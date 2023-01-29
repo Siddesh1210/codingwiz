@@ -1,38 +1,254 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+body{
+  padding:0;
+  margin:0;
+  font-family: 'Poppins', sans-serif;
+  overflow-x:hidden;
+}
+
+/* Start of CSS FOR NAVBAR */
+.navbar
+{
+  background-color: blueviolet;
+  cursor: pointer;
+}
+
+.call-btn
+{
+  padding:0px 10px !important;
+  border:none;
+  border-radius: 7px;
+  background-color: white;
+  color:blueviolet;
+  cursor: pointer;
+}
+
+.call-btn:hover{
+  transform: scale(0.8);
+  transition:0.5s ease-in-out;
+}
+
+@media (max-width:991px)
+{
+  .call-btn{
+    width:40%;
+    margin-left:0px !important;
+    padding:2px 0px !important;
+    margin-top: 10px !important;
+  }
+}
+
+.link
+{
+  text-decoration: none;
+}
+
+.call-anchor
+{
+  text-decoration: none;
+  color:blueviolet;
+}
+
+/* End of CSS FOR NAVBAR */
+
+/* Start of CSS FOR Hero */
+
+.hero-row
+{
+  background-color: black;
+  color:white;
+}
+
+@media (min-width:991px)
+{
+  .hero-row
+  {
+   height:90vh;
+  }
+}
+
+
+.hero-row p{
+  font-size: 20px;
+  text-align: justify;
+  font-weight: lighter;
+}
+
+.hero-btn
+{
+  padding:8px 20px;
+  border:none;
+  background-color: blueviolet;
+  color:white;
+  cursor: pointer;
+  margin:10px 20px 10px 0px;
+  border-radius: 8px;
+}
+
+.hero-btn2
+{
+  padding:8px 20px;
+  border:1px solid blueviolet;
+  background-color: transparent;
+  color:blueviolet;
+  cursor: pointer;
+  margin:10px 20px 10px 0px;
+  border-radius: 8px;
+}
+
+.hero-btn:hover{
+  transform: scale(0.9);
+  transition: 0.4s ease-in-out;
+}
+
+.hero-btn2:hover{
+  border:none;
+  background-color: blueviolet;
+  color:white;
+  transform: scale(0.9);
+  transition: 0.4s ease-in-out;
+}
+
+.hero-row img{
+  width:100% !important;
+  height:100% !important;
+}
+
+/* End of CSS FOR Hero */
+
+/* Start of Why us CSS */
+.yus-card
+{
+  border:1px solid rgb(219, 216, 216);
+  border-radius: 12px;
+  cursor:pointer;
+}
+
+.yus-card:hover
+{
+  -webkit-box-shadow:0px 0px 10px grey;
+  box-shadow:0px 0px 10px grey;
+  transition:0.4s ease-in-out;
+  transform: scale(1.02);
+}
+
+/* ENd of Why us CSS */
+
+/* Start of Course CSS */
+
+.course-card
+{
+  border:1px solid rgb(219, 216, 216);
+  border-radius: 12px;
+  cursor:pointer;
+  padding:10px;
+  margin:12px;
+}
+
+.parent-img
+{
+  width:100%;
+  height:200px;
+  margin-bottom: 15px;
+}
+
+.course-img
+{
+  border-radius: 12px;
+  margin-bottom:16px;
+  height: 100%;
+  width:100%;
+  object-fit: cover;
+}
+
+
+.course-card p{
+  margin:8px 0px;
+}
+
+.course-btn
+{
+  width:100%;
+  padding: 7px 20px;
   text-align: center;
+  background-color: blueviolet;
+  border: none;
+  border-radius: 10px;
+  cursor:pointer;
+  color:white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* End of Course CSS */
+
+/* Start of footer css */
+.footer
+{
+  background-color: blueviolet;
+  color:white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.footer p{
+  cursor: pointer;
+  font-weight: lighter;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* End of footer css */
+.js
+{
+  width:100%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.react
+{
+  width:90%;
+  margin:30px 10px 20px;
+}
+.express
+{
+  width:85%;
+  margin:25px 10px 10px;
+}
+.nodejs
+{
+  width:85%;
+  margin:25px 0px 10px;
+}
+.html
+{
+  width:81%;
+  margin:29px 0px 12px;
+}
+.css
+{
+  width:85%;
+  margin:10px;
 }
 
-.App-link {
-  color: #61dafb;
+.bootstrap
+{
+  width:100%;
+  margin:12px 5px 13px 3px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mongodb
+{
+  width:80%;
+  margin:10px;
+}
+
+.t-card
+{
+  border:1px solid rgb(216, 214, 214);
+  border-radius: 12px;
+  margin:10px;
+}
+
+.t-card:hover{
+  box-shadow:0px 0px 10px grey;
+  -webkit-box-shadow:0px 0px 10px grey;
+  transition: 0.5s ease-in-out;
+  transform: scale(1.01);
+  cursor: pointer;
 }
