@@ -1,5 +1,6 @@
 import HeroImg from '../Images/hero_img.png'
 import HeroImg2 from '../Images/hero_img2.png'
+import HeroImg3 from '../Images/hero_img3.png'
 import card1 from '../Images/card1.png';
 import card2 from '../Images/card2.png';
 import card3 from '../Images/card3.png';
@@ -21,14 +22,14 @@ function Hero()
 
             </div>
             <div className="col-md-5">
-                <img src={HeroImg2}></img>
+                <img src={HeroImg3}></img>
             </div>
         </div>
 
         <div className="row justify-content-evenly mt-4 mb-3 text-center">
             <div className="col-md-12">
             <h2 className="fw-bold fs-1">Why us?</h2>
-            <p className="fs-5 fw-lighter mb-0">our key offering</p>
+            <p className="fs-5 fw-lighter mb-0">Our key offering</p>
             </div>
         </div>
 

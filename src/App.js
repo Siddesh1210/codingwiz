@@ -4,6 +4,9 @@ import Home from './Components/Home';
 import Courses from './Components/Courses';
 import Technologies from './Components/Technologies';
 import Contact from './Components/Contact';
+import CourseDetail from './Components/CourseDetail';
+
+// So in future if we need to add any new card we can just pass JSON Card data in Courses.js File
 
 function App() {
   return (
@@ -21,7 +24,7 @@ function App() {
                 <Link to="/" className="nav-link active text-white link" aria-current="page" >Home</Link>
               </li>
               <li className="nav-item">
-                <Link to="/courses" className="nav-link active text-white link" aria-current="page"      >Courses</Link>
+                <Link to="/courses" className="nav-link active text-white link" aria-current="page">Courses</Link>
               </li>
               <li className="nav-item">
                 <Link to="/technologies" className="nav-link text-white link" >Technologies</Link>
@@ -41,6 +44,8 @@ function App() {
         <Route path="/courses" element={<Courses/>}></Route>
         <Route path="/technologies" element={<Technologies/>}></Route>
         <Route path="/contact" element={<Contact/>}></Route>
+        <Route path="/course-detail" element={<CourseDetail/>}></Route>
+
       </Routes>
     </div>
   );

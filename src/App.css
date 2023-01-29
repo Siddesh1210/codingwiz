@@ -194,6 +194,8 @@ body{
 }
 
 /* End of footer css */
+
+/* Start of Technology CSS */
 .js
 {
   width:100%;
@@ -252,3 +254,144 @@ body{
   transform: scale(1.01);
   cursor: pointer;
 }
+
+/* End of Technology CSS */
+
+/* Start of Contact CSS */
+
+.contact-row
+{
+  background-color:black;
+}
+
+.contact-row h4{
+  font-weight: bolder; 
+}
+
+.contact-btn
+{
+  padding:8px 10px;
+  width:100%;
+  border-radius: 10px;
+  border:none;
+  background-color: blueviolet;
+  color:white;
+  cursor: pointer;
+}
+
+.form-floating>.form-control,
+.form-floating>.form-control-plaintext {
+  padding: 0rem 0.75rem;
+}
+
+.form-floating>.form-control,
+.form-floating>.form-control-plaintext,
+.form-floating>.form-select {
+  height: calc(2.5rem + 2px);
+  line-height: 1;
+}
+
+.form-floating>label {
+  padding: 0.5rem 0.75rem;
+}
+
+.contact-form input:focus , .contact-form textarea:focus{
+  outline: none;
+  border:1px solid blueviolet;
+}
+
+.contact-form{
+  border:1px solid rgb(212, 210, 210);
+  border-radius: 8px;
+  padding:10px;
+}
+
+.contact-form h4{
+  color:blueviolet;
+}
+
+.contact-box
+{
+  border:1px solid rgb(222, 220, 220);
+  border-radius: 8px;
+}
+
+.contact-box p{
+  margin-bottom:8px;
+}
+
+@media (max-width:767px)
+{
+  .contact-hide-div
+  {
+    display: none;
+  }
+}
+
+@media (min-width:768px)
+{
+  .contact-hide-div2
+  {
+    display: none;
+  }
+}
+
+.map
+{
+  width:100%;
+  /* height:200%; */
+  height:250px;
+}
+
+@media (min-width:991px)
+{
+  .map{
+    height:400px;
+  }
+}
+
+
+/* End of Contact CSS */
+
+/* CSS Start for CourseDetail Page */
+
+.star
+{
+  color:rgb(255, 208, 0);
+}
+
+@media (min-width:576px)
+{
+  .relative
+{
+  position: relative;
+}
+
+.absolute
+{
+  position: absolute;
+  top:30px;
+  right:100px;
+}
+}
+
+.card-detail-row
+{
+  margin:0px !important;
+}
+
+.money-text
+{
+  font-size: 12px;
+}
+
+.text-499
+{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
+
+/* CSS end for CourseDetail Page */
+
