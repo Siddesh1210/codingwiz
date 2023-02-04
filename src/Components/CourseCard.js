@@ -1,16 +1,26 @@
 // So in future if we need to add any new card we can just pass JSON Card data over in Courses.js File
 
-import CourseDetail from "./CourseDetail";
-import { Link } from "react-router-dom";
+import {useNavigate} from 'react-router-dom';
+import React from "react";
+
 
 function CourseCard(props)
 {
+    const navigate=useNavigate();
     function CardHandler()
     {
-        // alert(props.title)
-        <CourseDetail/>
-
-    }
+        navigate('/course-detail',{
+            state:{
+                title:props.title,
+                desc:props.desc,
+                oprice:props.oprice,
+                sprice:props.sprice,
+                off:props.off,
+                btn:props.btn,
+                img:props.img,
+            }
+        });
+    };
     return(
             <div className='col-md-3 course-card'>
                 <div className='parent-img'>

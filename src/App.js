@@ -5,7 +5,9 @@ import Courses from './Components/Courses';
 import Technologies from './Components/Technologies';
 import Contact from './Components/Contact';
 import CourseDetail from './Components/CourseDetail';
-
+import PrivacyPolicy from './Components/PrivacyPolicy';
+import ScrollToTop from './Components/ScrollToTop';
+import Display from './Components/Display';
 // So in future if we need to add any new card we can just pass JSON Card data in Courses.js File
 
 function App() {
@@ -32,19 +34,21 @@ function App() {
               <li className="nav-item">
                 <Link to="/contact" className="nav-link text-white link">Contact</Link>
               </li>
-              <button class="call-btn ms-2"><a href="tel:9623235838" className="call-anchor">Call Us</a></button>
+              <button className="call-btn ms-2"><a href="tel:9623235838" className="call-anchor">Call Us</a></button>
             </ul>
           </div>
         </div>
       </nav>
 
-
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home/>}></Route>
         <Route path="/courses" element={<Courses/>}></Route>
         <Route path="/technologies" element={<Technologies/>}></Route>
         <Route path="/contact" element={<Contact/>}></Route>
         <Route path="/course-detail" element={<CourseDetail/>}></Route>
+        <Route path="/privacy-policy" element={<PrivacyPolicy/>}></Route>
+        <Route path="/view-f2c-student" element={<Display/>}></Route>
 
       </Routes>
     </div>

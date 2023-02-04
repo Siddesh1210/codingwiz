@@ -115,6 +115,17 @@ body{
   height:100% !important;
 }
 
+.callTutors
+{
+  color:blueviolet;
+  text-decoration: none;
+}
+
+.callTutors:hover 
+{
+  color:white;
+  transition: 0.4s ease-in-out;
+}
 /* End of CSS FOR Hero */
 
 /* Start of Why us CSS */
@@ -191,6 +202,11 @@ body{
 .footer p{
   cursor: pointer;
   font-weight: lighter;
+}
+
+.social-media a{
+  text-decoration: none;
+  color:white;
 }
 
 /* End of footer css */
@@ -306,7 +322,7 @@ body{
   padding:10px;
 }
 
-.contact-form h4{
+.contact-form h5{
   color:blueviolet;
 }
 
@@ -375,6 +391,16 @@ body{
 }
 }
 
+.course-card2
+{
+  margin: 10px 0px !important;
+}
+
+.course-detail-main-row
+{
+  background-color: black;
+}
+
 .card-detail-row
 {
   margin:0px !important;
@@ -383,6 +409,7 @@ body{
 .money-text
 {
   font-size: 12px;
+  line-height: 16px;
 }
 
 .text-499
@@ -391,7 +418,173 @@ body{
   font-size: 20px;
 }
 
+.course-include-card
+{
+  padding:24px 40px;
+}
+
+@media (max-width:767px)
+{
+  .course-include-card
+  {
+    padding:24px 10px 1px;
+  }
+
+  .course-include-card2
+  {
+    padding:5px 10px 10px !important;
+  }
+}
+
+.course-include-card2
+{
+  padding:10px 40px;
+}
+
+.course-detail-list li
+{
+  word-spacing:3px;
+  line-height: 30px;
+  font-size: 16px;
+  text-align: justify;
+}
+
+.course-detail-desc
+{
+  text-align: justify;
+}
 
 
 /* CSS end for CourseDetail Page */
 
+
+/* Start of privacy css */
+.privacy-row
+{
+  text-align: justify;
+}
+
+/* end of privacy css */
+
+/* testimonial css start */
+.testimonial-card , .card-up {
+  height: 120px;
+  overflow: hidden;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  background-color: blueviolet;
+}
+.testimonial-card , .avatar {
+  width: 110px;
+  margin-top: -60px;
+  overflow: hidden;
+  border: 3px solid #fff;
+  border-radius: 50%;
+}
+/* testimonial css end */
+
+
+/* Structure CSS Start */
+.show-detail
+{
+  margin:20px auto;
+  padding:10px 20px;
+  border: 1px solid blueviolet;
+  width:30vw;
+  color:rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+@media only screen and (max-width:767px)
+{
+  .show-detail{
+  padding:10px 10px !important;
+  width:90vw;
+  }
+}
+
+.structure-display
+{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.show-detail p{
+   font-size: 18px;
+}
+
+.x-schedule
+{
+  text-align: center;
+  font-size:5vh;
+  color:blueviolet;
+  margin-top:5vh;
+}
+
+/* animation css laoding */
+.center {
+  height: 58vh;
+  display: flex;
+  justify-content: center;
+  margin-top:20vh;
+  /* align-items: center; */
+  background: white;
+}
+
+.d-none
+{
+  display: none;
+}
+.wave {
+  width: 5px;
+  height: 100px;
+  background: linear-gradient(45deg, cyan, blueviolet);
+  margin: 10px;
+  animation: wave 1s linear infinite;
+  border-radius: 20px;
+}
+.wave:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.wave:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.wave:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.wave:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.wave:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.wave:nth-child(7) {
+  animation-delay: 0.6s;
+}
+.wave:nth-child(8) {
+  animation-delay: 0.7s;
+}
+.wave:nth-child(9) {
+  animation-delay: 0.8s;
+}
+.wave:nth-child(10) {
+  animation-delay: 0.9s;
+}
+
+@keyframes wave {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+ /* animation end */
+
+
+ /* Structure CSS END */
