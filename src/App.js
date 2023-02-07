@@ -8,6 +8,7 @@ import CourseDetail from './Components/CourseDetail';
 import PrivacyPolicy from './Components/PrivacyPolicy';
 import ScrollToTop from './Components/ScrollToTop';
 import Display from './Components/Display';
+import CoursePage from './Components/CoursePage';
 // So in future if we need to add any new card we can just pass JSON Card data in Courses.js File
 
 function App() {
@@ -43,7 +44,9 @@ function App() {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home/>}></Route>
-        <Route path="/courses" element={<Courses/>}></Route>
+        <Route path="/courses" element={<CoursePage/>}></Route>
+        {/* Temporary route below */}
+        <Route path="/course-page" element={<CoursePage/>}></Route>
         <Route path="/technologies" element={<Technologies/>}></Route>
         <Route path="/contact" element={<Contact/>}></Route>
         <Route path="/course-detail" element={<CourseDetail/>}></Route>

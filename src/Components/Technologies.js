@@ -1,31 +1,43 @@
 import Footer from "./Footer";
+import JS from '../Images/JS_Icon.webp'
+import ReactJS  from '../Images/React_Icon.png'
+import Express from '../Images/Express_Icon.png'
+import NodeJS from '../Images/Node_Icon.webp'
+import HTML from '../Images/Html_Icon.webp'
+import CSS from '../Images/Css_Icon.webp'
+import Git from '../Images/Git_Icon.png'
+import Github from '../Images/Github_Icon.png'
+import Bootstrap from '../Images/Bootstrap_Icon.png'
+import Mongodb from '../Images/Mongo_Icon.svg'
+
+
 function Technologies()
 {
     return(
         <div className="container-fluid">
             <div className="row justify-content-evenly mt-3">
                 <div className="col-md-2 text-center t-card">
-                    <img src="https://classes.pixsdev.com/_next/image?url=%2FImgs%2FCourses%2Fjs.png&w=256&q=75" className="js"></img>
+                    <img src={JS} className="js"></img>
                     <h6>JavaScript</h6>
                 </div>
 
                 <div className="col-md-2 text-center t-card">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" className="react"></img>
+                    <img src={ReactJS} className="react"></img>
                     <h6>ReactJS</h6>
                 </div>
 
                 <div className="col-md-2 text-center t-card">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Status_iucn_EX_icon.svg/480px-Status_iucn_EX_icon.svg.png" className="express"></img>
+                    <img src={Express} className="express"></img>
                     <h6>ExpressJS</h6>
                 </div>
 
                 <div className="col-md-2 text-center t-card ">
-                    <img src="https://classes.pixsdev.com/_next/image?url=%2FImgs%2FCourses%2Fnode.png&w=256&q=75" className="nodejs"></img>
+                    <img src={NodeJS} className="nodejs"></img>
                     <h6>NodeJS</h6>
                 </div>
 
                 <div className="col-md-2 text-center t-card ">
-                    <img src="https://classes.pixsdev.com/_next/image?url=%2FImgs%2FCourses%2Fhtml.png&w=256&q=75" className="html"></img>
+                    <img src={HTML} className="html"></img>
                     <h6>HTML</h6>
                 </div>
 
@@ -33,27 +45,27 @@ function Technologies()
 
             <div className="row justify-content-evenly my-3">
                 <div className="col-md-2 text-center t-card">
-                    <img src="https://classes.pixsdev.com/_next/image?url=%2FImgs%2FCourses%2Fcss.png&w=256&q=75" className="css"></img>
+                    <img src={CSS} className="css"></img>
                     <h6>CSS</h6>
                 </div>
 
                 <div className="col-md-2 text-center t-card">
-                    <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" className="css"></img>
+                    <img src={Git} className="css"></img>
                     <h6>Git</h6>
                 </div>
 
                 <div className="col-md-2 text-center t-card">
-                    <img src="https://cdn-icons-png.flaticon.com/512/38/38401.png" className="css"></img>
+                    <img src={Github} className="css"></img>
                     <h6>Github</h6>
                 </div>
 
                 <div className="col-md-2 text-center t-card">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1280px-Bootstrap_logo.svg.png" className="bootstrap"></img>
+                    <img src={Bootstrap} className="bootstrap"></img>
                     <h6>Bootstrap</h6>
                 </div>
 
                 <div className="col-md-2 text-center t-card">
-                    <img src="https://www.tutorialsteacher.com/Content/images/home/mongodb.svg" className="mongodb"></img>
+                    <img src={Mongodb} className="mongodb"></img>
                     <h6>MongoDB</h6>
                 </div>
             </div>

@@ -7,6 +7,8 @@ import card4 from '../Images/card4.png';
 import card5 from '../Images/card5.png';
 import card6 from '../Images/card6.png';
 import Courses from './Courses';
+import Footer from './Footer';
+import Testimonial from './Testimonial';
 import {useNavigate} from 'react-router-dom';
 
 
@@ -66,12 +68,15 @@ function Hero()
             <img src={card6} className='img-fluid'></img>
             </div>
         </div>
+        
+        {/* <Courses/> */}
+        <Courses/>
 
         {/* testimonial start */}
-         
+        <Testimonial/>
         {/* testimonial end */}
         
-        <Courses/>
+        <Footer/>
         {/* end of container-fluid */}
         </div>
     )

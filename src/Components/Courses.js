@@ -1,12 +1,17 @@
-import Footer from "./Footer";
+// import Footer from "./Footer";
 import CourseCard from "./CourseCard";
+import Frontend_Img from '../Images/Frontend_Img.webp'
+import Backend_Img from '../Images/Backend_Img.png'
+import DataStructure_Img from '../Images/DataStructure_Img.webp'
+
+
+
 
 // So in future if we need to add any new card we can just pass JSON Card data over here in Courses.js File
 
 let Courses_list=[
     {
-        img:'https://www.shutterstock.com/image-vector/this-colourful-illustration-shows-process-260nw-1788713501.jpg',
-        title:'Frontend Development Bootcamp',
+        img:{Frontend_Img},
         price:'₹ 499 Only',
         date:'Start from March onwards',
         time:'7:00 PM to 8:00 PM',
@@ -17,7 +22,7 @@ let Courses_list=[
         btn:'Buy this Course',
     },
     {
-        img:'https://www.iqmotion.ai/wp-content/uploads/2021/08/development-1.png',
+        img:{Backend_Img},
         title:'Backend Development Bootcamp',
         price:'₹ 799 Only',
         date:'Coming Soon',
@@ -29,7 +34,7 @@ let Courses_list=[
         btn:'Coming Soon!',
     },
     {
-        img:'https://classes.pixsdev.com/_next/image?url=%2FImgs%2FCourses%2Fdsa2.jpg&w=1080&q=75',
+        img:{DataStructure_Img},
         title:'Data Structures and Algorithm (Java / C++)',
         price:'₹ 999 Only',
         date:'Coming Soon',
@@ -65,7 +70,7 @@ function Courses()
             }
 
         </div>
-        <Footer/>
+        {/* <Footer/> */}
         </div>
     )
 }
