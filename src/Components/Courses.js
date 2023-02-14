@@ -3,7 +3,6 @@ import CourseCard from "./CourseCard";
 import Frontend_Img from '../Images/Frontend_Img.webp'
 import Backend_Img from '../Images/Backend_Img.png'
 import DataStructure_Img from '../Images/DataStructure_Img.webp'
-import SyllabusAccordion from "./SyllabusAccordion";
 
 
 
@@ -22,29 +21,6 @@ let Courses_list=[
         sprice:'₹ 2999',
         off:'83% off',
         btn:'Buy this Course',
-        syllabus:[
-            {
-                title:"Introduction to course",
-                description:"What are Different Stacks for WebD & Whats special about MERN above them Brief on Components of MERN Stack (ReactJS, NodeJS, ExpressJS, MongoDB) Explaining the Structure of the Course.Clarifying the Difference between Full Stack Development & DevOps.",
-                id:"headingOne",
-                datatarget:"#collapseOne",
-                arialcontrols:"collapseOne"
-            },
-            {
-                title:"Introduction to ReactJS",
-                description:"What are Different Stacks for WebD & Whats special about MERN above them Brief on Components of MERN Stack (ReactJS, NodeJS, ExpressJS, MongoDB) Explaining the Structure of the Course.Clarifying the Difference between Full Stack Development & DevOps.",
-                id:"headingTwo",
-                datatarget:"#collapseTwo",
-                arialcontrols:"collapseTwo"
-            },
-            {
-                title:"Introduction to ExpressJS",
-                description:"What are Different Stacks for WebD & Whats special about MERN above them Brief on Components of MERN Stack (ReactJS, NodeJS, ExpressJS, MongoDB) Explaining the Structure of the Course.Clarifying the Difference between Full Stack Development & DevOps.",
-                id:"headingThree",
-                datatarget:"#collapseThree",
-                arialcontrols:"collapseThree"
-            }
-        ]
     },
     {
         img:'https://www.iqmotion.ai/wp-content/uploads/2021/08/development-1.png',
@@ -127,11 +103,7 @@ function Courses()
             Courses_list.map((x)=>
             {
                 return(
-                    <div>
                     <CourseCard img={x.img} title={x.title} price={x.price} date={x.date} time={x.time} desc={x.desc} oprice={x.oprice} sprice={x.sprice} off={x.off} btn={x.btn}/>
-                    {/* <SyllabusAccordion title={x.syllabus}/> */}
-                    
-                    </div>
                 )
             })
             }
