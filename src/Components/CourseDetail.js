@@ -1,8 +1,226 @@
 import Footer from "./Footer";
+import SyllabusAccordion from "./SyllabusAccordion";
 import { useLocation } from "react-router-dom";
 
-function CourseDetail()
+function CourseDetail(props)
 {
+
+    let Courses_list=[
+        {
+            img:'https://www.shutterstock.com/image-vector/this-colourful-illustration-shows-process-260nw-1788713501.jpg',
+            title:'Frontend Development Bootcamp',
+            price:'₹ 499 Only',
+            date:'Start from March onwards',
+            time:'7:00 PM to 8:00 PM',
+            desc:'Learn complete Frontend Developement with 3+ live projects, Includes HTML5, CSS3, JavaScript, Bootstrap, Git and host your project at free!',
+            oprice:'499 Only',
+            sprice:'₹ 2999',
+            off:'83% off',
+            btn:'Buy this Course',
+            syllabus:[
+                {
+                    title:"Introduction to course",
+                    description:"What are Different Stacks for WebD & Whats special about MERN above them Brief on Components of MERN Stack (ReactJS, NodeJS, ExpressJS, MongoDB) Explaining the Structure of the Course.Clarifying the Difference between Full Stack Development & DevOps.",
+                    id:"headingOne",
+                    datatarget:"#collapseOne",
+                    arialcontrols:"collapseOne"
+                },
+                {
+                    title:"Introduction to ReactJS",
+                    description:"What are Different Stacks for WebD & Whats special about MERN above them Brief on Components of MERN Stack (ReactJS, NodeJS, ExpressJS, MongoDB) Explaining the Structure of the Course.Clarifying the Difference between Full Stack Development & DevOps.",
+                    id:"headingTwo",
+                    datatarget:"#collapseTwo",
+                    arialcontrols:"collapseTwo"
+                },
+                {
+                    title:"Introduction to ExpressJS",
+                    description:"What are Different Stacks for WebD & Whats special about MERN above them Brief on Components of MERN Stack (ReactJS, NodeJS, ExpressJS, MongoDB) Explaining the Structure of the Course.Clarifying the Difference between Full Stack Development & DevOps.",
+                    id:"headingThree",
+                    datatarget:"#collapseThree",
+                    arialcontrols:"collapseThree"
+                }
+            ]
+        },
+        {
+            img:'https://www.iqmotion.ai/wp-content/uploads/2021/08/development-1.png',
+            title:'Backend Development Bootcamp',
+            price:'₹ 749 Only',
+            date:'Start from March onwards',
+            time:'7:00 PM to 8:30 PM',
+            desc:'Learn Full Stack development with 3+ live projects, Learn how to create servers and intregrate with frontend technologies plus Database and Deployment!',
+            oprice:'749 Only',
+            sprice:'₹ 4999',
+            off:'85% off',
+            btn:'Coming Soon!',
+            syllabus:[
+                {
+                    title:"Introduction to course",
+                    description:"What are Different Stacks for WebD & Whats special about MERN above them Brief on Components of MERN Stack (ReactJS, NodeJS, ExpressJS, MongoDB) Explaining the Structure of the Course.Clarifying the Difference between Full Stack Development & DevOps.",
+                    id:"headingOne",
+                    datatarget:"#collapseOne",
+                    arialcontrols:"collapseOne"
+                },
+                {
+                    title:"Introduction to ReactJS",
+                    description:"What are Different Stacks for WebD & Whats special about MERN above them Brief on Components of MERN Stack (ReactJS, NodeJS, ExpressJS, MongoDB) Explaining the Structure of the Course.Clarifying the Difference between Full Stack Development & DevOps.",
+                    id:"headingTwo",
+                    datatarget:"#collapseTwo",
+                    arialcontrols:"collapseTwo"
+                },
+                {
+                    title:"Introduction to ExpressJS",
+                    description:"What are Different Stacks for WebD & Whats special about MERN above them Brief on Components of MERN Stack (ReactJS, NodeJS, ExpressJS, MongoDB) Explaining the Structure of the Course.Clarifying the Difference between Full Stack Development & DevOps.",
+                    id:"headingThree",
+                    datatarget:"#collapseThree",
+                    arialcontrols:"collapseThree"
+                }
+            ]
+        },
+        {
+            img:'https://img.freepik.com/free-vector/app-development-illustration_52683-47931.jpg',
+            title:'Android App Development with Java',
+            price:'₹ 749 Only',
+            date:'Start from March onwards',
+            time:'7:00 PM to 8:30 PM',
+            desc:'Android App development | Boost mobile app development skills with android studio using Kotlin, Java android development',
+            oprice:'749 Only',
+            sprice:'₹ 4999',
+            off:'85% off',
+            btn:'Coming Soon!',
+            syllabus:[
+                {
+                    title:"Introduction to course",
+                    description:"What are Different Stacks for WebD & Whats special about MERN above them Brief on Components of MERN Stack (ReactJS, NodeJS, ExpressJS, MongoDB) Explaining the Structure of the Course.Clarifying the Difference between Full Stack Development & DevOps.",
+                    id:"headingOne",
+                    datatarget:"#collapseOne",
+                    arialcontrols:"collapseOne"
+                },
+                {
+                    title:"Introduction to ReactJS",
+                    description:"What are Different Stacks for WebD & Whats special about MERN above them Brief on Components of MERN Stack (ReactJS, NodeJS, ExpressJS, MongoDB) Explaining the Structure of the Course.Clarifying the Difference between Full Stack Development & DevOps.",
+                    id:"headingTwo",
+                    datatarget:"#collapseTwo",
+                    arialcontrols:"collapseTwo"
+                },
+                {
+                    title:"Introduction to ExpressJS",
+                    description:"What are Different Stacks for WebD & Whats special about MERN above them Brief on Components of MERN Stack (ReactJS, NodeJS, ExpressJS, MongoDB) Explaining the Structure of the Course.Clarifying the Difference between Full Stack Development & DevOps.",
+                    id:"headingThree",
+                    datatarget:"#collapseThree",
+                    arialcontrols:"collapseThree"
+                }
+            ]
+        },
+        {
+            img:'https://media.licdn.com/dms/image/C4E0DAQGDRxCiTmA53A/learning-public-crop_288_512/0/1568669909265?e=2147483647&v=beta&t=QAxV_yWsi3WYtzsrZEJR8xk4Ij2LZDPsbUHpX0-00gc',
+            title:'Data Structures and Algorithm in Java',
+            price:'₹ 999 Only',
+            date:'Start from March onwards',
+            time:'7:00 PM to 9:00 PM',
+            desc:'Learn complete Data Structure and Algorithms with 50+ live examples solving, Included all Linear and Non Linear Data Structures!',
+            oprice:'999 Only',
+            sprice:'₹ 5999',
+            off:'80% off',
+            btn:'Coming Soon!',
+            syllabus:[
+                {
+                    title:"Introduction to course",
+                    description:"What are Different Stacks for WebD & Whats special about MERN above them Brief on Components of MERN Stack (ReactJS, NodeJS, ExpressJS, MongoDB) Explaining the Structure of the Course.Clarifying the Difference between Full Stack Development & DevOps.",
+                    id:"headingOne",
+                    datatarget:"#collapseOne",
+                    arialcontrols:"collapseOne"
+                },
+                {
+                    title:"Introduction to ReactJS",
+                    description:"What are Different Stacks for WebD & Whats special about MERN above them Brief on Components of MERN Stack (ReactJS, NodeJS, ExpressJS, MongoDB) Explaining the Structure of the Course.Clarifying the Difference between Full Stack Development & DevOps.",
+                    id:"headingTwo",
+                    datatarget:"#collapseTwo",
+                    arialcontrols:"collapseTwo"
+                },
+                {
+                    title:"Introduction to ExpressJS",
+                    description:"What are Different Stacks for WebD & Whats special about MERN above them Brief on Components of MERN Stack (ReactJS, NodeJS, ExpressJS, MongoDB) Explaining the Structure of the Course.Clarifying the Difference between Full Stack Development & DevOps.",
+                    id:"headingThree",
+                    datatarget:"#collapseThree",
+                    arialcontrols:"collapseThree"
+                }
+            ]
+        },
+        {
+            img:'https://classes.pixsdev.com/_next/image?url=%2FImgs%2FCourses%2Fdsa2.jpg&w=1080&q=75',
+            title:'Data Structures and Algorithm in C++',
+            price:'₹ 999 Only',
+            date:'Start from March onwards',
+            time:'7:00 PM to 9:00 PM',
+            desc:'Learn complete Data Structure and Algorithms with 50+ live examples solving, Included all Linear and Non Linear Data Structures!',
+            oprice:'999 Only',
+            sprice:'₹ 5999',
+            off:'80% off',
+            btn:'Coming Soon!',
+            syllabus:[
+                {
+                    title:"Introduction to course",
+                    description:"What are Different Stacks for WebD & Whats special about MERN above them Brief on Components of MERN Stack (ReactJS, NodeJS, ExpressJS, MongoDB) Explaining the Structure of the Course.Clarifying the Difference between Full Stack Development & DevOps.",
+                    id:"headingOne",
+                    datatarget:"#collapseOne",
+                    arialcontrols:"collapseOne"
+                },
+                {
+                    title:"Introduction to ReactJS",
+                    description:"What are Different Stacks for WebD & Whats special about MERN above them Brief on Components of MERN Stack (ReactJS, NodeJS, ExpressJS, MongoDB) Explaining the Structure of the Course.Clarifying the Difference between Full Stack Development & DevOps.",
+                    id:"headingTwo",
+                    datatarget:"#collapseTwo",
+                    arialcontrols:"collapseTwo"
+                },
+                {
+                    title:"Introduction to ExpressJS",
+                    description:"What are Different Stacks for WebD & Whats special about MERN above them Brief on Components of MERN Stack (ReactJS, NodeJS, ExpressJS, MongoDB) Explaining the Structure of the Course.Clarifying the Difference between Full Stack Development & DevOps.",
+                    id:"headingThree",
+                    datatarget:"#collapseThree",
+                    arialcontrols:"collapseThree"
+                }
+            ]
+        },
+        {
+            img:'https://www.oho.co.uk/uploads/guide-to-machine-learning-and-ai.jpg',
+            title:'Machine Learning with Python',
+            price:'₹ 749 Only',
+            date:'Start from March onwards',
+            time:'7:00 PM to 8:00 PM',
+            desc:'Deep dive into Machine Learning with Python! By learning about library like Numpy, Pandas, Matplotlib and by building 3+ real-time projects!',
+            oprice:'749 Only',
+            sprice:'₹ 4999',
+            off:'85% off',
+            btn:'Coming Soon!',
+            syllabus:[
+                {
+                    title:"Introduction to course",
+                    description:"What are Different Stacks for WebD & Whats special about MERN above them Brief on Components of MERN Stack (ReactJS, NodeJS, ExpressJS, MongoDB) Explaining the Structure of the Course.Clarifying the Difference between Full Stack Development & DevOps.",
+                    id:"headingOne",
+                    datatarget:"#collapseOne",
+                    arialcontrols:"collapseOne"
+                },
+                {
+                    title:"Introduction to ReactJS",
+                    description:"What are Different Stacks for WebD & Whats special about MERN above them Brief on Components of MERN Stack (ReactJS, NodeJS, ExpressJS, MongoDB) Explaining the Structure of the Course.Clarifying the Difference between Full Stack Development & DevOps.",
+                    id:"headingTwo",
+                    datatarget:"#collapseTwo",
+                    arialcontrols:"collapseTwo"
+                },
+                {
+                    title:"Introduction to ExpressJS",
+                    description:"What are Different Stacks for WebD & Whats special about MERN above them Brief on Components of MERN Stack (ReactJS, NodeJS, ExpressJS, MongoDB) Explaining the Structure of the Course.Clarifying the Difference between Full Stack Development & DevOps.",
+                    id:"headingThree",
+                    datatarget:"#collapseThree",
+                    arialcontrols:"collapseThree"
+                }
+            ]
+        }
+        
+    
+        // So in future if we need to add any new card we can just pass JSON Card data over here in Courses.js File
+    ]
+
     const location=useLocation();
     // console.log(location);
     // console.log(location.state.title);
@@ -17,6 +235,7 @@ function CourseDetail()
             alert("Please notify me")
         }
     }
+
     return(
         <div className="container-fluid">
             <div className="relative">
@@ -24,7 +243,7 @@ function CourseDetail()
                 <div className="col-sm-7">
                     <h3>{location.state.title}</h3>
                     <p className="course-detail-desc">{location.state.desc}</p>
-                    <p className="star">5 <i className="bi bi-star-fill star"></i> <i className="bi bi-star-fill star"></i> <i className="bi bi-star-fill star"></i> <i className="bi bi-star-fill star"></i> <i className="bi bi-star-fill star"></i></p>
+                    <p className="star">4.5 <i className="bi bi-star-fill star"></i> <i className="bi bi-star-fill star"></i> <i className="bi bi-star-fill star"></i> <i className="bi bi-star-fill star"></i> <i className="bi bi-star-half star"></i></p>
                 </div>
             </div>
             <div className="row card-detail-row">
@@ -40,9 +259,12 @@ function CourseDetail()
                 </div>
             </div>
             </div>
+
+        {/* start of course include section */}
+
             <div className="row course-include-card">
                 <div className="col-md-6 ">
-                    <h4 className="fw-bolder">This Course includes :</h4>
+                    <h4 className="fw-bolder">This Course Includes</h4>
                     <div className="row justify-content-between">
                         <div className="col-md-6 py-2">
                             <p><i className="bi bi-tv"></i> Daily Live Interactive Classes</p>
@@ -71,9 +293,167 @@ function CourseDetail()
                     </div>
                 </div>
             </div>
+        {/* End of course include section */}
 
+        {/* start of course circullun section */}
+        {/* <div className="row course-include-card">
+            <div className="col-md-8 ps-3 pe-2">
+                <h4 className="fw-bolder">Course Curriculum</h4>
+                <div className="accordion" id="accordionExample">
+                    <div className="accordion-item">
+                        <h2 className="accordion-header" id="headingOne">
+                        <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            Accordion Item #1
+                        </button>
+                        </h2>
+                        <div id="collapseOne" className="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div className="accordion-body">
+                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                        </div>
+                    </div>
+
+                    <div className="accordion-item">
+                        <h2 className="accordion-header" id="headingTwo">
+                        <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Accordion Item #2
+                        </button>
+                        </h2>
+                        <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div className="accordion-body">
+                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                        </div>
+                    </div>
+
+                    <div className="accordion-item">
+                        <h2 className="accordion-header" id="headingThree">
+                        <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Accordion Item #3
+                        </button>
+                        </h2>
+                        <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div className="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                        </div>
+                    </div>
+
+                    <div className="accordion-item">
+                        <h2 className="accordion-header" id="headingFour">
+                        <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Accordion Item #4
+                        </button>
+                        </h2>
+                        <div id="collapseFour" className="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                        <div className="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                        </div>
+                    </div>
+
+                    <div className="accordion-item">
+                        <h2 className="accordion-header" id="headingFive">
+                        <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Accordion Item #5
+                        </button>
+                        </h2>
+                        <div id="collapseFive" className="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                        <div className="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                        </div>
+                    </div>
+
+                    <div className="accordion-item">
+                        <h2 className="accordion-header" id="headingSix">
+                        <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            Accordion Item #6
+                        </button>
+                        </h2>
+                        <div id="collapseSix" className="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                        <div className="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                        </div>
+                    </div>
+
+                    <div className="accordion-item">
+                        <h2 className="accordion-header" id="headingSeven">
+                        <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                            Accordion Item #7
+                        </button>
+                        </h2>
+                        <div id="collapseSeven" className="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                        <div className="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                        </div>
+                    </div>
+
+                    <div className="accordion-item">
+                        <h2 className="accordion-header" id="headingEight">
+                        <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                            Accordion Item #8
+                        </button>
+                        </h2>
+                        <div id="collapseEight" className="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                        <div className="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                        </div>
+                    </div>
+
+                    <div className="accordion-item">
+                        <h2 className="accordion-header" id="headingNine">
+                        <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                            Accordion Item #9
+                        </button>
+                        </h2>
+                        <div id="collapseNine" className="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+                        <div className="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                        </div>
+                    </div>
+
+                    <div className="accordion-item">
+                        <h2 className="accordion-header" id="headingTen">
+                        <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                            Accordion Item #10
+                        </button>
+                        </h2>
+                        <div id="collapseTen" className="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample">
+                        <div className="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> */}
+        <div className="row course-heading">
+            <div className="col-md-8 ps-3 pe-2">
+                <h4 className="fw-bolder">Course Curriculum</h4>
+                
+                <div className="accordion" id="accordionExample">
+                    {
+                        
+                        location.state.syllabus.map((i)=>{
+                            console.log(i);
+                            return <SyllabusAccordion title={i.title} description={i.description} id={i.id} arialcontrols={i.arialcontrols} datatarget={i.datatarget} />
+                        })
+                    }
+                </div>
+            </div>
+        </div>
+        <SyllabusAccordion/>
+
+        {/* end of circullum section */}
+        
+        {/* start of requirement section */}
             <div className="row course-include-card2">
-                <div className="col-md-8 ps-0 pe-1">
+                <div className="col-md-8 ps-3 pe-2">
                     <h4 className="fw-bolder">Requirements</h4>
                     <ul className="course-detail-list">
                         <li>No programming experience needed - We'll teach you everything you need to know</li>
@@ -84,6 +464,8 @@ function CourseDetail()
                     </ul>
                 </div>
             </div>
+        {/* end of requirement section */}
+
             <Footer/>
         </div>
     )
