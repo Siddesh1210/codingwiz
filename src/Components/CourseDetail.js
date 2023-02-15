@@ -219,7 +219,7 @@ function CourseDetail()
                 <h4 className="fw-bolder">Course Curriculum</h4>
             </div>
         </div>
-        <SyllabusAccordion/>
+        <SyllabusAccordion syllabus={location.state.syllabus} />
 
         {/* end of circullum section */}
         

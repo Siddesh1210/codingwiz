@@ -18,6 +18,7 @@ function CourseCard(props)
                 off:props.off,
                 btn:props.btn,
                 img:props.img,
+                syllabus: props.syllabus
             }
         });
     };

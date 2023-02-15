@@ -21,6 +21,29 @@ let Courses_list=[
         sprice:'₹ 2999',
         off:'83% off',
         btn:'Buy this Course',
+        syllabus:[
+            {
+                title:"Introduction to course",
+                description:"What are Different Stacks for WebD & Whats special about MERN above them Brief on Components of MERN Stack (ReactJS, NodeJS, ExpressJS, MongoDB) Explaining the Structure of the Course.Clarifying the Difference between Full Stack Development & DevOps.",
+                id:"headingOne",
+                datatarget:"#collapseOne",
+                arialcontrols:"collapseOne"
+            },
+            {
+                title:"Introduction to ReactJS",
+                description:"• Introduction to ReactJS & Its Advantages (SPA & its Dynamic Nature) • React Components (Code Once Use Everywhere ;) • React Props and State • React Hooks (useState & useEffect) • React Router (SPA) • React Styling (Module CSS vs normal CSS) • Mini Project on ReactJS (A Grocery List App) & Compiling the Code",
+                id:"headingTwo",
+                datatarget:"#collapseTwo",
+                arialcontrols:"collapseTwo"
+            },
+            {
+                title:"Introduction to ExpressJS",
+                description:"What are Different Stacks for WebD & Whats special about MERN above them Brief on Components of MERN Stack (ReactJS, NodeJS, ExpressJS, MongoDB) Explaining the Structure of the Course.Clarifying the Difference between Full Stack Development & DevOps.",
+                id:"headingThree",
+                datatarget:"#collapseThree",
+                arialcontrols:"collapseThree"
+            }
+        ]
     },
     {
         img:'https://www.iqmotion.ai/wp-content/uploads/2021/08/development-1.png',
@@ -33,6 +56,29 @@ let Courses_list=[
         sprice:'₹ 4999',
         off:'85% off',
         btn:'Coming Soon!',
+        syllabus:[
+            {
+                title:"Introduction to course",
+                description:"What are Different Stacks for WebD & Whats special about MERN above them Brief on Components of MERN Stack (ReactJS, NodeJS, ExpressJS, MongoDB) Explaining the Structure of the Course.Clarifying the Difference between Full Stack Development & DevOps.",
+                id:"headingOne",
+                datatarget:"#collapseOne",
+                arialcontrols:"collapseOne"
+            },
+            {
+                title:"Introduction to ReactJS",
+                description:"What are Different Stacks for WebD & Whats special about MERN above them Brief on Components of MERN Stack (ReactJS, NodeJS, ExpressJS, MongoDB) Explaining the Structure of the Course.Clarifying the Difference between Full Stack Development & DevOps.",
+                id:"headingTwo",
+                datatarget:"#collapseTwo",
+                arialcontrols:"collapseTwo"
+            },
+            {
+                title:"Introduction to ExpressJS",
+                description:"What are Different Stacks for WebD & Whats special about MERN above them Brief on Components of MERN Stack (ReactJS, NodeJS, ExpressJS, MongoDB) Explaining the Structure of the Course.Clarifying the Difference between Full Stack Development & DevOps.",
+                id:"headingThree",
+                datatarget:"#collapseThree",
+                arialcontrols:"collapseThree"
+            }
+        ]
     },
     {
         img:'https://img.freepik.com/free-vector/app-development-illustration_52683-47931.jpg',
@@ -45,6 +91,29 @@ let Courses_list=[
         sprice:'₹ 4999',
         off:'85% off',
         btn:'Coming Soon!',
+        syllabus:[
+            {
+                title:"Introduction to course",
+                description:"What are Different Stacks for WebD & Whats special about MERN above them Brief on Components of MERN Stack (ReactJS, NodeJS, ExpressJS, MongoDB) \nExplaining the Structure of the Course.\nClarifying the Difference between Full Stack Development & DevOps.",
+                id:"headingOne",
+                datatarget:"#collapseOne",
+                arialcontrols:"collapseOne"
+            },
+            {
+                title:"Introduction to ReactJS",
+                description:"What are Different Stacks for WebD & Whats special about MERN above them \nBrief on Components of MERN Stack (ReactJS, NodeJS, ExpressJS, MongoDB) Explaining the Structure of the Course.Clarifying the Difference between Full Stack Development & DevOps.",
+                id:"headingTwo",
+                datatarget:"#collapseTwo",
+                arialcontrols:"collapseTwo"
+            },
+            {
+                title:"Introduction to ExpressJS",
+                description:"What are Different Stacks for WebD & Whats special about MERN above them Brief on Components of MERN Stack (ReactJS, NodeJS, ExpressJS, MongoDB) Explaining the Structure of the Course.Clarifying the Difference between Full Stack Development & DevOps.",
+                id:"headingThree",
+                datatarget:"#collapseThree",
+                arialcontrols:"collapseThree"
+            }
+        ]
     },
     {
         img:'https://media.licdn.com/dms/image/C4E0DAQGDRxCiTmA53A/learning-public-crop_288_512/0/1568669909265?e=2147483647&v=beta&t=QAxV_yWsi3WYtzsrZEJR8xk4Ij2LZDPsbUHpX0-00gc',
@@ -57,6 +126,29 @@ let Courses_list=[
         sprice:'₹ 5999',
         off:'80% off',
         btn:'Coming Soon!',
+        syllabus:[
+            {
+                title:"Introduction to course",
+                description:"What are Different Stacks for WebD & Whats special about MERN above them Brief on Components of MERN Stack (ReactJS, NodeJS, ExpressJS, MongoDB) Explaining the Structure of the Course.Clarifying the Difference between Full Stack Development & DevOps.",
+                id:"headingOne",
+                datatarget:"#collapseOne",
+                arialcontrols:"collapseOne"
+            },
+            {
+                title:"Introduction to ReactJS",
+                description:"What are Different Stacks for WebD & Whats special about MERN above them Brief on Components of MERN Stack (ReactJS, NodeJS, ExpressJS, MongoDB) Explaining the Structure of the Course.Clarifying the Difference between Full Stack Development & DevOps.",
+                id:"headingTwo",
+                datatarget:"#collapseTwo",
+                arialcontrols:"collapseTwo"
+            },
+            {
+                title:"Introduction to ExpressJS",
+                description:"What are Different Stacks for WebD & Whats special about MERN above them Brief on Components of MERN Stack (ReactJS, NodeJS, ExpressJS, MongoDB) Explaining the Structure of the Course.Clarifying the Difference between Full Stack Development & DevOps.",
+                id:"headingThree",
+                datatarget:"#collapseThree",
+                arialcontrols:"collapseThree"
+            }
+        ]
     },
     {
         img:'https://classes.pixsdev.com/_next/image?url=%2FImgs%2FCourses%2Fdsa2.jpg&w=1080&q=75',
@@ -69,6 +161,29 @@ let Courses_list=[
         sprice:'₹ 5999',
         off:'80% off',
         btn:'Coming Soon!',
+        syllabus:[
+            {
+                title:"Introduction to course",
+                description:"What are Different Stacks for WebD & Whats special about MERN above them Brief on Components of MERN Stack (ReactJS, NodeJS, ExpressJS, MongoDB) Explaining the Structure of the Course.Clarifying the Difference between Full Stack Development & DevOps.",
+                id:"headingOne",
+                datatarget:"#collapseOne",
+                arialcontrols:"collapseOne"
+            },
+            {
+                title:"Introduction to ReactJS",
+                description:"What are Different Stacks for WebD & Whats special about MERN above them Brief on Components of MERN Stack (ReactJS, NodeJS, ExpressJS, MongoDB) Explaining the Structure of the Course.Clarifying the Difference between Full Stack Development & DevOps.",
+                id:"headingTwo",
+                datatarget:"#collapseTwo",
+                arialcontrols:"collapseTwo"
+            },
+            {
+                title:"Introduction to ExpressJS",
+                description:"What are Different Stacks for WebD & Whats special about MERN above them Brief on Components of MERN Stack (ReactJS, NodeJS, ExpressJS, MongoDB) Explaining the Structure of the Course.Clarifying the Difference between Full Stack Development & DevOps.",
+                id:"headingThree",
+                datatarget:"#collapseThree",
+                arialcontrols:"collapseThree"
+            }
+        ]
     },
     {
         img:'https://www.oho.co.uk/uploads/guide-to-machine-learning-and-ai.jpg',
@@ -103,7 +218,7 @@ function Courses()
             Courses_list.map((x)=>
             {
                 return(
-                    <CourseCard img={x.img} title={x.title} price={x.price} date={x.date} time={x.time} desc={x.desc} oprice={x.oprice} sprice={x.sprice} off={x.off} btn={x.btn}/>
+                    <CourseCard img={x.img} title={x.title} price={x.price} date={x.date} time={x.time} desc={x.desc} oprice={x.oprice} sprice={x.sprice} syllabus={x.syllabus} off={x.off} btn={x.btn}/>
                 )
             })
             }
