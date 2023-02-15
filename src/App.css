@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 
+
 body{
   padding:0;
   margin:0;
@@ -578,9 +579,6 @@ body{
     border-radius:8px
 }
 
-.test-card p{
-  /* text-align: justify; */
-}
 
 .student-img
 {
@@ -626,3 +624,53 @@ mark{
 }
  /* Testomonial CSS End */
 
+ /* Accordion CSS start */
+
+ .course-heading
+ {
+  /* padding-left:40px;
+  margin:1px 0px; */
+ }
+
+ .course-heading
+{
+  padding:10px 40px;
+}
+
+@media (max-width:767px)
+{
+  .course-heading
+  {
+    padding:10px 10px 1px;
+  }
+}
+ 
+.accordion-button.collapsed {
+  background: rgb(255, 255, 255);
+  color:rgb(0, 0, 0);
+}
+
+.accordion-button.collapsed::after {
+  background-image: url('./Images/plus-icon-13062.png') !important;
+}
+
+.accordion-button:not(.collapsed) {
+  color:rgb(255, 255, 255) !important;
+  background-color:rgb(0, 0, 0) !important;
+  box-shadow:1px 1px 1px white !important;
+}
+
+.accordion-button:focus {
+  z-index: 3;
+  border-color:rgb(149, 148, 148) !important;
+  outline: 0 !important;
+  box-shadow: 0px 0px 3px rgb(134, 133, 133) !important;
+  -webkit-box-shadow: 0px 0px 3px rgb(145, 144, 144) !important;
+}
+
+
+.accordion-button:not(.collapsed)::after {
+  background-image:url('./Images/close-button-png-30221.png') !important;
+}
+
+/* Accordion CSS End */
