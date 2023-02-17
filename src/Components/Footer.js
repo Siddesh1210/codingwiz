@@ -43,7 +43,7 @@ function Footer()
 
             <hr></hr>
             <div className="col-md-10 text-center">
-                <p>Copyright &#169; freetocode 2023.All right reserved.</p>
+                <p>Copyright &#169; codingwiz 2023.All right reserved.</p>
             </div>
 
         </div>

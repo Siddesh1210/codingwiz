@@ -21,7 +21,7 @@ function Testimonial()
             <div className="row justify-content-evenly">
             <div className="col-md-3 mx-1">
                 <div className="col-12 p-2 my-2 test-card" >
-                    <p><i class="bi bi-quote"></i><mark>A lot of advanced web dev topics taught at freetocode </mark>taught by sir gave me an edge over my peers, and I ultimately absorbed more here than I ever did anywhere else.The course is very well organized.And now as a frontend developer, I feel much confident.</p>
+                    <p><i class="bi bi-quote"></i><mark>A lot of advanced web dev topics taught at codingwiz </mark>taught by sir gave me an edge over my peers, and I ultimately absorbed more here than I ever did anywhere else.The course is very well organized.And now as a frontend developer, I feel much confident.</p>
                     <div className="d-flex justify-content-between align-items-center">
                     <div className="d-flex align-items-center">
                         <img src={RitikImg} className="student-img abhisek-img"/>
@@ -66,7 +66,7 @@ function Testimonial()
                     <div className="d-flex justify-content-between align-items-center">
                         <div className="d-flex align-items-center">
                             <img src={SarveshImg} className="student-img abhisek-img"/>
-                            <p className="studentname-para"><b>Sarvesh Rai</b><br/><span>Student</span></p>
+                            <p className="studentname-para"><b>Sarvesh Tiwari</b><br/><span>Student</span></p>
                         </div>
                         <div>
                         <h2 className="insta-testimonial-icon"><a href="https://instagram.com/sarveshrai8?igshid=YmMyMTA2M2Y="><i className="bi bi-instagram"></i></a></h2>
