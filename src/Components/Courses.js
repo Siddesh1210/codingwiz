@@ -1,17 +1,23 @@
 // import Footer from "./Footer";
 import CourseCard from "./CourseCard";
-// import Frontend_Img from '../Images/Frontend_Img.webp'
-// import Backend_Img from '../Images/Backend_Img.png'
-// import DataStructure_Img from '../Images/DataStructure_Img.webp'
+import Frontend_Img from '../Images/Frontend_Img.webp'
+import Backend_Img from '../Images/Backend_Img.png'
+import DSA_C from '../Images/DataStructure_Img.webp'
+import DSA_Java from '../Images/DSA_Java.jpg'
+import App_dev from '../Images/App_development.avif'
+import ML from '../Images/machine_learning.jpg'
+
+
+
 
 // So in future if we need to add any new card we can just pass JSON Card data over here in Courses.js File
 
 let Courses_list=[
     {
-        img:'https://www.shutterstock.com/image-vector/this-colourful-illustration-shows-process-260nw-1788713501.jpg',
+        img:Frontend_Img,
         title:'Frontend Development Bootcamp',
         price:'₹ 499 Only',
-        date:'Start from March onwards',
+        date:'Start from 6th March 2023',
         time:'7:00 PM to 8:00 PM',
         desc:'Learn complete Frontend Developement with 3+ live projects, Includes HTML5, CSS3, JavaScript, Bootstrap, Git and host your project at free!',
         oprice:'₹ 499 Only',
@@ -163,11 +169,11 @@ let Courses_list=[
         ]
     },
     {
-        img:'https://www.iqmotion.ai/wp-content/uploads/2021/08/development-1.png',
+        img:Backend_Img,
         title:'Backend Development Bootcamp',
         price:'₹ 749 Only',
-        date:'Start from March onwards',
-        time:'7:00 PM to 8:30 PM',
+        date:'Start from 6th March 2023',
+        time:'8:00 PM to 9:30 PM',
         desc:'Learn Full Stack development with 3+ live projects, Learn how to create servers and intregrate with frontend technologies plus Database and Deployment!',
         oprice:'₹ 749 Only',
         sprice:'₹ 4999',
@@ -285,11 +291,11 @@ let Courses_list=[
         ]
     },
     {
-        img:'https://img.freepik.com/free-vector/app-development-illustration_52683-47931.jpg',
+        img:App_dev,
         title:'App Development with Flutter',
         price:'₹ 749 Only',
-        date:'Start from March onwards',
-        time:'7:00 PM to 8:30 PM',
+        date:'Start from 6th March 2023',
+        time:'8:00 PM to 9:30 PM',
         desc:'App development | Boost mobile app development skills with android studio using Dart and Flutter by building 3 projects',
         oprice:'₹ 749 Only',
         sprice:'₹ 4999',
@@ -420,10 +426,10 @@ let Courses_list=[
         ]
     },
     {
-        img:'https://media.licdn.com/dms/image/C4E0DAQGDRxCiTmA53A/learning-public-crop_288_512/0/1568669909265?e=2147483647&v=beta&t=QAxV_yWsi3WYtzsrZEJR8xk4Ij2LZDPsbUHpX0-00gc',
+        img:DSA_Java,
         title:'Data Structures and Algorithm in Java',
         price:'₹ 999 Only',
-        date:'Start from March onwards',
+        date:'Start from 6th March 2023',
         time:'7:00 PM to 9:00 PM',
         desc:'Learn complete Data Structure and Algorithms with 50+ live examples solving, Included all Linear and Non Linear Data Structures!',
         oprice:'₹ 999 Only',
@@ -554,10 +560,10 @@ let Courses_list=[
         ]
     },
     {
-        img:'https://cdn.dribbble.com/users/902546/screenshots/8930575/media/0781d852f00ef1db83da5b1a3914ee4e.jpg?compress=1&resize=400x300&vertical=top',
+        img:DSA_C,
         title:'Data Structures and Algorithm in C++',
         price:'₹ 999 Only',
-        date:'Start from March onwards',
+        date:'Start from 6th March 2023',
         time:'7:00 PM to 9:00 PM',
         desc:'Learn complete Data Structure and Algorithms with 50+ live examples solving, Included all Linear and Non Linear Data Structures!',
         oprice:'₹ 999 Only',
@@ -688,10 +694,10 @@ let Courses_list=[
         ]
     },
     {
-        img:'https://www.oho.co.uk/uploads/guide-to-machine-learning-and-ai.jpg',
+        img:ML,
         title:'Machine Learning with Python',
         price:'₹ 749 Only',
-        date:'Start from March onwards',
+        date:'Start from 6th March 2023',
         time:'7:00 PM to 8:00 PM',
         desc:'Deep dive into Machine Learning with Python! By learning about library like Numpy, Pandas, Matplotlib and by building 3+ real-time projects!',
         oprice:'₹ 749 Only',

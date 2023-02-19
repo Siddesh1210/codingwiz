@@ -1,6 +1,7 @@
 import HeroImg3 from '../Images/hero_img3.png'
 import HeroGif2 from '../Images/hero_gif_vikrant.gif'
 import HeroGif3 from '../Images/rotating_icon.gif';
+import HeroGif4 from '../Images/newrotating_icons.gif';
 import card1 from '../Images/card1.png';
 import card2 from '../Images/card2.png';
 import card3 from '../Images/card3.png';
@@ -33,7 +34,7 @@ function Hero()
             </div>
             <div className="col-md-5">
                 {/* <img src={HeroGif2} className="img-fluid"></img> */}
-                <img src={HeroGif3} className="img-fluid"></img>
+                <img src={HeroGif4} className="img-fluid"></img>
 
             </div>
         </div>
