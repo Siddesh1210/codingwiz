@@ -53,7 +53,7 @@ function Contact()
         <div className="container-fluid">
         <div className="row justify-content-evenly contact-row pt-4 pb-3 px-3 text-white align-items-center">
             <div className="col-md-6">
-                <h4>Contact free to code</h4>
+                <h4>Contact CodingWiz</h4>
                 <p>We're glad you found us, and we can't wait to help you build your coding career! Have any questions you can fill the form and we will contact you or call us on 9623235838</p>
                 <div className="row justify-content-between contact-hide-div">
                 <div className="col-5 contact-box px-2 pt-2 m-2">
@@ -61,11 +61,11 @@ function Contact()
                     </div>
 
                     <div className="col-5 contact-box px-2 pt-2 m-2">
-                        <p><i className="bi bi-phone"></i> 9623235838 <br></br> <i className="bi bi-phone"></i> 8356971330</p>
+                        <p><i className="bi bi-phone"></i> 9623235838 <br></br> <i className="bi bi-phone"></i> 9084321252</p>
                     </div>
 
                     <div className="col-5 contact-box px-2 pt-2 m-2">
-                        <p><i className="bi bi-envelope"></i> info@freetocode.in</p>
+                        <p><i className="bi bi-envelope"></i> info@codingwiz.in</p>
                     </div>
 
                     <div className="col-5 contact-box px-2 pt-2 m-2">

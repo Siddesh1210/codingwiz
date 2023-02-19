@@ -5,12 +5,12 @@ function PrivacyPolicy()
         <div className="container-fluid">
             <div className="row justify-content-center py-3 privacy-row">
             <div className="col-md-11">
-                <h1 className="pb-2 fw-bolder">Privacy Policy for Free to Code</h1>
+                <h1 className="pb-2 fw-bolder">Privacy Policy for CodingWiz</h1>
 
                 <p><b>Last Updated:</b> [1st January 2023]<br></br><br></br>
 
                 <b>Introduction</b><br></br>
-                This privacy policy outlines the personal data collection, usage, and protection practices of freetocode, an online educational course platform. We value the privacy of our users and are committed to upholding their rights.</p>
+                This privacy policy outlines the personal data collection, usage, and protection practices of codingwiz, an online educational course platform. We value the privacy of our users and are committed to upholding their rights.</p>
 
                 <p><b>Data Collection</b><br></br>
                 We collect personal data when you purchase a course, participate in our community, or communicate with us. The data we collect may include:<br></br>
@@ -36,7 +36,7 @@ function PrivacyPolicy()
                 We do not share personal data with third parties except in the following circumstances:
                 <ul>
                 <li>To comply with legal requirements or to respond to legal process</li>
-                <li>To protect the safety and rights of freetocode or its users</li>
+                <li>To protect the safety and rights of codingwiz or its users</li>
                 <li>To third-party service providers who assist us in operating our business (e.g. payment processors, email providers)</li>
                 </ul>
                 </p>
@@ -49,20 +49,20 @@ function PrivacyPolicy()
                 We retain personal data for as long as necessary to fulfill the purposes outlined in this privacy policy, or as required by law. Upon request, we will delete or anonymize a user's personal data.</p>
 
                 <p><b>User Rights</b><br></br>
-                Users have the right to access, correct, or request deletion of their personal data. They may also object to the processing of their data or request restrictions on its use. To exercise these rights, users can contact freetocode at 9623235838.</p>
+                Users have the right to access, correct, or request deletion of their personal data. They may also object to the processing of their data or request restrictions on its use. To exercise these rights, users can contact codingwiz at 9623235838.</p>
 
                 <p><b>Changes to Privacy Policy</b><br></br>
                 We may revise this privacy policy from time to time, and will post any updates on this page. Users are encouraged to periodically review this policy for any changes.</p>
 
                 <p><b>Contact Us</b><br></br>
-                If you have any questions about this privacy policy or our data collection, usage, and protection practices, please contact us at info@freetocode.in.
+                If you have any questions about this privacy policy or our data collection, usage, and protection practices, please contact us at info@codingwiz.in.
                 </p>
                 <p><b>Refund Back Policy</b><br></br>
                 <ul>
 
                     <li>Duration: The policy is valid for 7 days from the date of course commencement.</li>
 
-                    <li>Refund Process: To request a refund, customers must send an email to info@freetocode.in with the subject line "Refund Request" and include their name and reason for the refund request.</li>
+                    <li>Refund Process: To request a refund, customers must send an email to info@codingwiz.in with the subject line "Refund Request" and include their name and reason for the refund request.</li>
 
                     <li>Refund Criteria: Refunds will only be issued if the customer has requested for refund within first 7 course commencement day.</li>
 
@@ -70,7 +70,7 @@ function PrivacyPolicy()
 
                     <li>Processing Time: Refunds will be processed within 3-5 business days after the request has been received and approved.</li>
 
-                    <li>Changes to Policy: freetocode reserves the right to change this policy at any time, without notice.</li>
+                    <li>Changes to Policy: codingwiz reserves the right to change this policy at any time, without notice.</li>
                 </ul></p>
             </div>
         </div>

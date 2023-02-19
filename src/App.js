@@ -9,15 +9,30 @@ import PrivacyPolicy from './Components/PrivacyPolicy';
 import ScrollToTop from './Components/ScrollToTop';
 import Display from './Components/Display';
 import CoursePage from './Components/CoursePage';
+import { useEffect , useState } from 'react';
+import Logo from './Images/cw_logo.png';
 // So in future if we need to add any new card we can just pass JSON Card data in Courses.js File
 
 function App() {
+  const [shouldAddClass, setShouldAddClass] = useState(false);
+  useEffect(() => {
+    // set a timeout to add the class after 10 seconds
+      const timeoutId = setTimeout(() => {
+        setShouldAddClass(true);
+      }, 10000)
+      return () => clearTimeout(timeoutId);
+    }, []);
   return (
+
     <div className="App">
       {/* navbar */}
+      <p className={shouldAddClass ? 'd-none' : 'early-bird-text'}><i class="bi bi-twitter"></i> Early bird offer : Guaranteed free Internship</p>
+    {/* <p className='early-bird-text'><i class="bi bi-twitter"></i> Early bird offer : Guaranteed free Internship</p> */}
+      
       <nav className="navbar navbar-expand-lg">
         <div className="container-fluid">
-          <Link to="/" className="navbar-brand text-white link">Free to Code</Link>
+          <img src={Logo} className="logo me-2"/>
+          <Link to="/" className="navbar-brand text-white link">CodingWiz</Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
