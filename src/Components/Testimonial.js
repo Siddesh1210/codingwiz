@@ -21,7 +21,7 @@ function Testimonial()
             <div className="row justify-content-evenly">
             <div className="col-md-3 mx-1">
                 <div className="col-12 p-2 my-2 test-card" >
-                    <p><i class="bi bi-quote"></i><mark>A lot of advanced web dev topics taught at codingwiz </mark>taught by sir gave me an edge over my peers, and I ultimately absorbed more here than I ever did anywhere else.The course is very well organized.And now as a frontend developer, I feel much confident.</p>
+                    <p><i class="bi bi-quote"></i><mark>A lot of advanced web dev topics taught at codingwiz </mark>taught by sir gave me an edge over my peers, and I ultimately absorbed more here than I ever did anywhere else.The course is very well organized.And now as a developer, I feel much confident.</p>
                     <div className="d-flex justify-content-between align-items-center">
                     <div className="d-flex align-items-center">
                         <img src={RitikImg} className="student-img abhisek-img"/>
@@ -62,7 +62,7 @@ function Testimonial()
 
             <div className="col-md-3 mx-1">
                 <div className="col-12 p-2  my-2 test-card">
-                    <p><i class="bi bi-quote"></i><mark>It was great learnig with freetocode. </mark>It helped in gaining enough experience to get my internship</p>
+                    <p><i class="bi bi-quote"></i><mark>It was great learnig with codingwiz. </mark>It helped in gaining enough experience to get my internship</p>
                     <div className="d-flex justify-content-between align-items-center">
                         <div className="d-flex align-items-center">
                             <img src={SarveshImg} className="student-img abhisek-img"/>
@@ -90,7 +90,7 @@ function Testimonial()
 
             <div className="col-md-3 mx-1">
                 <div className="col-12 p-2  my-2 test-card" >
-                    <p><i class="bi bi-quote"></i>The course material was well-organized and easy to follow, and the instructor was knowledgeable and engaging. The online format allowed for flexibility in my schedule and provided resources, such as recorded lectures and interactive discussions, that enhanced my learning experience.<mark> Overall, I highly recommend this frontend course for anyone looking to further their knowledge and skills in a convenient and effective manner. </mark> </p>
+                    <p><i class="bi bi-quote"></i>The course material was well-organized and easy to follow, and the instructor was knowledgeable and engaging. The online format allowed for flexibility in my schedule and provided resources, such as recorded lectures and interactive discussions, that enhanced my learning experience.<mark> Overall, I highly recommend this course for anyone looking to further their knowledge and skills in a convenient and effective manner. </mark> </p>
                     <div className="d-flex justify-content-between align-items-center">
                         <div className="d-flex align-items-center">
                             <img src="https://media.istockphoto.com/id/1136413215/photo/young-man-at-street-market.jpg?b=1&s=170667a&w=0&k=20&c=lQxEqo4oY2z9-yUVMFdsJPYpMNRgOhi8-sFCz8Wt-cg=" className="student-img abhisek-img"/>

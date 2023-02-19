@@ -8,11 +8,50 @@ body{
   overflow-x:hidden;
 }
 
+::selection
+{
+  background-color: rgb(179, 110, 244);
+  color: white;
+}
+
 /* Start of CSS FOR NAVBAR */
+
+@media (min-width: 991px) {
+  .logo {
+    width: 3%;
+    /* margin-left:25px; */
+  }
+}
+
+@media (max-width: 990px) {
+  .logo {
+    width: 8%;
+  }
+}
+
+@media (max-width: 399px) {
+  .logo {
+    width: 13%;
+  }
+}
+
+@media (max-width:500px) {
+  .logo {
+    width: 11%;
+  }
+}
+
 .navbar
 {
   background-color: blueviolet;
   cursor: pointer;
+}
+
+.early-bird-text
+{
+  text-align: center;
+  color:blueviolet;
+  margin: 5px 0px;
 }
 
 .call-btn
@@ -626,11 +665,11 @@ mark{
 
  /* Accordion CSS start */
 
- .course-heading
+ /* .course-heading
  {
-  /* padding-left:40px;
-  margin:1px 0px; */
- }
+  padding-left:40px;
+  margin:1px 0px;
+ } */
 
  .course-heading
 {

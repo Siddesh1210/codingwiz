@@ -14,10 +14,11 @@ let Courses_list=[
         date:'Start from March onwards',
         time:'7:00 PM to 8:00 PM',
         desc:'Learn complete Frontend Developement with 3+ live projects, Includes HTML5, CSS3, JavaScript, Bootstrap, Git and host your project at free!',
-        oprice:'499 Only',
+        oprice:'₹ 499 Only',
         sprice:'₹ 2999',
         off:'83% off',
         btn:'Buy this Course',
+        requirement:"No programming experience needed - We'll teach you everything you need to know",
         syllabus:[
             {
                 title:"Introduction to course & Installation of Tools",
@@ -168,10 +169,11 @@ let Courses_list=[
         date:'Start from March onwards',
         time:'7:00 PM to 8:30 PM',
         desc:'Learn Full Stack development with 3+ live projects, Learn how to create servers and intregrate with frontend technologies plus Database and Deployment!',
-        oprice:'749 Only',
+        oprice:'₹ 749 Only',
         sprice:'₹ 4999',
         off:'85% off',
-        btn:'Coming Soon!',
+        btn:'Buy this Course',
+        requirement:"Must be familiar with HTML , CSS and Javascript advance concepts ",
         syllabus:[
             {
                 title:"Introduction to course",
@@ -284,36 +286,136 @@ let Courses_list=[
     },
     {
         img:'https://img.freepik.com/free-vector/app-development-illustration_52683-47931.jpg',
-        title:'Android App Development with Java',
+        title:'App Development with Flutter',
         price:'₹ 749 Only',
         date:'Start from March onwards',
         time:'7:00 PM to 8:30 PM',
-        desc:'Android App development | Boost mobile app development skills with android studio using Kotlin, Java android development',
-        oprice:'749 Only',
+        desc:'App development | Boost mobile app development skills with android studio using Dart and Flutter by building 3 projects',
+        oprice:'₹ 749 Only',
         sprice:'₹ 4999',
         off:'85% off',
-        btn:'Coming Soon!',
+        btn:'Buy this Course',
+        requirement:"No programming experience needed - We'll teach you everything you need to know",
         syllabus:[
             {
                 title:"Introduction to course",
-                description:"What are Different Stacks for WebD & Whats special about MERN above them Brief on Components of MERN Stack (ReactJS, NodeJS, ExpressJS, MongoDB) \nExplaining the Structure of the Course.\nClarifying the Difference between Full Stack Development & DevOps.",
+                description:"Basic introduction about the course and discussion of roadmap.Understanidng what is dart , flutter and installation of required tool.",
                 id:"headingOne",
                 datatarget:"#collapseOne",
                 arialcontrols:"collapseOne"
             },
             {
-                title:"Introduction to ReactJS",
-                description:"What are Different Stacks for WebD & Whats special about MERN above them \nBrief on Components of MERN Stack (ReactJS, NodeJS, ExpressJS, MongoDB) Explaining the Structure of the Course.Clarifying the Difference between Full Stack Development & DevOps.",
+                title:"Introduction to Dart",
+                description:"Introduction to dart  -Features, Basic syntax, DartPad, Use in Flutter, HELLO WORLD Program.",
                 id:"headingTwo",
                 datatarget:"#collapseTwo",
                 arialcontrols:"collapseTwo"
             },
             {
-                title:"Introduction to ExpressJS",
-                description:"What are Different Stacks for WebD & Whats special about MERN above them Brief on Components of MERN Stack (ReactJS, NodeJS, ExpressJS, MongoDB) Explaining the Structure of the Course.Clarifying the Difference between Full Stack Development & DevOps.",
-                id:"headingThree",
-                datatarget:"#collapseThree",
-                arialcontrols:"collapseThree"
+                title:"Dart Datatype and Collection",
+                description:"Dart Data types - constants, numbers, string.Collections- Lists, Sets, Map, Enum, Queue",
+                id:"headingFour",
+                datatarget:"#collapseFour",
+                arialcontrols:"collapseFour"
+            },
+            {
+                title:"FLow Control",
+                description:"Flow Control- Asserts,IF-Else, Switch, Loops.",
+                id:"headingFive",
+                datatarget:"#collapseFive",
+                arialcontrols:"collapseFive"
+            },
+            {
+                title:"Dart Functions",
+                description:"Dart Functions - Anonymous Functions,Main(), Recursion",
+                id:"headingSix",
+                datatarget:"#collapseSix",
+                arialcontrols:"collapseSix"
+            },
+            {
+                title:"Object Oriented",
+                description:"Object-Oriented- Classes-Objects, Keywords, Methods, Interfaces.",
+                id:"headingSeven",
+                datatarget:"#collapseSeven",
+                arialcontrols:"collapseSeven"
+            },
+            {
+                title:"Adding Animation - Shop App",
+                description:"Module Introduction ,Animations From Scratch (Completely Manually Controlled) ,Using the AnimatedBuilder Widget ,Working with the AnimatedContainer ,More Built-in Animation & Transition Widgets ,Fading Loaded Images In (And Showing a Placeholder) ,Adding a Hero Transition ,Working with Slivers ,Practice: Animating Order Boxes ,A Fix for the Latest Version of Flutter ,Implementing Custom Route Transitions ,Wrap Up ,Useful Resources & Links",
+                id:"headingEight",
+                datatarget:"#collapseEight",
+                arialcontrols:"collapseEight"
+            },
+            {
+                title:"Error Handling",
+                description:"Error handling- Exceptions, try-catch, throw.",
+                id:"headingNine",
+                datatarget:"#collapseNine",
+                arialcontrols:"collapseNine"
+            },
+            {
+                title:"Introduction to Flutter",
+                description:"Introduction to flutter- environment setup, architecture, IDE’s.",
+                id:"headingTen",
+                datatarget:"#collapseTen",
+                arialcontrols:"collapseTen"
+            },
+            {
+                title:"FLutter Widgets",
+                description:"Flutter Widgets- Visible and invisible, Stateless and Stateful Widget.",
+                id:"headingEleven",
+                datatarget:"#collapseEleven",
+                arialcontrols:"collapseEleven"
+            },
+            {
+                title:"BMI Calculator - Project 1",
+                description:"Building a BMI Calculator application using all the concepts that we have learnt so far.",
+                id:"headingTwelve",
+                datatarget:"#collapseTwelve",
+                arialcontrols:"collapseTwelve"
+            },
+            ,
+            {
+                title:"Flutter Layouts",
+                description:"Flutter Layouts- types of layouts, Layout widgets.",
+                id:"headingThirteen",
+                datatarget:"#collapseThirteen",
+                arialcontrols:"collapseThirteen"
+            },
+            {
+                title:"State Management",
+                description:"State management- what is state?, types of state, app life cycle",
+                id:"headingFourteen",
+                datatarget:"#collapseFourteen",
+                arialcontrols:"collapseFourteen"
+            },
+            {
+                title:"Navigation and Routing",
+                description:"Navigation and Routing- Routes, Flutter navigation.",
+                id:"headingFifteen",
+                datatarget:"#collapseFifteen",
+                arialcontrols:"collapseFifteen"
+            },
+            {
+                title:"Portfolio - Project 2",
+                description:"Building a Portfolio application using all the concepts that we have learnt so far.",
+                id:"headingSixteen",
+                datatarget:"#collapseSixteen",
+                arialcontrols:"collapseSixteen"
+            },
+            {
+                title:"Restful API and Database",
+                description:"Restful API and database- API integration, database, local storage.",
+                id:"headingSeventeen",
+                datatarget:"#collapseSeventeen",
+                arialcontrols:"collapseSeventeen"
+            },
+            {
+                title:"Grocery Ordering Application - Project 3",
+                description:"Building a grocery ordering application using all the concepts that we have learnt so far.",
+                id:"headingEighteen",
+                datatarget:"#collapseEighteen",
+                arialcontrols:"collapseEighteen"
             }
         ]
     },
@@ -324,10 +426,11 @@ let Courses_list=[
         date:'Start from March onwards',
         time:'7:00 PM to 9:00 PM',
         desc:'Learn complete Data Structure and Algorithms with 50+ live examples solving, Included all Linear and Non Linear Data Structures!',
-        oprice:'999 Only',
+        oprice:'₹ 999 Only',
         sprice:'₹ 5999',
         off:'80% off',
-        btn:'Coming Soon!',
+        btn:'Buy this Course',
+        requirement:"No programming experience needed - We'll teach you everything you need to know",
         syllabus:[
             {
                 title:"Introduction to course",
@@ -451,16 +554,17 @@ let Courses_list=[
         ]
     },
     {
-        img:'https://classes.pixsdev.com/_next/image?url=%2FImgs%2FCourses%2Fdsa2.jpg&w=1080&q=75',
+        img:'https://cdn.dribbble.com/users/902546/screenshots/8930575/media/0781d852f00ef1db83da5b1a3914ee4e.jpg?compress=1&resize=400x300&vertical=top',
         title:'Data Structures and Algorithm in C++',
         price:'₹ 999 Only',
         date:'Start from March onwards',
         time:'7:00 PM to 9:00 PM',
         desc:'Learn complete Data Structure and Algorithms with 50+ live examples solving, Included all Linear and Non Linear Data Structures!',
-        oprice:'999 Only',
+        oprice:'₹ 999 Only',
         sprice:'₹ 5999',
         off:'80% off',
-        btn:'Coming Soon!',
+        btn:'Buy this Course',
+        requirement:"No programming experience needed - We'll teach you everything you need to know",
         syllabus:[
             {
                 title:"Introduction to course",
@@ -590,10 +694,11 @@ let Courses_list=[
         date:'Start from March onwards',
         time:'7:00 PM to 8:00 PM',
         desc:'Deep dive into Machine Learning with Python! By learning about library like Numpy, Pandas, Matplotlib and by building 3+ real-time projects!',
-        oprice:'749 Only',
+        oprice:'₹ 749 Only',
         sprice:'₹ 4999',
         off:'85% off',
-        btn:'Coming Soon!',
+        btn:'Buy this Course',
+        requirement:"No programming experience needed - We'll teach you everything you need to know",
         syllabus:[
             {
                 title:"Introduction to course",
@@ -738,7 +843,7 @@ function Courses()
             Courses_list.map((x)=>
             {
                 return(
-                    <CourseCard img={x.img} title={x.title} price={x.price} date={x.date} time={x.time} desc={x.desc} oprice={x.oprice} sprice={x.sprice} syllabus={x.syllabus} off={x.off} btn={x.btn}/>
+                    <CourseCard img={x.img} title={x.title} price={x.price} date={x.date} time={x.time} desc={x.desc} oprice={x.oprice} sprice={x.sprice} syllabus={x.syllabus} off={x.off} btn={x.btn} require={x.requirement}/>
                 )
             })
             }
