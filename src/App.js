@@ -14,8 +14,20 @@ import Logo from './Images/cw_logo.png';
 // So in future if we need to add any new card we can just pass JSON Card data in Courses.js File
 
 function App() {
+  const [loading, setloading] = useState(false)
+  const [itemClicked, setitemClicked] = useState(false)
   const [shouldAddClass, setShouldAddClass] = useState(false);
+
+  function onSiteLoaded(){
+    window.onload = ()=>{
+      setloading(false)
+    }
+  }
   useEffect(() => {
+
+    setloading(true)
+    onSiteLoaded()
+
     // set a timeout to add the class after 10 seconds
       const timeoutId = setTimeout(() => {
         setShouldAddClass(true);
@@ -25,6 +37,12 @@ function App() {
   return (
 
     <div className="App">
+      {
+        loading && <div style={{height: '100vh', width: '100vw', background: 'white', color: 'black', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', position: 'fixed', zIndex: 1000}}>
+          {/* <img src={Logo} alt='Loading Image' /> */}
+          Loading...
+        </div>
+      }
       {/* navbar */}
       <p className={shouldAddClass ? 'd-none' : 'early-bird-text'}><i class="bi bi-twitter"></i> Early bird offer : Guaranteed free Internship</p>
     {/* <p className='early-bird-text'><i class="bi bi-twitter"></i> Early bird offer : Guaranteed free Internship</p> */}
@@ -33,22 +51,22 @@ function App() {
         <div className="container-fluid">
           <img src={Logo} className="logo me-2"/>
           <Link to="/" className="navbar-brand text-white link">CodingWiz</Link>
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button className="navbar-toggler" type="button" id="trial-btn" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0 text-white">
               <li className="nav-item">
-                <Link to="/" className="nav-link active text-white link" aria-current="page" >Home</Link>
+                <Link to="/" onClick={()=>{document.getElementById('trial-btn').click()}} className="nav-link active text-white link" aria-current="page" >Home</Link>
               </li>
               <li className="nav-item">
-                <Link to="/courses" className="nav-link active text-white link" aria-current="page">Courses</Link>
+                <Link to="/courses" onClick={()=>{document.getElementById('trial-btn').click()}} className="nav-link active text-white link" aria-current="page">Courses</Link>
               </li>
               <li className="nav-item">
-                <Link to="/technologies" className="nav-link text-white link" >Technologies</Link>
+                <Link to="/technologies" onClick={()=>{document.getElementById('trial-btn').click()}} className="nav-link text-white link" >Technologies</Link>
               </li>
               <li className="nav-item">
-                <Link to="/contact" className="nav-link text-white link">Contact</Link>
+                <Link to="/contact" onClick={()=>{document.getElementById('trial-btn').click()}} className="nav-link text-white link">Contact</Link>
               </li>
               <button className="call-btn ms-2"><a href="tel:9623235838" className="call-anchor">Call Us</a></button>
             </ul>
