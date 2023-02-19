@@ -9,6 +9,7 @@ import PrivacyPolicy from './Components/PrivacyPolicy';
 import ScrollToTop from './Components/ScrollToTop';
 import Display from './Components/Display';
 import CoursePage from './Components/CoursePage';
+import Loading from './Images/loading.gif'
 import { useEffect , useState } from 'react';
 import Logo from './Images/cw_logo.png';
 // So in future if we need to add any new card we can just pass JSON Card data in Courses.js File
@@ -38,9 +39,9 @@ function App() {
 
     <div className="App">
       {
-        loading && <div style={{height: '100vh', width: '100vw', background: 'white', color: 'black', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', position: 'fixed', zIndex: 1000}}>
-          {/* <img src={Logo} alt='Loading Image' /> */}
-          Loading...
+        loading && <div style={{height: '100vh', width: '100vw', background: 'black', color: 'black', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', position: 'fixed', zIndex: 1000}}>
+          <img src={Loading} alt='Loading Image' />
+          {/* Loading... */}
         </div>
       }
       {/* navbar */}
