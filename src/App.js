@@ -19,15 +19,17 @@ function App() {
   const [itemClicked, setitemClicked] = useState(false)
   const [shouldAddClass, setShouldAddClass] = useState(false);
 
-  function onSiteLoaded(){
-    window.onload = ()=>{
-      setloading(false)
-    }
-  }
+  // function onSiteLoaded(){
+  //   window.onload = ()=>{
+  //   document.getElementById('loader-container').style.display='none'
+  //   // setloading(false)
+  //   }
+  // }
   useEffect(() => {
 
-    setloading(true)
-    onSiteLoaded()
+    // setloading(true)
+    document.getElementById('loader-container').style.display='flex'
+    // onSiteLoaded()
 
     // set a timeout to add the class after 10 seconds
       const timeoutId = setTimeout(() => {
@@ -37,9 +39,9 @@ function App() {
     }, []);
   return (
 
-    <div className="App">
+    <div className="App" onLoad={()=>{document.getElementById('loader-container').style.display='none'}}>
       {
-        loading && <div style={{height: '100vh', width: '100vw', background: 'black', color: 'black', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', position: 'fixed', zIndex: 1000}}>
+        <div id="loader-container" style={{height: '100vh', width: '100vw', background: 'black', color: 'black', display: 'none', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', position: 'fixed', zIndex: 1000}}>
           <img src={Loading} alt='Loading Image' />
           {/* Loading... */}
         </div>
