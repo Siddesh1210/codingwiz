@@ -11,41 +11,41 @@ function CourseDetail()
     {
         if(location.state.title=="Frontend Development Bootcamp")
         {
-            alert("Note :\n\n1.Once your payment is successfull , you will receive course confirmation mail within 24 hours. \n\n2.Also note you will be paying to Siddesh Laxmichandra Jaiswal , Founder of Codingwiz.");
+            alert("Note :\n\n1.Once your payment is successful , you will receive course confirmation mail within 24 hours. \n\n2.Also note you will be paying to Siddesh Laxmichandra Jaiswal , Founder of Codingwiz.");
             window.location.href='https://pmny.in/2I5lADweAfoz';
         }
         else if(location.state.title=="Backend Development Bootcamp")
         {
             // alert("Proceed for Backend payment");
-            alert("Note :\n\n1.Once your payment is successfull , you will receive course confirmation mail within 24 hours. \n\n2.Also note you will be paying to Siddesh Laxmichandra Jaiswal , Founder of Codingwiz.");
+            alert("Note :\n\n1.Once your payment is successful , you will receive course confirmation mail within 24 hours. \n\n2.Also note you will be paying to Siddesh Laxmichandra Jaiswal , Founder of Codingwiz.");
             window.location.href='https://pmny.in/Jry0aLXWmAIJ';
 
         }
         else if(location.state.title=="App Development with Flutter")
         {
             // alert("Proceed for App payment");
-            alert("Note :\n\n1.Once your payment is successfull , you will receive course confirmation mail within 24 hours. \n\n2.Also note you will be paying to Siddesh Laxmichandra Jaiswal , Founder of Codingwiz.");
+            alert("Note :\n\n1.Once your payment is successful , you will receive course confirmation mail within 24 hours. \n\n2.Also note you will be paying to Siddesh Laxmichandra Jaiswal , Founder of Codingwiz.");
             window.location.href='https://pmny.in/Drc56zdwD2Y1';
 
         }
-        else if(location.state.title=="Data Structures and Algorithm in Java")
+        else if(location.state.title=="Data Structures and Algorithms in Java")
         {
             // alert("Proceed for Java payment");
-            alert("Note :\n\n1.Once your payment is successfull , you will receive course confirmation mail within 24 hours. \n\n2.Also note you will be paying to Siddesh Laxmichandra Jaiswal , Founder of Codingwiz.");
+            alert("Note :\n\n1.Once your payment is successful , you will receive course confirmation mail within 24 hours. \n\n2.Also note you will be paying to Siddesh Laxmichandra Jaiswal , Founder of Codingwiz.");
             window.location.href='https://pmny.in/trXJnrcwYrqI';
 
         }
-        else if(location.state.title=="Data Structures and Algorithm in C++")
+        else if(location.state.title=="Data Structures and Algorithms in C++")
         {
             // alert("Proceed for C++ payment");
-            alert("Note :\n\n1.Once your payment is successfull , you will receive course confirmation mail within 24 hours. \n\n2.Also note you will be paying to Siddesh Laxmichandra Jaiswal , Founder of Codingwiz.");
+            alert("Note :\n\n1.Once your payment is successful , you will receive course confirmation mail within 24 hours. \n\n2.Also note you will be paying to Siddesh Laxmichandra Jaiswal , Founder of Codingwiz.");
             window.location.href='https://pmny.in/pIkjBcnDFPsE';
 
         }
         else if(location.state.title=="Machine Learning with Python")
         {
             // alert("Proceed for ML payment");
-            alert("Note :\n\n1.Once your payment is successfull , you will receive course confirmation mail within 24 hours. \n\n2.Also note you will be paying to Siddesh Laxmichandra Jaiswal , Founder of Codingwiz.");
+            alert("Note :\n\n1.Once your payment is successful , you will receive course confirmation mail within 24 hours. \n\n2.Also note you will be paying to Siddesh Laxmichandra Jaiswal , Founder of Codingwiz.");
             window.location.href='https://pmny.in/1rE0mLRWIArS';
         }
     }
