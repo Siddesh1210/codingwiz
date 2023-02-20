@@ -27,7 +27,7 @@ function Hero()
         <div className="row justify-content-evenly align-items-center hero-row flex-wrap-reverse">
             <div className="col-md-5 px-4 py-2">
                 <h1>Start your Dream Career with CodingWiz</h1>
-                <p>Be job ready by learning top & trending technologies used by Big MNCs at just starting price from ₹499!</p>
+                <p>Be job ready by learning top & trending technologies used by leading MNCs at just starting price from ₹499!</p>
                 <button className="hero-btn" onClick={CoursesHandler}>Explore Courses</button>
                 <a href="tel:9623235838" className="callTutors"><button className="hero-btn2">Call Tutors</button></a>
 

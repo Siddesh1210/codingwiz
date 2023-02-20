@@ -60,13 +60,13 @@ function PrivacyPolicy()
                 <p><b>Refund Back Policy</b><br></br>
                 <ul>
 
-                    <li>Duration: The policy is valid for 7 days from the date of course commencement.</li>
+                    <li>Duration: The refund policy is valid prior to the date of course commencement.</li>
 
                     <li>Refund Process: To request a refund, customers must send an email to info@codingwiz.in with the subject line "Refund Request" and include their name and reason for the refund request.</li>
 
                     <li>Refund Criteria: Refunds will only be issued if the customer has requested for refund within first 7 course commencement day.</li>
 
-                    <li>Refund Amount: The full purchase price of the course will be refunded, excluding any processing or transaction fees.</li>
+                    <li>Refund Amount: The full purchase price of the course will be refunded.</li>
 
                     <li>Processing Time: Refunds will be processed within 3-5 business days after the request has been received and approved.</li>
 

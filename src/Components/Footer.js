@@ -33,7 +33,7 @@ function Footer()
 
             <div className="col-md-2">
             <h5>Social Media</h5>
-                <p className='social-media'><a href="https://www.linkedin.com/company/codingwiz/">LinkedIn</a><br></br><a href="https://www.facebook.com/siddesh-jaiswal.921">Facebook</a><br></br><a href="https://instagram.com/thecoding_wiz?igshid=ZDdkNTZiNTM=">Instagram</a><br></br><a href="https://wa.me/9623235838">Whatsapp</a></p>
+                <p className='social-media'><a href="https://www.linkedin.com/company/codingwiz/">LinkedIn</a><br></br><a href="https://www.facebook.com/CodingWiz2023">Facebook</a><br></br><a href="https://instagram.com/thecoding_wiz?igshid=ZDdkNTZiNTM=">Instagram</a><br></br><a href="https://wa.me/9623235838">Whatsapp</a></p>
             </div>
 
             <div className="col-md-2">
