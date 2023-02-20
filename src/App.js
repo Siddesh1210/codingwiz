@@ -60,16 +60,16 @@ function App() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0 text-white">
               <li className="nav-item">
-                <Link to="/" onClick={()=>{document.getElementById('trial-btn').click()}} className="nav-link active text-white link" aria-current="page" >Home</Link>
+                <Link to="/" onClick={()=>{ navigator.userAgent.match('/Android/i')||navigator.userAgent.match('/iPhone/i')||navigator.userAgent.match('Mozilla/5.0') && document.getElementById('trial-btn').click()}} className="nav-link active text-white link" aria-current="page" >Home</Link>
               </li>
               <li className="nav-item">
-                <Link to="/courses" onClick={()=>{document.getElementById('trial-btn').click()}} className="nav-link active text-white link" aria-current="page">Courses</Link>
+                <Link to="/courses" onClick={()=>{ navigator.userAgent.match('/Android/i')||navigator.userAgent.match('/iPhone/i')||navigator.userAgent.match('Mozilla/5.0') && document.getElementById('trial-btn').click()}} className="nav-link active text-white link" aria-current="page">Courses</Link>
               </li>
               <li className="nav-item">
-                <Link to="/technologies" onClick={()=>{document.getElementById('trial-btn').click()}} className="nav-link text-white link" >Technologies</Link>
+                <Link to="/technologies" onClick={()=>{ navigator.userAgent.match('/Android/i')||navigator.userAgent.match('/iPhone/i')||navigator.userAgent.match('Mozilla/5.0') && document.getElementById('trial-btn').click()}} className="nav-link text-white link" >Technologies</Link>
               </li>
               <li className="nav-item">
-                <Link to="/contact" onClick={()=>{document.getElementById('trial-btn').click()}} className="nav-link text-white link">Contact</Link>
+                <Link to="/contact" onClick={()=>{ navigator.userAgent.match('/Android/i')||navigator.userAgent.match('/iPhone/i')||navigator.userAgent.match('Mozilla/5.0') && document.getElementById('trial-btn').click()}} className="nav-link text-white link">Contact</Link>
               </li>
               <button className="call-btn ms-2"><a href="tel:9623235838" className="call-anchor">Call Us</a></button>
             </ul>
