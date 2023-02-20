@@ -28,14 +28,14 @@ function CourseDetail()
             window.location.href='https://pmny.in/Drc56zdwD2Y1';
 
         }
-        else if(location.state.title=="Data Structures and Algorithm in Java")
+        else if(location.state.title=="Data Structures and Algorithms in Java")
         {
             // alert("Proceed for Java payment");
             alert("Note :\n\n1.Once your payment is successful , you will receive course confirmation mail within 24 hours. \n\n2.Also note you will be paying to Siddesh Laxmichandra Jaiswal , Founder of Codingwiz.");
             window.location.href='https://pmny.in/trXJnrcwYrqI';
 
         }
-        else if(location.state.title=="Data Structures and Algorithm in C++")
+        else if(location.state.title=="Data Structures and Algorithms in C++")
         {
             // alert("Proceed for C++ payment");
             alert("Note :\n\n1.Once your payment is successful , you will receive course confirmation mail within 24 hours. \n\n2.Also note you will be paying to Siddesh Laxmichandra Jaiswal , Founder of Codingwiz.");
