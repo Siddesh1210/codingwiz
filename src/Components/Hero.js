@@ -122,6 +122,7 @@ function Hero()
                     <select style={{border: '#a4a4a4 0.5px solid', padding: 5, paddingLeft: 12, borderRadius: 8, width: '100%', outline: 0, background: '#fff'}}>
                         <option>Frontend Web Development</option>
                         <option>Backend Development</option>
+                        <option>Android/IOS Development</option>
                         <option>Java DSA</option>
                         <option>C++ DSA</option>
                         <option>Machine Learning</option>
