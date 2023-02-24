@@ -26,11 +26,14 @@ function Hero()
     const username=useRef(null);
     const userph=useRef(null);
     const usertext=useRef(null);
+
+    const [courseSelectedFromDialog, setcourseSelectedFromDialog] = useState('')
     function writeUserData()
     {
         const name=username.current.value;
         const p_no=userph.current.value;
         const query=usertext.current.value;
+        const course=courseSelectedFromDialog
         console.log(name,p_no,query);
         setshowDialog(false);
     }
@@ -127,13 +130,13 @@ function Hero()
                 <div style={{marginTop: 20}}>
                 {/* <p style={{fontWeight: '500', marginBottom: 8,color:'#606060'}}>Interested Course?</p> */}
                     <select style={{border: '#a4a4a4 0.5px solid', padding: 5, paddingLeft: 12, borderRadius: 5, width: '100%', outline: 0, background: '#fff'}}>
-                        <option>Select your course</option>
-                        <option>Frontend Development</option>
-                        <option>Backend Development</option>
-                        <option>Android/IOS Development</option>
-                        <option>Java DSA</option>
-                        <option>C++ DSA</option>
-                        <option>Machine Learning</option>
+                        <option onClick={()=>{setcourseSelectedFromDialog()}}>Select your course</option>
+                        <option onClick={()=>{setcourseSelectedFromDialog('Frontend Devlopement')}}>Frontend Development</option>
+                        <option onClick={()=>{setcourseSelectedFromDialog('Backend Development')}}>Backend Development</option>
+                        <option onClick={()=>{setcourseSelectedFromDialog('Android/IOS Development')}}>Android/IOS Development</option>
+                        <option onClick={()=>{setcourseSelectedFromDialog('Java DSA')}}>Java DSA</option>
+                        <option onClick={()=>{setcourseSelectedFromDialog('C++ DSA')}}>C++ DSA</option>
+                        <option onClick={()=>{setcourseSelectedFromDialog('Machine Learning')}}>Machine Learning</option>
                     </select>
                 </div>
                 <div style={{marginTop: 20}}>
