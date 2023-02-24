@@ -42,7 +42,7 @@ function Hero()
     useEffect(() => {
         const timer = setTimeout(()=>{
             setshowDialog(true)
-        }, 15000)
+        }, 10000)
         return ()=>clearTimeout(timer)
     }, [])
     return(
@@ -102,25 +102,26 @@ function Hero()
             <div style={{background: 'white', padding: 15, borderRadius: 8, display: 'flex', flexDirection: 'column', justifyContent: 'center', minWidth: '30vw', maxWidth: '90vw'}}>
                 
                 <div className='header' style={{display: 'flex', paddingBottom: 10, justifyContent: 'space-between', borderBottom: '#999 0.5px solid', width: '100%'}}>
-                    <span style={{fontWeight: '600'}}>Drop us a Query</span>
+                    <span style={{fontWeight: '600',color:'blueviolet'}}>Drop your Query?</span>
                     <span style={{cursor: 'pointer'}} onClick={()=>{setshowDialog(false)}}>✖</span>
                 </div>
                 <div style={{marginTop: 20}}>
-                    <p style={{fontWeight: '500', marginBottom: 8}}>Full Name</p>
-                    <input placeholder='Your full Name' style={{border: '#a4a4a4 0.5px solid', padding: 5, paddingLeft: 12, borderRadius: 8, width: '100%'}} />
+                    {/* <p style={{fontWeight: '500', marginBottom: 8}}>Full Name</p> */}
+                    <input placeholder='Enter your full Name' style={{border: '#a4a4a4 0.5px solid', padding: 5, paddingLeft: 12, borderRadius: 5, width: '100%'}} />
                 </div>
                 <div style={{marginTop: 20}}>
-                    <p style={{fontWeight: '500', marginBottom: 8}}>Phone Number</p>
-                    <input placeholder='Phone Number' type="number" maxLength={12} minLength={10} style={{border: '#a4a4a4 0.5px solid', padding: 5, paddingLeft: 12, borderRadius: 8, width: '100%'}} />
+                    {/* <p style={{fontWeight: '500', marginBottom: 8}}>Phone Number</p> */}
+                    <input placeholder='Enter your Phone Number' type="number" maxLength={12} minLength={10} style={{border: '#a4a4a4 0.5px solid', padding: 5, paddingLeft: 12, borderRadius: 5, width: '100%'}} />
                 </div>
                 {/* <div style={{marginTop: 20}}>
                     <p style={{fontWeight: '500', marginBottom: 8}}>Email Address</p>
                     <input placeholder='Email Address' type="email" style={{border: '#a4a4a4 0.5px solid', padding: 5, paddingLeft: 12, borderRadius: 8, width: '100%'}} />
                 </div> */}
                 <div style={{marginTop: 20}}>
-                <p style={{fontWeight: '500', marginBottom: 8}}>Select the Course you're Interested in</p>
-                    <select style={{border: '#a4a4a4 0.5px solid', padding: 5, paddingLeft: 12, borderRadius: 8, width: '100%', outline: 0, background: '#fff'}}>
-                        <option>Frontend Web Development</option>
+                {/* <p style={{fontWeight: '500', marginBottom: 8,color:'#606060'}}>Interested Course?</p> */}
+                    <select style={{border: '#a4a4a4 0.5px solid', padding: 5, paddingLeft: 12, borderRadius: 5, width: '100%', outline: 0, background: '#fff'}}>
+                        <option>Select your course</option>
+                        <option>Frontend Development</option>
                         <option>Backend Development</option>
                         <option>Android/IOS Development</option>
                         <option>Java DSA</option>
@@ -129,18 +130,17 @@ function Hero()
                     </select>
                 </div>
                 <div style={{marginTop: 20}}>
-                    <p style={{fontWeight: '500', marginBottom: 10}}>Your Query</p>
-                    <textarea placeholder='Enter your query or doubt in a brief' style={{border: '#a4a4a4 0.5px solid', padding: 5, paddingLeft: 12, borderRadius: 8, width: '100%'}} />
+                    {/* <p style={{fontWeight: '500', marginBottom: 10}}>Your Query</p> */}
+                    <textarea placeholder='Enter your query' style={{border: '#a4a4a4 0.5px solid', padding: 5, paddingLeft: 12, borderRadius: 5, width: '100%'}} />
                 </div>
                 <button style={{
-                    background: 'rgb(179, 110, 244)',
-                    border: 'rgb(179, 110, 244) 1.5px solid',
+                    backgroundColor: 'blueviolet',
+                    border: 'none',
                     borderRadius: 8,
                     color: 'white',
                     marginTop: 15,
-                    alignSelf: 'center',
-                    // color: 'rgb(179, 110, 244)',
-                    padding: 8,
+                    // alignSelf: 'center',
+                    padding: 9,
                     paddingLeft: 20,
                     paddingRight: 20,
                 }} onClick={writeUserData}>Submit</button>
