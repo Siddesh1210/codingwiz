@@ -12,12 +12,31 @@ import CoursePage from './Components/CoursePage';
 import Loading from './Images/loading.gif'
 import { useEffect , useState } from 'react';
 import Logo from './Images/cw_logo.png';
+import { initializeApp } from "firebase/app";
+import { getDatabase } from "firebase/database";
 // So in future if we need to add any new card we can just pass JSON Card data in Courses.js File
 
 function App() {
   const [loading, setloading] = useState(false)
   const [itemClicked, setitemClicked] = useState(false)
   const [shouldAddClass, setShouldAddClass] = useState(false);
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyB5qHL9-tug8h5NVkvTq_ZYqRm33OPbVsc",
+    authDomain: "https://codingwiz-d7270-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "codingwiz-d7270",
+    storageBucket: "codingwiz-d7270.appspot.com",
+    messagingSenderId: "848789342274",
+    appId: "1:848789342274:web:e3d6daa7b60d0abcffc5db",
+    measurementId: "G-JVKJSBYWN1"
+  }
+  
+  const app = initializeApp(firebaseConfig);
+  const db = getDatabase(app)
+
+  
+  // Initialize Firebase
+  // const analytics = getAnalytics(app);
 
   // function onSiteLoaded(){
   //   window.onload = ()=>{
@@ -76,6 +95,7 @@ function App() {
           </div>
         </div>
       </nav>
+
 
       <ScrollToTop />
       <Routes>

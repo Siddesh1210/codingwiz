@@ -7,12 +7,15 @@ import card2 from '../Images/card2.png';
 import card3 from '../Images/card3.png';
 import card4 from '../Images/card4.png';
 import freeinternship from '../Images/guarantee card.png';
-
+import { ref } from 'firebase/database';
+import { getDatabase } from 'firebase/database';
+import { set } from 'firebase/database';
 import card6 from '../Images/card6.png';
 import Courses from './Courses';
 import Footer from './Footer';
 import Testimonial from './Testimonial';
 import {useNavigate} from 'react-router-dom';
+import { useEffect, useState } from 'react';
 
 
 function Hero()
@@ -22,6 +25,26 @@ function Hero()
     {
         navigate('/courses');
     }
+
+    const writeUserData = async() => {
+        const db=getDatabase()
+        console.log('setting db');
+        set(ref(db, '/'), {
+            name: 'hello',
+            phone: '98822'
+        })
+        
+        console.log('DATA SAVED');
+      }
+
+    const [showDialog, setshowDialog] = useState(false)
+
+    useEffect(() => {
+        const timer = setTimeout(()=>{
+            setshowDialog(true)
+        }, 15000)
+        return ()=>clearTimeout(timer)
+    }, [])
     return(
         <div className="container-fluid">
         <div className="row justify-content-evenly align-items-center hero-row flex-wrap-reverse">
@@ -73,6 +96,57 @@ function Hero()
             <img src={card6} className='img-fluid'></img>
             </div>
         </div>
+        {
+            showDialog && 
+        <div style={{background: 'rgba(0, 0, 0, 0.2)', width: '100vw', height: '100vh', position: 'fixed', top: 0, left: 0, display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+            <div style={{background: 'white', padding: 15, borderRadius: 8, display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
+                
+                <div className='header' style={{display: 'flex', paddingBottom: 10, justifyContent: 'space-between', borderBottom: '#999 0.5px solid', width: 500}}>
+                    <span style={{fontWeight: '600'}}>Drop us a Query</span>
+                    <span style={{cursor: 'pointer'}} onClick={()=>{setshowDialog(false)}}>✖</span>
+                </div>
+                <div style={{marginTop: 20}}>
+                    <p style={{fontWeight: '500', marginBottom: 8}}>Full Name</p>
+                    <input placeholder='Your full Name' style={{border: '#a4a4a4 0.5px solid', padding: 5, paddingLeft: 12, borderRadius: 8, width: '100%'}} />
+                </div>
+                <div style={{marginTop: 20}}>
+                    <p style={{fontWeight: '500', marginBottom: 8}}>Phone Number</p>
+                    <input placeholder='Phone Number without +91' type="number" maxLength={12} minLength={10} style={{border: '#a4a4a4 0.5px solid', padding: 5, paddingLeft: 12, borderRadius: 8, width: '100%'}} />
+                </div>
+                <div style={{marginTop: 20}}>
+                    <p style={{fontWeight: '500', marginBottom: 8}}>Email Address</p>
+                    <input placeholder='Email Address' type="email" style={{border: '#a4a4a4 0.5px solid', padding: 5, paddingLeft: 12, borderRadius: 8, width: '100%'}} />
+                </div>
+                <div style={{marginTop: 20}}>
+                <p style={{fontWeight: '500', marginBottom: 8}}>Select the Course you're Interested in</p>
+                    <select style={{border: '#a4a4a4 0.5px solid', padding: 5, paddingLeft: 12, borderRadius: 8, width: '100%', outline: 0, background: '#fff'}}>
+                        <option>Frontend Web Development</option>
+                        <option>Backend Development</option>
+                        <option>Java DSA</option>
+                        <option>C++ DSA</option>
+                        <option>Machine Learning</option>
+                    </select>
+                </div>
+                <div style={{marginTop: 20}}>
+                    <p style={{fontWeight: '500', marginBottom: 10}}>Your Query</p>
+                    <textarea placeholder='Enter your query or doubt in a brief' style={{border: '#a4a4a4 0.5px solid', padding: 5, paddingLeft: 12, borderRadius: 8, width: '100%'}} />
+                </div>
+                <button style={{
+                    background: 'rgb(179, 110, 244)',
+                    border: 'rgb(179, 110, 244) 1.5px solid',
+                    borderRadius: 8,
+                    color: 'white',
+                    marginTop: 15,
+                    alignSelf: 'center',
+                    // color: 'rgb(179, 110, 244)',
+                    padding: 8,
+                    paddingLeft: 20,
+                    paddingRight: 20,
+                }} onClick={writeUserData}>Submit</button>
+            </div>
+
+        </div>
+        }
         
         {/* <Courses/> */}
         <Courses/>
