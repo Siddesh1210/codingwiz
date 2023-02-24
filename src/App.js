@@ -21,18 +21,18 @@ function App() {
   const [itemClicked, setitemClicked] = useState(false)
   const [shouldAddClass, setShouldAddClass] = useState(false);
 
-  const firebaseConfig = {
-    apiKey: "AIzaSyB5qHL9-tug8h5NVkvTq_ZYqRm33OPbVsc",
-    authDomain: "codingwiz-d7270.firebaseapp.com",
-    projectId: "codingwiz-d7270",
-    storageBucket: "codingwiz-d7270.appspot.com",
-    messagingSenderId: "848789342274",
-    appId: "1:848789342274:web:e3d6daa7b60d0abcffc5db",
-    measurementId: "G-JVKJSBYWN1"
-  }
+  // const firebaseConfig = {
+  //   apiKey: "AIzaSyB5qHL9-tug8h5NVkvTq_ZYqRm33OPbVsc",
+  //   authDomain: "codingwiz-d7270.firebaseapp.com",
+  //   projectId: "codingwiz-d7270",
+  //   storageBucket: "codingwiz-d7270.appspot.com",
+  //   messagingSenderId: "848789342274",
+  //   appId: "1:848789342274:web:e3d6daa7b60d0abcffc5db",
+  //   measurementId: "G-JVKJSBYWN1"
+  // }
   
-  const app = initializeApp(firebaseConfig);
-  const db = getDatabase(app)
+  // const app = initializeApp(firebaseConfig);
+  // const db = getDatabase(app)
 
   
   // Initialize Firebase

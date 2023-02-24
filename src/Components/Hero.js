@@ -1,22 +1,19 @@
-import HeroImg3 from '../Images/hero_img3.png'
-import HeroGif2 from '../Images/hero_gif_vikrant.gif'
-import HeroGif3 from '../Images/rotating_icon.gif';
+// import HeroImg3 from '../Images/hero_img3.png'
+// import HeroGif2 from '../Images/hero_gif_vikrant.gif'
+// import HeroGif3 from '../Images/rotating_icon.gif';
 import HeroGif4 from '../Images/newrotating_icons.gif';
 import card1 from '../Images/card1.png';
 import card2 from '../Images/card2.png';
 import card3 from '../Images/card3.png';
 import card4 from '../Images/card4.png';
 import freeinternship from '../Images/guarantee card.png';
-import { ref } from 'firebase/database';
-import { getDatabase } from 'firebase/database';
-import { set } from 'firebase/database';
 import card6 from '../Images/card6.png';
 import Courses from './Courses';
 import Footer from './Footer';
 import Testimonial from './Testimonial';
 import {useNavigate} from 'react-router-dom';
 import { useEffect, useState } from 'react';
-
+import { useRef } from 'react';
 
 function Hero()
 {
@@ -26,16 +23,28 @@ function Hero()
         navigate('/courses');
     }
 
-    const writeUserData = async() => {
-        const db=getDatabase()
-        console.log('setting db');
-        set(ref(db, '/'), {
-            name: 'hello',
-            phone: '98822'
-        })
+    const username=useRef(null);
+    const userph=useRef(null);
+    const usertext=useRef(null);
+    function writeUserData()
+    {
+        const name=username.current.value;
+        const p_no=userph.current.value;
+        const query=usertext.current.value;
+        console.log(name,p_no,query);
+        setshowDialog(false);
+    }
+
+    // const writeUserData= async() => {
+    //     const db=getDatabase()
+    //     console.log('setting db');
+    //     set(ref(db, '/'), {
+    //         name: 'hello',
+    //         phone: '98822'
+    //     })
         
-        console.log('DATA SAVED');
-      }
+    //     console.log('DATA SAVED');
+    //   } 
 
     const [showDialog, setshowDialog] = useState(false)
 
@@ -96,6 +105,8 @@ function Hero()
             <img src={card6} className='img-fluid'></img>
             </div>
         </div>
+
+        {/* start of Modal */}
         {
             showDialog && 
         <div style={{background: 'rgba(0, 0, 0, 0.4)', width: '100vw', height: '100vh', position: 'fixed', top: 0, left: 0, display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
@@ -107,16 +118,12 @@ function Hero()
                 </div>
                 <div style={{marginTop: 20}}>
                     {/* <p style={{fontWeight: '500', marginBottom: 8}}>Full Name</p> */}
-                    <input placeholder='Enter your full Name' style={{border: '#a4a4a4 0.5px solid', padding: 5, paddingLeft: 12, borderRadius: 5, width: '100%'}} />
+                    <input placeholder='Enter your full Name' style={{border: '#a4a4a4 0.5px solid', padding: 5, paddingLeft: 12, borderRadius: 5, width: '100%'}} ref={username}/>
                 </div>
                 <div style={{marginTop: 20}}>
                     {/* <p style={{fontWeight: '500', marginBottom: 8}}>Phone Number</p> */}
-                    <input placeholder='Enter your Phone Number' type="number" maxLength={12} minLength={10} style={{border: '#a4a4a4 0.5px solid', padding: 5, paddingLeft: 12, borderRadius: 5, width: '100%'}} />
+                    <input placeholder='Enter your Phone Number' type="number" maxLength={12} minLength={10} style={{border: '#a4a4a4 0.5px solid', padding: 5, paddingLeft: 12, borderRadius: 5, width: '100%'}} ref={userph}/>
                 </div>
-                {/* <div style={{marginTop: 20}}>
-                    <p style={{fontWeight: '500', marginBottom: 8}}>Email Address</p>
-                    <input placeholder='Email Address' type="email" style={{border: '#a4a4a4 0.5px solid', padding: 5, paddingLeft: 12, borderRadius: 8, width: '100%'}} />
-                </div> */}
                 <div style={{marginTop: 20}}>
                 {/* <p style={{fontWeight: '500', marginBottom: 8,color:'#606060'}}>Interested Course?</p> */}
                     <select style={{border: '#a4a4a4 0.5px solid', padding: 5, paddingLeft: 12, borderRadius: 5, width: '100%', outline: 0, background: '#fff'}}>
@@ -131,7 +138,7 @@ function Hero()
                 </div>
                 <div style={{marginTop: 20}}>
                     {/* <p style={{fontWeight: '500', marginBottom: 10}}>Your Query</p> */}
-                    <textarea placeholder='Enter your query' style={{border: '#a4a4a4 0.5px solid', padding: 5, paddingLeft: 12, borderRadius: 5, width: '100%'}} />
+                    <textarea placeholder='Enter your query' style={{border: '#a4a4a4 0.5px solid', padding: 5, paddingLeft: 12, borderRadius: 5, width: '100%'}} ref={usertext}/>
                 </div>
                 <button style={{
                     backgroundColor: 'blueviolet',
@@ -146,9 +153,11 @@ function Hero()
                 }} onClick={writeUserData}>Submit</button>
             </div>
 
-        </div>
+         </div>
         }
-        
+        {/* End of Modal */}
+
+
         {/* <Courses/> */}
         <Courses/>
 
