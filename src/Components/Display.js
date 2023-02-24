@@ -6,7 +6,7 @@ function ShowPage()
     const[update,setUpdate]=useState([]);
     useEffect(()=>
     {
-        fetch('https://feb-demo-night-default-rtdb.firebaseio.com/user.json').then
+        fetch('https://codingwiz-query-default-rtdb.firebaseio.com/tempuser.json').then
         (response=>response.json()).then(data=>
             {
                 const users=[];
@@ -19,7 +19,10 @@ function ShowPage()
                 users.push(user_detail);
                 setLoadStatus(false);
                 setUpdate(users);
-            }console.log(update);
+            }
+            console.log(update);
+            // console.log('Important Note : Any update please check passing value in down while calling structure component and firebase column name must be updated!!!');
+
     })
     },[])
     return(
@@ -43,7 +46,7 @@ function ShowPage()
                 {
                     update.map((x)=>
                     {
-                        return <Structure name={x.name} email={x.email} p_no={x.phone_number} query={x.query}/>
+                        return <Structure name={x.Name} p_no={x.Phone_Number} course={x.Course} query={x.Query}/>
                     })
                 }
             </div>

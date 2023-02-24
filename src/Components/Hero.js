@@ -33,21 +33,22 @@ function Hero()
         const name=username.current.value;
         const p_no=userph.current.value;
         const query=usertext.current.value;
-        const course=courseSelectedFromDialog
-        console.log(name,p_no,query);
+        const course=document.getElementById('course').value;
+        // console.log(name,p_no,query,course);
+
+        let tempuser={
+            Name:name,
+            Phone_Number:p_no,
+            Course:course,
+            Query:query
+        }
+
+        fetch('https://codingwiz-query-default-rtdb.firebaseio.com/tempuser.json',{method:'post',body:JSON.stringify(tempuser)}).then(()=>
+        {
+            console.log('Data Added Successfully')
+        })
         setshowDialog(false);
     }
-
-    // const writeUserData= async() => {
-    //     const db=getDatabase()
-    //     console.log('setting db');
-    //     set(ref(db, '/'), {
-    //         name: 'hello',
-    //         phone: '98822'
-    //     })
-        
-    //     console.log('DATA SAVED');
-    //   } 
 
     const [showDialog, setshowDialog] = useState(false)
 
@@ -121,15 +122,15 @@ function Hero()
                 </div>
                 <div style={{marginTop: 20}}>
                     {/* <p style={{fontWeight: '500', marginBottom: 8}}>Full Name</p> */}
-                    <input placeholder='Enter your full Name' style={{border: '#a4a4a4 0.5px solid', padding: 5, paddingLeft: 12, borderRadius: 5, width: '100%'}} ref={username}/>
+                    <input placeholder='Enter your Full Name' style={{border: '#a4a4a4 0.5px solid', padding: 5, paddingLeft: 12, borderRadius: 5, width: '100%'}} ref={username} className="query_inp"/>
                 </div>
                 <div style={{marginTop: 20}}>
                     {/* <p style={{fontWeight: '500', marginBottom: 8}}>Phone Number</p> */}
-                    <input placeholder='Enter your Phone Number' type="number" maxLength={12} minLength={10} style={{border: '#a4a4a4 0.5px solid', padding: 5, paddingLeft: 12, borderRadius: 5, width: '100%'}} ref={userph}/>
+                    <input placeholder='Enter your Phone Number' type="tel" maxLength={10}style={{border: '#a4a4a4 0.5px solid', padding: 5, paddingLeft: 12, borderRadius: 5, width: '100%'}} ref={userph} className="query_inp"/>
                 </div>
                 <div style={{marginTop: 20}}>
                 {/* <p style={{fontWeight: '500', marginBottom: 8,color:'#606060'}}>Interested Course?</p> */}
-                    <select style={{border: '#a4a4a4 0.5px solid', padding: 5, paddingLeft: 12, borderRadius: 5, width: '100%', outline: 0, background: '#fff'}}>
+                    <select style={{border: '#a4a4a4 0.5px solid', padding: 5, paddingLeft: 12, borderRadius: 5, width: '100%', outline: 0, background: '#fff'}} id="course" className="sel">
                         <option onClick={()=>{setcourseSelectedFromDialog()}}>Select your course</option>
                         <option onClick={()=>{setcourseSelectedFromDialog('Frontend Devlopement')}}>Frontend Development</option>
                         <option onClick={()=>{setcourseSelectedFromDialog('Backend Development')}}>Backend Development</option>
@@ -141,7 +142,7 @@ function Hero()
                 </div>
                 <div style={{marginTop: 20}}>
                     {/* <p style={{fontWeight: '500', marginBottom: 10}}>Your Query</p> */}
-                    <textarea placeholder='Enter your query' style={{border: '#a4a4a4 0.5px solid', padding: 5, paddingLeft: 12, borderRadius: 5, width: '100%'}} ref={usertext}/>
+                    <textarea placeholder='Enter your Query' style={{border: '#a4a4a4 0.5px solid', padding: 5, paddingLeft: 12, borderRadius: 5, width: '100%'}} ref={usertext} className="query_inp"/>
                 </div>
                 <button style={{
                     backgroundColor: 'blueviolet',
