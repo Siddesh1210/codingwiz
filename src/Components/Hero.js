@@ -99,7 +99,7 @@ function Hero()
         {
             showDialog && 
         <div style={{background: 'rgba(0, 0, 0, 0.2)', width: '100vw', height: '100vh', position: 'fixed', top: 0, left: 0, display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-            <div style={{background: 'white', padding: 15, borderRadius: 8, display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
+            <div style={{background: 'white', padding: 15, borderRadius: 8, display: 'flex', flexDirection: 'column', justifyContent: 'center', maxWidth: '90vw'}}>
                 
                 <div className='header' style={{display: 'flex', paddingBottom: 10, justifyContent: 'space-between', borderBottom: '#999 0.5px solid', width: 500}}>
                     <span style={{fontWeight: '600'}}>Drop us a Query</span>

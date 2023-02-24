@@ -23,7 +23,7 @@ function App() {
 
   const firebaseConfig = {
     apiKey: "AIzaSyB5qHL9-tug8h5NVkvTq_ZYqRm33OPbVsc",
-    authDomain: "https://codingwiz-d7270-default-rtdb.asia-southeast1.firebasedatabase.app",
+    authDomain: "codingwiz-d7270.firebaseapp.com",
     projectId: "codingwiz-d7270",
     storageBucket: "codingwiz-d7270.appspot.com",
     messagingSenderId: "848789342274",
