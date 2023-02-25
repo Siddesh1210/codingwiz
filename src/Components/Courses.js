@@ -174,7 +174,7 @@ let Courses_list=[
         price:'₹ 749 Only',
         date:'Starts from 13th March 2023',
         time:'8:00 PM to 9:30 PM',
-        desc:'Learn backend development with 3+ live projects, learn how to create servers and intregrate with frontend technologies plus Database and Deployment!',
+        desc:'Learn MERN backend development with 3+ live projects, learn how to create servers and intregrate with frontend technologies plus Database and Deployment!',
         oprice:'₹ 749 Only',
         sprice:'₹ 4999',
         off:'85% off',

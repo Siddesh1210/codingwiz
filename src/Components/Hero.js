@@ -132,7 +132,7 @@ function Hero()
                     <select style={{border: '#a4a4a4 0.5px solid', padding: 5, paddingLeft: 12, borderRadius: 5, width: '100%', outline: 0, background: '#fff'}}>
                         <option onClick={()=>{setcourseSelectedFromDialog()}}>Select your course</option>
                         <option onClick={()=>{setcourseSelectedFromDialog('Frontend Devlopement')}}>Frontend Development</option>
-                        <option onClick={()=>{setcourseSelectedFromDialog('Backend Development')}}>Backend Development</option>
+                        <option onClick={()=>{setcourseSelectedFromDialog('MERN Backend Development')}}>MERN Backend Development</option>
                         <option onClick={()=>{setcourseSelectedFromDialog('Android/IOS Development')}}>Android/IOS Development</option>
                         <option onClick={()=>{setcourseSelectedFromDialog('Java DSA')}}>Java DSA</option>
                         <option onClick={()=>{setcourseSelectedFromDialog('C++ DSA')}}>C++ DSA</option>
