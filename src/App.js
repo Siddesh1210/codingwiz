@@ -107,7 +107,7 @@ function App() {
         <Route path="/contact" element={<Contact/>}></Route>
         <Route path="/course-detail" element={<CourseDetail/>}></Route>
         <Route path="/privacy-policy" element={<PrivacyPolicy/>}></Route>
-        <Route path="/view-f2c-student" element={<Display/>}></Route>
+        <Route path="/view-student" element={<Display/>}></Route>
 
       </Routes>
     </div>

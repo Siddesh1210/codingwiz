@@ -481,7 +481,7 @@ let Courses_list=[
                 arialcontrols:"collapseSix"
             },
             {
-                title:"Searching",
+                title:"Searching and Sorting",
                 description:"Introduction to binary search, Search Element, First Index Occurrence, Last index Occurrence, Count Frequency, Square Root, Search in infinite size, Search in Rotated Sorted Array, Leetcode Live problem solving",
                 id:"headingSeven",
                 datatarget:"#collapseSeven",
@@ -615,7 +615,7 @@ let Courses_list=[
                 arialcontrols:"collapseSix"
             },
             {
-                title:"Searching",
+                title:"Searching and Sorting",
                 description:"Introduction to binary search, Search Element, First Index Occurrence, Last index Occurrence, Count Frequency, Square Root, Search in infinite size, Search in Rotated Sorted Array, Leetcode Live problem solving",
                 id:"headingSeven",
                 datatarget:"#collapseSeven",
