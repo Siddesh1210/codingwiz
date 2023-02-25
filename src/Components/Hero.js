@@ -117,7 +117,7 @@ function Hero()
             <div style={{background: 'white', padding: 15, borderRadius: 8, display: 'flex', flexDirection: 'column', justifyContent: 'center', minWidth: '30vw', maxWidth: '90vw'}}>
                 
                 <div className='header' style={{display: 'flex', paddingBottom: 10, justifyContent: 'space-between', borderBottom: '#999 0.5px solid', width: '100%'}}>
-                    <span style={{fontWeight: '600',color:'blueviolet'}}>Drop your Query?</span>
+                    <span style={{fontWeight: '600',color:'blueviolet'}}>Get upto 100% Scholarship</span>
                     <span style={{cursor: 'pointer'}} onClick={()=>{setshowDialog(false)}}>✖</span>
                 </div>
                 <div style={{marginTop: 20}}>
@@ -154,7 +154,7 @@ function Hero()
                     padding: 9,
                     paddingLeft: 20,
                     paddingRight: 20,
-                }} onClick={writeUserData}>Submit</button>
+                }} onClick={writeUserData}>Apply Now</button>
             </div>
 
          </div>
