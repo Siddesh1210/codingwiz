@@ -79,7 +79,7 @@ function Testimonial()
                     <div className="d-flex justify-content-between align-items-center">
                         <div className="d-flex align-items-center">
                             <img src={HaamidImg} className="student-img abhisek-img"/>
-                            <p className="studentname-para"><b>Haamid Raza</b><br/><span>Student</span></p>
+                            <p className="studentname-para"><b>Haamid Raza Kazi</b><br/><span>Student</span></p>
                         </div>
                         <div>
                         <h2 className="insta-testimonial-icon"><a href="https://instagram.com/the_hrk_03?igshid=NTA5ZTk1NTc="><i className="bi bi-instagram"></i></a></h2>
