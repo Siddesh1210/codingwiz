@@ -117,7 +117,7 @@ function Hero()
             <div style={{background: 'white', padding: 15, borderRadius: 8, display: 'flex', flexDirection: 'column', justifyContent: 'center', minWidth: '30vw', maxWidth: '90vw'}}>
                 
                 <div className='header' style={{display: 'flex', paddingBottom: 10, justifyContent: 'space-between', borderBottom: '#999 0.5px solid', width: '100%'}}>
-                    <span style={{fontWeight: '600',color:'blueviolet'}}>Drop your Query</span>
+                    <span style={{fontWeight: '600',color:'blueviolet'}}>Apply for scholarship</span>
                     <span style={{cursor: 'pointer'}} onClick={()=>{setshowDialog(false)}}>✖</span>
                 </div>
                 <div style={{marginTop: 20}}>
@@ -142,7 +142,7 @@ function Hero()
                 </div>
                 <div style={{marginTop: 20}}>
                     {/* <p style={{fontWeight: '500', marginBottom: 10}}>Your Query</p> */}
-                    <textarea placeholder='Enter your Query' style={{border: '#a4a4a4 0.5px solid', padding: 5, paddingLeft: 12, borderRadius: 5, width: '100%'}} ref={usertext} className="query_inp"/>
+                    <textarea placeholder='Reason for applying scholarship?' style={{border: '#a4a4a4 0.5px solid', padding: 5, paddingLeft: 12, borderRadius: 5, width: '100%'}} ref={usertext} className="query_inp"/>
                 </div>
                 <button style={{
                     backgroundColor: 'blueviolet',
