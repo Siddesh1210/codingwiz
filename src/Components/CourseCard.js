@@ -20,6 +20,8 @@ function CourseCard(props)
                 img:props.img,
                 syllabus: props.syllabus,
                 require:props.require,
+                coursedur:props.coursedur,
+                linkin:props.linkin,
             }
         });
     };

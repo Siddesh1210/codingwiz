@@ -56,7 +56,9 @@ function CourseDetail()
                 <div className="col-sm-7">
                     <h3>{location.state.title}</h3>
                     <p className="course-detail-desc">{location.state.desc}</p>
+                    <p>Course Duration : {location.state.coursedur} </p>
                     <p className="star">4.5 <i className="bi bi-star-fill star"></i> <i className="bi bi-star-fill star"></i> <i className="bi bi-star-fill star"></i> <i className="bi bi-star-fill star"></i> <i className="bi bi-star-half star"></i></p>
+                    <a href={location.state.linkin} target="_blank"><button className="btn btn-outline-warning">View Expert Profile</button></a>
                 </div>
             </div>
             <div className="row card-detail-row">

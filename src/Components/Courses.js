@@ -1,7 +1,7 @@
 // import Footer from "./Footer";
 import CourseCard from "./CourseCard";
-import Frontend_Img from '../Images/Frontend_Img.webp'
-import Backend_Img from '../Images/Backend_Img.png'
+import Frontend_Img from '../Images/Frontend_img.jpg'
+import Backend_Img from '../Images/Backend_img.jpg'
 import DSA_C from '../Images/DataStructure_Img.webp'
 import DSA_Java from '../Images/DSA_Java.jpg'
 import App_dev from '../Images/App_development.avif'
@@ -24,6 +24,8 @@ let Courses_list=[
         sprice:'₹ 2999',
         off:'83% off',
         btn:'Buy this Course',
+        courseDuration:"1 Month - 1 ½ Month",
+        linkedinurl:'https://www.linkedin.com/in/siddesh-jaiswal-3961a6223',
         requirement:"No programming experience needed - We'll teach you everything you need to know",
         syllabus:[
             {
@@ -179,7 +181,9 @@ let Courses_list=[
         sprice:'₹ 4999',
         off:'85% off',
         btn:'Buy this Course',
+        linkedinurl:'https://www.linkedin.com/in/vishal-vishwajeet',
         requirement:"Must be familiar with HTML , CSS and Javascript advance concepts ",
+        courseDuration:"1 ½ Month - 2 Month",
         syllabus:[
             {
                 title:"Introduction to course",
@@ -301,6 +305,8 @@ let Courses_list=[
         sprice:'₹ 4999',
         off:'85% off',
         btn:'Buy this Course',
+        courseDuration:"1 ½ Month - 2 Month",
+        linkedinurl:'https://www.linkedin.com/in/utkarsh-bhardwaj-6a1034162',
         requirement:"No programming experience needed - We'll teach you everything you need to know",
         syllabus:[
             {
@@ -436,6 +442,8 @@ let Courses_list=[
         sprice:'₹ 4999',
         off:'80% off',
         btn:'Buy this Course',
+        courseDuration:"2 Month - 2 ½ Month",
+        linkedinurl:'https://www.linkedin.com/in/nishan-banga-2154531b4',
         requirement:"No programming experience needed - We'll teach you everything you need to know",
         syllabus:[
             {
@@ -570,6 +578,8 @@ let Courses_list=[
         sprice:'₹ 4999',
         off:'80% off',
         btn:'Buy this Course',
+        courseDuration:"2 Month - 2 ½ Month",
+        linkedinurl:'https://www.linkedin.com/in/utsavbarnwal',
         requirement:"No programming experience needed - We'll teach you everything you need to know",
         syllabus:[
             {
@@ -704,6 +714,8 @@ let Courses_list=[
         sprice:'₹ 4999',
         off:'85% off',
         btn:'Buy this Course',
+        courseDuration:"1 ½ Month - 2 Month",
+        linkedinurl:"https://www.linkedin.com/in/mohd-faizan-khawar-518135121",
         requirement:"No programming experience needed - We'll teach you everything you need to know",
         syllabus:[
             {
@@ -849,7 +861,7 @@ function Courses()
             Courses_list.map((x)=>
             {
                 return(
-                    <CourseCard img={x.img} title={x.title} price={x.price} date={x.date} time={x.time} desc={x.desc} oprice={x.oprice} sprice={x.sprice} syllabus={x.syllabus} off={x.off} btn={x.btn} require={x.requirement}/>
+                    <CourseCard img={x.img} title={x.title} price={x.price} date={x.date} time={x.time} desc={x.desc} oprice={x.oprice} sprice={x.sprice} syllabus={x.syllabus} off={x.off} btn={x.btn} require={x.requirement} coursedur={x.courseDuration} linkin={x.linkedinurl}/>
                 )
             })
             }

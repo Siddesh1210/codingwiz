@@ -12,8 +12,7 @@ import CoursePage from './Components/CoursePage';
 import Loading from './Images/loading.gif'
 import { useEffect , useState } from 'react';
 import Logo from './Images/cw_logo.png';
-import { initializeApp } from "firebase/app";
-import { getDatabase } from "firebase/database";
+import About from './Components/About';
 // So in future if we need to add any new card we can just pass JSON Card data in Courses.js File
 
 function App() {
@@ -21,29 +20,7 @@ function App() {
   const [itemClicked, setitemClicked] = useState(false)
   const [shouldAddClass, setShouldAddClass] = useState(false);
 
-  // const firebaseConfig = {
-  //   apiKey: "AIzaSyB5qHL9-tug8h5NVkvTq_ZYqRm33OPbVsc",
-  //   authDomain: "codingwiz-d7270.firebaseapp.com",
-  //   projectId: "codingwiz-d7270",
-  //   storageBucket: "codingwiz-d7270.appspot.com",
-  //   messagingSenderId: "848789342274",
-  //   appId: "1:848789342274:web:e3d6daa7b60d0abcffc5db",
-  //   measurementId: "G-JVKJSBYWN1"
-  // }
-  
-  // const app = initializeApp(firebaseConfig);
-  // const db = getDatabase(app)
 
-  
-  // Initialize Firebase
-  // const analytics = getAnalytics(app);
-
-  // function onSiteLoaded(){
-  //   window.onload = ()=>{
-  //   document.getElementById('loader-container').style.display='none'
-  //   // setloading(false)
-  //   }
-  // }
   useEffect(() => {
 
     // setloading(true)
@@ -82,6 +59,9 @@ function App() {
                 <Link to="/" onClick={()=>{ navigator.userAgent.match('/Android/i')||navigator.userAgent.match('/iPhone/i')||navigator.userAgent.match('Mozilla/5.0') && document.getElementById('trial-btn').click()}} className="nav-link active text-white link" aria-current="page" >Home</Link>
               </li>
               <li className="nav-item">
+                <Link to="/about-us" onClick={()=>{ navigator.userAgent.match('/Android/i')||navigator.userAgent.match('/iPhone/i')||navigator.userAgent.match('Mozilla/5.0') && document.getElementById('trial-btn').click()}} className="nav-link active text-white link" aria-current="page">About us</Link>
+              </li>
+              <li className="nav-item">
                 <Link to="/courses" onClick={()=>{ navigator.userAgent.match('/Android/i')||navigator.userAgent.match('/iPhone/i')||navigator.userAgent.match('Mozilla/5.0') && document.getElementById('trial-btn').click()}} className="nav-link active text-white link" aria-current="page">Courses</Link>
               </li>
               <li className="nav-item">
@@ -108,6 +88,8 @@ function App() {
         <Route path="/course-detail" element={<CourseDetail/>}></Route>
         <Route path="/privacy-policy" element={<PrivacyPolicy/>}></Route>
         <Route path="/view-student" element={<Display/>}></Route>
+        <Route path="/about-us" element={<About/>}></Route>
+
 
       </Routes>
     </div>

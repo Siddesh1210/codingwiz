@@ -19,6 +19,10 @@ function Footer()
     {
         navigate('/courses');
     }
+    function AboutHandler()
+    {
+        navigate('/about-us');
+    }
     return(
         <div className="row justify-content-evenly footer pt-5 pb-2">
             <div className="col-md-2">
@@ -38,7 +42,7 @@ function Footer()
 
             <div className="col-md-2">
             <h5>Legal</h5>
-                <p><span onClick={PrivacyHandler}>Privacy Policy<br></br>Terms & Conditions<br></br>Refund Policy</span><br></br><span onClick={ContactHandler}>Contact</span></p>
+                <p><span onClick={PrivacyHandler}>Privacy Policy<br></br>Terms & Conditions<br></br></span><span onClick={AboutHandler}>About Us</span><br></br><span onClick={ContactHandler}>Contact</span></p>
             </div>
 
             <hr></hr>

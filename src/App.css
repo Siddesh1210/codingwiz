@@ -724,3 +724,21 @@ mark{
 
 
 /* Query Alert Box CSS End */
+
+/* About US PAge css Start */
+
+.about-desc
+{
+  text-align: justify;
+}
+
+.about-bg
+{
+  background-image: url(https://edtechmagazine.com/k12/k12/k12/k12/k12/k12/k12/k12/k12/k12/k12/k12/k12/k12/k12/k12/k12/k12/k12/k12/k12/k12/k12/k12/k12/higher/k12/k12/k12/k12/k12/k12/sites/edtechmagazine.com.k12/files/styles/insider_teaser/public/articles/%5Bcdw_tech_site%3Afield_site_shortname%5D/202209/GettyImages-1356381571.jpg?itok=zDI-24az);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+/* About US PAge css End */
+
