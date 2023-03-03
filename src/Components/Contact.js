@@ -106,11 +106,11 @@ function Contact()
             </div>
 
             <div className="col-md-2 contact-box px-2 pt-2 m-2">
-                <p><i className="bi bi-phone"></i> 9623235838 <br></br> <i className="bi bi-phone"></i> 8356971330</p>
+                <p><i className="bi bi-phone"></i> 9623235838 <br></br> <i className="bi bi-phone"></i> 9084321252</p>
             </div>
 
             <div className="col-md-2 contact-box px-2 pt-2 m-2">
-                <p><i className="bi bi-envelope"></i> info@freetocode.in</p>
+                <p><i className="bi bi-envelope"></i> info@codingwiz.in</p>
             </div>
 
             <div className="col-md-2 contact-box px-2 pt-2 m-2">
