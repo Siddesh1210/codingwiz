@@ -4,6 +4,7 @@ import Frontend_Img from '../Images/Frontend_img.jpg'
 import Backend_Img from '../Images/Backend_img.jpg'
 import DSA_C from '../Images/DataStructure_Img.webp'
 import DSA_Java from '../Images/DSA_Java.jpg'
+import javadsa from '../Images/javadsa.png'
 import App_dev from '../Images/App_development.avif'
 import ML from '../Images/machine_learning.jpg'
 import dsa from '../Images/dsa.png';
@@ -17,7 +18,7 @@ let Courses_list=[
     {
         img:Frontend_Img,
         title:'Frontend Development Bootcamp',
-        price:'₹ 499 Only',
+        price:"₹ 499 Only",
         date:'Starts from 13th March 2023',
         time:'7:00 PM to 8:00 PM',
         desc:'Learn complete Frontend Developement with 3+ live projects, Includes HTML5, CSS3, JavaScript, Bootstrap, Git and host your project at free of cost!',
@@ -433,7 +434,7 @@ let Courses_list=[
         ]
     },
     {
-        img:DSA_Java,
+        img:javadsa,
         title:'Data Structures and Algorithms in Java',
         price:'₹ 999 Only',
         date:'Starts from 13th March 2023',

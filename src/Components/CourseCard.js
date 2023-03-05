@@ -34,6 +34,7 @@ function CourseCard(props)
                 <p>{props.price}</p>
                 <p>{props.date}</p>
                 <p>{props.time}</p>
+                {/* <button>Best Seller</button> */}
                 <button className='course-btn' onClick={CardHandler}>Check Details!</button>
             </div>
     )
