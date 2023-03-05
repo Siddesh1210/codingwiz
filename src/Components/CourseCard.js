@@ -22,6 +22,7 @@ function CourseCard(props)
                 require:props.require,
                 coursedur:props.coursedur,
                 linkin:props.linkin,
+                bestsell:props.bestsell,
             }
         });
     };
@@ -31,7 +32,7 @@ function CourseCard(props)
                 <img src={props.img} className='course-img'></img>
                 </div>
                 <h4>{props.title}</h4>
-                <p>{props.price}</p>
+                <p>{props.price} <span className='bestselling-btn'>{props.bestsell}</span></p>
                 <p>{props.date}</p>
                 <p>{props.time}</p>
                 {/* <button>Best Seller</button> */}

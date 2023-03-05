@@ -20,7 +20,7 @@ let Courses_list=[
         img:Frontend_Img,
         title:'Frontend Development Bootcamp',
         price:"₹ 499 Only",
-        // bestseller:"Best Seller",
+        bestseller:"Best Selling",
         date:'Starts from 13th March 2023',
         time:'7:00 PM to 8:00 PM',
         desc:'Learn complete Frontend Developement with 3+ live projects, Includes HTML5, CSS3, JavaScript, Bootstrap, Git and host your project at free of cost!',
@@ -177,6 +177,7 @@ let Courses_list=[
     {
         img:Backend_Img,
         title:'Backend Development Bootcamp',
+        bestseller:"Best Selling",
         price:'₹ 749 Only',
         date:'Starts from 13th March 2023',
         time:'8:00 PM to 9:30 PM',
@@ -301,6 +302,7 @@ let Courses_list=[
     {
         img:app,
         title:'App Development with Flutter',
+        bestseller:"",
         price:'₹ 749 Only',
         date:'Starts from 13th March 2023',
         time:'8:00 PM to 9:30 PM',
@@ -438,6 +440,7 @@ let Courses_list=[
     {
         img:javadsa,
         title:'Data Structures and Algorithms in Java',
+        bestseller:"",
         price:'₹ 999 Only',
         date:'Starts from 13th March 2023',
         time:'7:00 PM to 9:00 PM',
@@ -575,6 +578,7 @@ let Courses_list=[
         img:dsa,
         title:'Data Structures and Algorithms in C++',
         price:'₹ 999 Only',
+        bestseller:"",
         date:'Starts from 13th March 2023',
         time:'7:00 PM to 9:00 PM',
         desc:'Learn complete Data Structure and Algorithms with 50+ live problems solving, Included all Linear and Non Linear Data Structures!',
@@ -710,6 +714,7 @@ let Courses_list=[
     {
         img:ML,
         title:'Machine Learning with Python',
+        bestseller:"Best Selling",
         price:'₹ 749 Only',
         date:'Starts from 13th March 2023',
         time:'7:00 PM to 8:00 PM',
@@ -865,7 +870,7 @@ function Courses()
             Courses_list.map((x)=>
             {
                 return(
-                    <CourseCard img={x.img} title={x.title} price={x.price} date={x.date} time={x.time} desc={x.desc} oprice={x.oprice} sprice={x.sprice} syllabus={x.syllabus} off={x.off} btn={x.btn} require={x.requirement} coursedur={x.courseDuration} linkin={x.linkedinurl}/>
+                    <CourseCard img={x.img} title={x.title} price={x.price} date={x.date} time={x.time} desc={x.desc} oprice={x.oprice} sprice={x.sprice} syllabus={x.syllabus} off={x.off} btn={x.btn} require={x.requirement} coursedur={x.courseDuration} linkin={x.linkedinurl} bestsell={x.bestseller}/>
                 )
             })
             }

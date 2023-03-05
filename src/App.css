@@ -253,6 +253,12 @@ body{
   color:white;
 }
 
+.bestselling-btn:first-child
+{
+  color:rgb(242, 242, 242);
+  background-color: red;
+}
+
 /* End of Course CSS */
 
 /* Start of footer css */
