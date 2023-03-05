@@ -6,6 +6,7 @@ import DSA_C from '../Images/DataStructure_Img.webp'
 import DSA_Java from '../Images/DSA_Java.jpg'
 import App_dev from '../Images/App_development.avif'
 import ML from '../Images/machine_learning.jpg'
+import dsa from '../Images/dsa.png';
 
 
 
@@ -568,7 +569,7 @@ let Courses_list=[
         ]
     },
     {
-        img:DSA_C,
+        img:dsa,
         title:'Data Structures and Algorithms in C++',
         price:'₹ 999 Only',
         date:'Starts from 13th March 2023',
