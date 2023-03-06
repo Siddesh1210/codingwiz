@@ -43,7 +43,7 @@ function App() {
         </div>
       }
       {/* navbar */}
-      <p className={shouldAddClass ? 'd-none' : 'early-bird-text'}><i class="bi bi-gift-fill"></i> Holi Festive Offer - Atleast 80% off on all courses [Limited Seat Only]</p>
+      <p className={shouldAddClass ? 'd-none' : 'early-bird-text'}><i class="bi bi-gift-fill"></i> Holi Festive Offer - Atleast 80% off on all courses [Limited Seats Only]</p>
     {/* <p className='early-bird-text'><i class="bi bi-twitter"></i> Early bird offer : Guaranteed free Internship</p> */}
       
       <nav className="navbar navbar-expand-lg">
