@@ -1,6 +1,7 @@
 // import Footer from "./Footer";
 import CourseCard from "./CourseCard";
 import Frontend_Img from '../Images/Frontend_img.jpg'
+import frontend from '../Images/frontend.png'
 import Backend_Img from '../Images/Backend_img.jpg'
 import DSA_C from '../Images/DataStructure_Img.webp'
 import DSA_Java from '../Images/DSA_Java.jpg'
@@ -9,6 +10,8 @@ import App_dev from '../Images/App_development.avif'
 import ML from '../Images/machine_learning.jpg'
 import dsa from '../Images/dsa.png';
 import app from '../Images/mobileapp.png'
+import ml from '../Images/ml.png'
+import backend from '../Images/backend.png'
 
 
 
@@ -17,7 +20,7 @@ import app from '../Images/mobileapp.png'
 
 let Courses_list=[
     {
-        img:Frontend_Img,
+        img:frontend,
         title:'Frontend Development Bootcamp',
         price:"₹ 499 Only",
         bestseller:"",
@@ -175,7 +178,7 @@ let Courses_list=[
         ]
     },
     {
-        img:Backend_Img,
+        img:backend,
         title:'Backend Development Bootcamp',
         bestseller:"Best Selling",
         price:'₹ 749 Only',
@@ -712,7 +715,7 @@ let Courses_list=[
         ]
     },
     {
-        img:ML,
+        img:ml,
         title:'Machine Learning with Python',
         bestseller:"",
         price:'₹ 749 Only',
