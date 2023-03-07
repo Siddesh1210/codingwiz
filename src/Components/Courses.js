@@ -1,17 +1,11 @@
 // import Footer from "./Footer";
 import CourseCard from "./CourseCard";
 import Frontend_Img from '../Images/Frontend_img.jpg'
-import frontend from '../Images/frontend.png'
 import Backend_Img from '../Images/Backend_img.jpg'
 import DSA_C from '../Images/DataStructure_Img.webp'
 import DSA_Java from '../Images/DSA_Java.jpg'
-import javadsa from '../Images/javadsa.png'
-import App_dev from '../Images/App_development.avif'
+import App_dev from '../Images/App_dev.png'
 import ML from '../Images/machine_learning.jpg'
-import dsa from '../Images/dsa.png';
-import app from '../Images/mobileapp.png'
-import ml from '../Images/ml.png'
-import backend from '../Images/backend.png'
 
 
 
@@ -20,7 +14,7 @@ import backend from '../Images/backend.png'
 
 let Courses_list=[
     {
-        img:frontend,
+        img:Frontend_Img,
         title:'Frontend Development Bootcamp',
         price:"₹ 499 Only",
         bestseller:"",
@@ -178,7 +172,7 @@ let Courses_list=[
         ]
     },
     {
-        img:backend,
+        img:Backend_Img,
         title:'Backend Development Bootcamp',
         bestseller:"Best Selling",
         price:'₹ 749 Only',
@@ -303,7 +297,7 @@ let Courses_list=[
         ]
     },
     {
-        img:app,
+        img:App_dev,
         title:'App Development with Flutter',
         bestseller:"Best Selling",
         price:'₹ 749 Only',
@@ -441,7 +435,7 @@ let Courses_list=[
         ]
     },
     {
-        img:javadsa,
+        img:DSA_Java,
         title:'Data Structures and Algorithms in Java',
         bestseller:"Best Selling",
         price:'₹ 999 Only',
@@ -578,7 +572,7 @@ let Courses_list=[
         ]
     },
     {
-        img:dsa,
+        img:DSA_C,
         title:'Data Structures and Algorithms in C++',
         price:'₹ 999 Only',
         bestseller:"Best Selling",
@@ -715,7 +709,7 @@ let Courses_list=[
         ]
     },
     {
-        img:ml,
+        img:ML,
         title:'Machine Learning with Python',
         bestseller:"",
         price:'₹ 749 Only',
