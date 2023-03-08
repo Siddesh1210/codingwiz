@@ -13,6 +13,7 @@ import Loading from './Images/loading.gif'
 import { useEffect , useState } from 'react';
 import Logo from './Images/cw_logo.png';
 import About from './Components/About';
+import Register from './Components/Register';
 // So in future if we need to add any new card we can just pass JSON Card data in Courses.js File
 
 function App() {
@@ -43,7 +44,7 @@ function App() {
         </div>
       }
       {/* navbar */}
-      <p className={shouldAddClass ? 'd-none' : 'early-bird-text'}><i class="bi bi-gift-fill"></i> Holi Festive Offer - Atleast 80% off on all courses [Limited Seats Only]</p>
+      <p className={shouldAddClass ? 'd-none' : 'early-bird-text'}><i class="bi bi-gift-fill"></i> End of Season Sale - Atleast 80% off on all courses [Limited Seats Only]</p>
     {/* <p className='early-bird-text'><i class="bi bi-twitter"></i> Early bird offer : Guaranteed free Internship</p> */}
       
       <nav className="navbar navbar-expand-lg">
@@ -89,6 +90,8 @@ function App() {
         <Route path="/privacy-policy" element={<PrivacyPolicy/>}></Route>
         <Route path="/view-student" element={<Display/>}></Route>
         <Route path="/about-us" element={<About/>}></Route>
+        <Route path="/register" element={<Register/>}></Route>
+
 
 
       </Routes>
