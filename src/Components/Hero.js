@@ -55,7 +55,7 @@ function Hero()
     useEffect(() => {
         const timer = setTimeout(()=>{
             setshowDialog(true)
-        }, 120000)
+        }, 10000)
         return ()=>clearTimeout(timer)
     }, [])
     return(
