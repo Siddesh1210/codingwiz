@@ -26,7 +26,7 @@ function About()
                 <div className="col-md-12">
                     <p><span style={{fontSize:"25px",color:"blueviolet",fontWeight:"bolder"}}>Codingwiz</span> is registered company  under Ministry of Micro, Small & Medium Enterprises (MSME) and has a team of passionate educators, entrepreneurs, and technology experts who believe in the power of online education to transform lives and communities.We are committed to breaking down the barriers to traditional education by offering courses and programs that are flexible, self-paced, and tailored to the unique needs and interests of each learner.</p>
 
-                    <p>At our online educational startup, we believe that education should be a lifelong pursuit, and we are dedicated to supporting learners at every stage of their journey. Whether you are a student, a professional, or someone who simply wants to learn something new, we are here to help you achieve your goals and unlock your full potential.</p>
+                    <p>At our online educational startup, we believe that education should be a lifelong pursuit, and we are dedicated to supporting learners at every stage of their journey. Whether you are a student, a professional, or someone who simply wants to learn something new, we are here to help you achieve your goals and unlock your full potential.Demo Changes</p>
                 </div>
             </div>
 
