@@ -34,6 +34,11 @@ function App() {
       }, 20000)
       return () => clearTimeout(timeoutId);
     }, []);
+
+    function Logohandler()
+    {
+      window.open('/');
+    }
   return (
 
     <div className="App" onLoad={()=>{document.getElementById('loader-container').style.display='none'}}>
@@ -49,7 +54,7 @@ function App() {
       
       <nav className="navbar navbar-expand-lg">
         <div className="container-fluid">
-          <img src={Logo} className="logo me-2"/>
+          <img src={Logo} className="logo me-2" onClick={Logohandler}/>
           <Link to="/" className="navbar-brand text-white link">CodingWiz</Link>
           <button className="navbar-toggler" type="button" id="trial-btn" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
