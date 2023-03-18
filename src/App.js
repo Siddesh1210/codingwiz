@@ -14,12 +14,15 @@ import { useEffect , useState } from 'react';
 import Logo from './Images/cw_logo.png';
 import About from './Components/About';
 import Register from './Components/Register';
+import {useNavigate} from 'react-router-dom';
 // So in future if we need to add any new card we can just pass JSON Card data in Courses.js File
 
 function App() {
   const [loading, setloading] = useState(false)
   const [itemClicked, setitemClicked] = useState(false)
   const [shouldAddClass, setShouldAddClass] = useState(false);
+  const navigate=useNavigate();
+
 
 
   useEffect(() => {
@@ -37,7 +40,7 @@ function App() {
 
     function Logohandler()
     {
-      window.open('/');
+      navigate('/');
     }
   return (
 
