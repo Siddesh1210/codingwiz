@@ -16,14 +16,14 @@ let Courses_list=[
     {
         img:Frontend_Img,
         title:'Frontend Development Bootcamp',
-        price:"₹ 999 Only",
-        bestseller:"Best Selling",
+        price:"₹ 749 Only",
+        bestseller:"",
         date:'Starts from 1st June 2023',
         time:'7:00 PM to 8:00 PM',
         desc:'Learn complete Frontend Developement with 3+ live projects, Includes HTML5, CSS3, JavaScript, Bootstrap, Git and host your project at free of cost!',
-        oprice:'₹ 999 Only',
+        oprice:'₹ 749 Only',
         sprice:'₹ 2999',
-        off:'70% off',
+        off:'75% off',
         btn:'Buy this Course',
         courseDuration:"4 weeks - 6 weeks",
         linkedinurl:'https://www.linkedin.com/in/siddesh-jaiswal-3961a6223',
@@ -175,13 +175,13 @@ let Courses_list=[
         img:Backend_Img,
         title:'Backend Development Bootcamp',
         bestseller:"",
-        price:'₹ 1499 Only',
+        price:'₹ 999 Only',
         date:'Starts from 1st June 2023',
         time:'8:00 PM to 9:30 PM',
         desc:'Learn MERN backend development with 3+ live projects, learn how to create servers and intregrate with frontend technologies plus Database and Deployment!',
-        oprice:'₹ 1499 Only',
-        sprice:'₹ 4999',
-        off:'70% off',
+        oprice:'₹ 999 Only',
+        sprice:'₹ 3999',
+        off:'75% off',
         btn:'Buy this Course',
         linkedinurl:'https://www.linkedin.com/in/vishal-vishwajeet',
         requirement:"Must be familiar with HTML , CSS and Javascript advance concepts ",
@@ -297,17 +297,155 @@ let Courses_list=[
         ]
     },
     {
+        img:ML,
+        title:'Machine Learning with Python',
+        bestseller:"",
+        price:'₹ 999 Only',
+        date:'Starts from 1st June 2023',
+        time:'7:00 PM to 8:00 PM',
+        desc:'Deep dive into Machine Learning with Python, by learning about libraries like Numpy, Pandas, Matplotlib and building 3+ industry-level projects!',
+        oprice:'₹ 999 Only',
+        sprice:'₹ 4999',
+        off:'80% off',
+        btn:'Buy this Course',
+        courseDuration:"6 weeks - 8 weeks",
+        linkedinurl:"https://www.linkedin.com/in/mohd-faizan-khawar-518135121",
+        requirement:"No programming experience needed - We'll teach you everything you need to know",
+        syllabus:[
+            {
+                title:"Introduction to course",
+                description:"Basic course information and roadmap.Discussion of indepth syllabus and concepts for the overall course",
+                id:"headingOne",
+                datatarget:"#collapseOne",
+                arialcontrols:"collapseOne"
+            },
+            {
+                title:"Introduction to Python",
+                description:"Installing Python and setting up the development environment Basic Input/Output operations. Data types and structures Data types, type casting, operators, strings and methods Understanding the basic syntax and data structures (lists, dictionaries, tuples, sets)",
+                id:"headingTwo",
+                datatarget:"#collapseTwo",
+                arialcontrols:"collapseTwo"
+            },
+            {
+                title:"Control structure , Functions and Modules",
+                description:"If-else conditional statement , else-if ladder , while , do-while , for loop , Jump statement .Syntax for creating function , types of function and modules.",
+                id:"headingThree",
+                datatarget:"#collapseThree",
+                arialcontrols:"collapseThree"
+            },
+            {
+                title:"Numpy Library",
+                description:"Introduction to Numpy - Creating arrays and matrices.Array indexing, slicing, and reshaping.Basic array mathematics operations",
+                id:"headingFour",
+                datatarget:"#collapseFour",
+                arialcontrols:"collapseFour"
+            },
+            {
+                title:"Pandas Library and Data Analysis using Pandas",
+                description:"-Introduction to Pandas -Creating dataframes , Indexing and slicing dataframes.Manipulating dataframes (adding/deleting rows and columns)Grouping and aggregating data",
+                id:"headingSix",
+                datatarget:"#collapseSix",
+                arialcontrols:"collapseSix"
+            },
+            {
+                title:"Matplotlib Library",
+                description:"Introduction to Matplotlib. Plotting line graphs, scatter plots, bar plots, and histograms. Customizing plots with labels, titles, and legends .Saving plots to image files",
+                id:"headingSeven",
+                datatarget:"#collapseSeven",
+                arialcontrols:"collapseSeven"
+            },
+            {
+                title:"Machine Learning Fundamentals",
+                description:"How to get Datasets - Understanding the basics of machine learning.Types of machine learning algorithms (supervised, unsupervised, reinforcement learning), Overfitting and underfitting",
+                id:"headingEight",
+                datatarget:"#collapseEight",
+                arialcontrols:"collapseEight"
+            },
+            {
+                title:"Data Preprocessing",
+                description:"Getting the dataset.Importing libraries , Importing datasets , Finding Missing Data ,Encoding Categorical Data ,Splitting dataset into training and test set ,Feature scaling.",
+                id:"headingNine",
+                datatarget:"#collapseNine",
+                arialcontrols:"collapseNine"
+            },
+            {
+                title:"Linear Regression",
+                description:"Introduction to linear regression .Building a simple linear regression model in Python ,Evaluating model performance",
+                id:"headingTen",
+                datatarget:"#collapseTen",
+                arialcontrols:"collapseTen"
+            },
+            {
+                title:"House Price Prediction - Project 1",
+                description:"Building an house price prediction system",
+                id:"headingTen2",
+                datatarget:"#collapseTen2",
+                arialcontrols:"collapseTen2"
+            },
+            {
+                title:"Logistic Regression",
+                description:"Introduction to logistic regression .Building a logistic regression model in Python , Evaluating model performance",
+                id:"headingEleven",
+                datatarget:"#collapseEleven",
+                arialcontrols:"collapseEleven"
+            },
+            {
+                title:"Decision Trees",
+                description:"Introduction to decision trees .Building a decision tree model in Python",
+                id:"headingTwelve",
+                datatarget:"#collapseTwelve",
+                arialcontrols:"collapseTwelve"
+            },
+            {
+                title:"Cancer Classification - Project 2",
+                description:"Building full-fledge cancer classification system",
+                id:"headingThirteen",
+                datatarget:"#collapseThirteen",
+                arialcontrols:"collapseThirteen"
+            },
+            {
+                title:"K-Nearest Neighbors",
+                description:"Introduction to K-Nearest Neighbors.Building a K-Nearest Neighbors model in Python , Evaluating model performance",
+                id:"headingFifteen",
+                datatarget:"#collapseFifteen",
+                arialcontrols:"collapseFifteen"
+            },
+            {
+                title:"Support Vector Machines",
+                description:"Introduction to Support Vector Machines .Building a Support Vector Machine model in Python , Evaluating model performance",
+                id:"headingSixteen",
+                datatarget:"#collapseSixteen",
+                arialcontrols:"collapseSixteen"
+            },
+            {
+                title:"Unsupervised Learning",
+                description:"Introduction to Clustering - KMeans Clustering .Building a KMeans Clustering model in Python , Evaluating model performance",
+                id:"headingSeventeen",
+                datatarget:"#collapseSeventeen",
+                arialcontrols:"collapseSeventeen"
+            },
+            {
+                title:"Stock Price Prediction - Final Project",
+                description:"Implementing a complete machine learning project. Preparing data for analysis , Training a model ,Making predictions and evaluating model performance",
+                id:"headingEighteen",
+                datatarget:"#collapseEighteen",
+                arialcontrols:"collapseEighteen"
+            }
+            
+        ]
+    },
+    {
         img:App_dev,
         title:'App Development with Flutter',
-        bestseller:"",
-        price:'₹ 1499 Only',
-        date:'Starts from 3rd April 2023',
+        bestseller:"Coming Soon",
+        price:'₹ 999 Only',
+        date:'Starts from July 2023',
         time:'8:00 PM to 9:30 PM',
         desc:'App development | Boost mobile app development skills with android studio using Dart and Flutter by building 3 projects',
         oprice:'₹ 1499 Only',
         sprice:'₹ 4999',
-        off:'70% off',
-        btn:'Buy this Course',
+        off:'80% off',
+        btn:'Coming Soon!',
         courseDuration:"6 weeks - 8 weeks",
         linkedinurl:'https://www.linkedin.com/in/utkarsh-bhardwaj-6a1034162',
         requirement:"No programming experience needed - We'll teach you everything you need to know",
@@ -437,15 +575,15 @@ let Courses_list=[
     {
         img:DSA_Java,
         title:'Data Structures and Algorithms in Java',
-        bestseller:"Best Selling",
-        price:'₹ 1999 Only',
-        date:'Starts from 3rd April 2023',
+        bestseller:"Coming Soon",
+        price:'₹ 999 Only',
+        date:'Starts from July 2023',
         time:'7:00 PM to 9:00 PM',
         desc:'Learn complete Data Structure and Algorithms with 50+ live problems solving, Included all Linear and Non Linear Data Structures!',
-        oprice:'₹ 1999 Only',
+        oprice:'₹ 999 Only',
         sprice:'₹ 4999',
-        off:'60% off',
-        btn:'Buy this Course',
+        off:'80% off',
+        btn:'Coming Soon!',
         courseDuration:"8 weeks - 10 weeks",
         linkedinurl:'https://www.linkedin.com/in/nishan-banga-2154531b4',
         requirement:"No programming experience needed - We'll teach you everything you need to know",
@@ -574,15 +712,15 @@ let Courses_list=[
     {
         img:DSA_C,
         title:'Data Structures and Algorithms in C++',
-        price:'₹ 1999 Only',
-        bestseller:"Best Selling",
-        date:'Starts from 3rd April 2023',
+        price:'₹ 999 Only',
+        bestseller:"Coming Soon",
+        date:'Starts from July 2023',
         time:'7:00 PM to 9:00 PM',
         desc:'Learn complete Data Structure and Algorithms with 50+ live problems solving, Included all Linear and Non Linear Data Structures!',
-        oprice:'₹ 1999 Only',
+        oprice:'₹ 999 Only',
         sprice:'₹ 4999',
-        off:'60% off',
-        btn:'Buy this Course',
+        off:'80% off',
+        btn:'Coming Soon!',
         courseDuration:"8 weeks - 10 weeks",
         linkedinurl:'https://www.linkedin.com/in/utsavbarnwal',
         requirement:"No programming experience needed - We'll teach you everything you need to know",
@@ -707,147 +845,7 @@ let Courses_list=[
                 arialcontrols:"collapseEighteen"
             }
         ]
-    },
-    {
-        img:ML,
-        title:'Machine Learning with Python',
-        bestseller:"Best Selling",
-        price:'₹ 1499 Only',
-        date:'Starts from 1st June 2023',
-        time:'7:00 PM to 8:00 PM',
-        desc:'Deep dive into Machine Learning with Python, by learning about libraries like Numpy, Pandas, Matplotlib and building 3+ industry-level projects!',
-        oprice:'₹ 1499 Only',
-        sprice:'₹ 4999',
-        off:'70% off',
-        btn:'Buy this Course',
-        courseDuration:"6 weeks - 8 weeks",
-        linkedinurl:"https://www.linkedin.com/in/mohd-faizan-khawar-518135121",
-        requirement:"No programming experience needed - We'll teach you everything you need to know",
-        syllabus:[
-            {
-                title:"Introduction to course",
-                description:"Basic course information and roadmap.Discussion of indepth syllabus and concepts for the overall course",
-                id:"headingOne",
-                datatarget:"#collapseOne",
-                arialcontrols:"collapseOne"
-            },
-            {
-                title:"Introduction to Python",
-                description:"Installing Python and setting up the development environment Basic Input/Output operations. Data types and structures Data types, type casting, operators, strings and methods Understanding the basic syntax and data structures (lists, dictionaries, tuples, sets)",
-                id:"headingTwo",
-                datatarget:"#collapseTwo",
-                arialcontrols:"collapseTwo"
-            },
-            {
-                title:"Control structure , Functions and Modules",
-                description:"If-else conditional statement , else-if ladder , while , do-while , for loop , Jump statement .Syntax for creating function , types of function and modules.",
-                id:"headingThree",
-                datatarget:"#collapseThree",
-                arialcontrols:"collapseThree"
-            },
-            {
-                title:"Numpy Library",
-                description:"Introduction to Numpy - Creating arrays and matrices.Array indexing, slicing, and reshaping.Basic array mathematics operations",
-                id:"headingFour",
-                datatarget:"#collapseFour",
-                arialcontrols:"collapseFour"
-            },
-            {
-                title:"Pandas Library and Data Analysis using Pandas",
-                description:"-Introduction to Pandas -Creating dataframes , Indexing and slicing dataframes.Manipulating dataframes (adding/deleting rows and columns)Grouping and aggregating data",
-                id:"headingSix",
-                datatarget:"#collapseSix",
-                arialcontrols:"collapseSix"
-            },
-            {
-                title:"Matplotlib Library",
-                description:"Introduction to Matplotlib. Plotting line graphs, scatter plots, bar plots, and histograms. Customizing plots with labels, titles, and legends .Saving plots to image files",
-                id:"headingSeven",
-                datatarget:"#collapseSeven",
-                arialcontrols:"collapseSeven"
-            },
-            {
-                title:"Machine Learning Fundamentals",
-                description:"How to get Datasets - Understanding the basics of machine learning.Types of machine learning algorithms (supervised, unsupervised, reinforcement learning), Overfitting and underfitting",
-                id:"headingEight",
-                datatarget:"#collapseEight",
-                arialcontrols:"collapseEight"
-            },
-            {
-                title:"Data Preprocessing",
-                description:"Getting the dataset.Importing libraries , Importing datasets , Finding Missing Data ,Encoding Categorical Data ,Splitting dataset into training and test set ,Feature scaling.",
-                id:"headingNine",
-                datatarget:"#collapseNine",
-                arialcontrols:"collapseNine"
-            },
-            {
-                title:"Linear Regression",
-                description:"Introduction to linear regression .Building a simple linear regression model in Python ,Evaluating model performance",
-                id:"headingTen",
-                datatarget:"#collapseTen",
-                arialcontrols:"collapseTen"
-            },
-            {
-                title:"House Price Prediction - Project 1",
-                description:"Building an house price prediction system",
-                id:"headingTen2",
-                datatarget:"#collapseTen2",
-                arialcontrols:"collapseTen2"
-            },
-            {
-                title:"Logistic Regression",
-                description:"Introduction to logistic regression .Building a logistic regression model in Python , Evaluating model performance",
-                id:"headingEleven",
-                datatarget:"#collapseEleven",
-                arialcontrols:"collapseEleven"
-            },
-            {
-                title:"Decision Trees",
-                description:"Introduction to decision trees .Building a decision tree model in Python",
-                id:"headingTwelve",
-                datatarget:"#collapseTwelve",
-                arialcontrols:"collapseTwelve"
-            },
-            {
-                title:"Cancer Classification - Project 2",
-                description:"Building full-fledge cancer classification system",
-                id:"headingThirteen",
-                datatarget:"#collapseThirteen",
-                arialcontrols:"collapseThirteen"
-            },
-            {
-                title:"K-Nearest Neighbors",
-                description:"Introduction to K-Nearest Neighbors.Building a K-Nearest Neighbors model in Python , Evaluating model performance",
-                id:"headingFifteen",
-                datatarget:"#collapseFifteen",
-                arialcontrols:"collapseFifteen"
-            },
-            {
-                title:"Support Vector Machines",
-                description:"Introduction to Support Vector Machines .Building a Support Vector Machine model in Python , Evaluating model performance",
-                id:"headingSixteen",
-                datatarget:"#collapseSixteen",
-                arialcontrols:"collapseSixteen"
-            },
-            {
-                title:"Unsupervised Learning",
-                description:"Introduction to Clustering - KMeans Clustering .Building a KMeans Clustering model in Python , Evaluating model performance",
-                id:"headingSeventeen",
-                datatarget:"#collapseSeventeen",
-                arialcontrols:"collapseSeventeen"
-            },
-            {
-                title:"Stock Price Prediction - Final Project",
-                description:"Implementing a complete machine learning project. Preparing data for analysis , Training a model ,Making predictions and evaluating model performance",
-                id:"headingEighteen",
-                datatarget:"#collapseEighteen",
-                arialcontrols:"collapseEighteen"
-            }
-            
-        ]
     }
-    
-
     // So in future if we need to add any new card we can just pass JSON Card data over here in Courses.js File
 ]
 
