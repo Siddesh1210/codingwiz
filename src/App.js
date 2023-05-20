@@ -25,18 +25,18 @@ function App() {
 
 
 
-  useEffect(() => {
+  // useEffect(() => {
 
-    // setloading(true)
-    document.getElementById('loader-container').style.display='flex'
-    // onSiteLoaded()
+  //   // setloading(true)
+  //   document.getElementById('loader-container').style.display='flex'
+  //   // onSiteLoaded()
 
-    // set a timeout to add the class after 10 seconds
-      const timeoutId = setTimeout(() => {
-        setShouldAddClass(true);
-      }, 20000)
-      return () => clearTimeout(timeoutId);
-    }, []);
+  //   // set a timeout to add the class after 10 seconds
+  //     const timeoutId = setTimeout(() => {
+  //       setShouldAddClass(false);
+  //     }, 600000)
+  //     return () => clearTimeout(timeoutId);
+  //   }, []);
 
     function Logohandler()
     {
