@@ -35,6 +35,7 @@ function CourseCard(props)
                 <p>{props.price} <span className='bestselling-btn'>{props.bestsell}</span></p>
                 <p>{props.date}</p>
                 <p>{props.time}</p>
+                <p style={{fontSize:"19px"}}><i class="bi bi-play-circle-fill text-primary"></i> Live Classes</p>
                 {/* <button>Best Seller</button> */}
                 <button className='course-btn' onClick={CardHandler}>Check Details!</button>
             </div>

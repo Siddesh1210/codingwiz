@@ -301,7 +301,7 @@ let Courses_list=[
         bestseller:"",
         price:'₹ 1499 Only',
         date:'Starts from Mid June 2023',
-        time:'7:00 PM to 8:00 PM',
+        time:'7:30 PM to 8:30 PM',
         desc:'Deep dive into Machine Learning with Python, by learning about libraries like Numpy, Pandas, Matplotlib and building 3+ industry-level projects!',
         oprice:'₹ 1499 Only',
         sprice:'₹ 6999',
