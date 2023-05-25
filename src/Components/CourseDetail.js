@@ -9,7 +9,7 @@ function CourseDetail()
     // console.log(location.state.title);
     function PaymentHandler()
     {
-        if(location.state.title=="Frontend Development Bootcamp")
+        if(location.state.title=="Full Stack Development [MERN]")
         {
             alert("Note :\n\n1.Once your payment is successful , you will receive course confirmation mail within 24 hours. \n\n2.Also note you will be paying to Siddesh Laxmichandra Jaiswal , Founder of Codingwiz.");
             window.location.href='https://pmny.in/2I5lADweAfoz';

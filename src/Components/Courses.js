@@ -15,297 +15,296 @@ import ML from '../Images/machine_learning.jpg'
 let Courses_list=[
     {
         img:Frontend_Img,
-        title:'Frontend Development Bootcamp',
-        price:"₹ 749 Only",
+        title:'Full Stack Development [MERN]',
+        price:"₹ 1449 Only",
         bestseller:"",
-        date:'Starts from 1st June 2023',
-        time:'7:00 PM to 8:00 PM',
-        desc:'Learn complete Frontend Developement with 3+ live projects, Includes HTML5, CSS3, JavaScript, Bootstrap, Git and host your project at free of cost!',
-        oprice:'₹ 749 Only',
-        sprice:'₹ 2999',
-        off:'75% off',
+        date:'Starts from Mid June 2023',
+        time:'6:30 PM to 7:30 PM',
+        desc:'Learn complete Full Stack Developement with 3+ live projects, Includes HTML5, CSS3, JavaScript, ReactJS, ExpressJS, NodeJS, MongoDB and host your project at free of cost!',
+        oprice:'₹ 1449 Only',
+        sprice:'₹ 4999',
+        off:'70% off',
         btn:'Buy this Course',
-        courseDuration:"4 weeks - 6 weeks",
-        linkedinurl:'https://www.linkedin.com/in/siddesh-jaiswal-3961a6223',
+        courseDuration:"8 weeks - 10 weeks",
+        linkedinurl:'https://www.linkedin.com/in/vishal-vishwajeet',
         requirement:"No programming experience needed - We'll teach you everything you need to know",
         syllabus:[
             {
                 title:"Introduction to course & Installation of Tools",
-                description:"Basic introduction about overall flow of course , roadmap and installation of various tools like VSCode,Git and other.",
+                description:"Basic introduction about overall flow of course , roadmap and installation of various tools like VSCode and other.",
                 id:"headingOne",
                 datatarget:"#collapseOne",
                 arialcontrols:"collapseOne"
             },
             {
-                title:"Introduction to Git and Basic Git Commands",
-                description:"What is Git? and looking basic git commands such as git init , status , add , commit , log , diff.",
+                title:"Week 1 : Introduction to Web Development and HTML",
+                description:"Introduction to web development and its fundamentals, Understanding the structure and syntax of HTML, Working with HTML tags, attributes, and elements, Creating basic HTML pages, Adding headings, paragraphs, lists, links, and images to web pages, Understanding HTML forms and form validation",
                 id:"headingTwo",
                 datatarget:"#collapseTwo",
                 arialcontrols:"collapseTwo"
             },
             {
-                title:"Advance Git commands and Github Introduction & Connectivity",
-                description:"Git reset hard -soft , Git Branches & working with branches, Git Clone pull & push ,Github Introduction , Github Repository ,Github connectivity to local device.",
+                title:"Week 2 : CSS Fundamentals",
+                description:"Introduction to CSS and its role in web development, CSS syntax and selectors, Working with CSS properties, values, and units, Styling text, backgrounds, and borders, Applying CSS layout techniques (box model, positioning, floats), Using CSS frameworks for rapid development, Creating responsive layouts with CSS media queries, Flexbox and CSS Grid for modern web design, Styling navigation menus, forms, and tables, Working with CSS transitions and animations ,Optimizing web pages for performance",
                 id:"headingThree",
                 datatarget:"#collapseThree",
                 arialcontrols:"collapseThree"
             },
             {
-                title:"Understanding what is HTML and Basic of HTML Tags",
-                description:"Understanding the html boiler code and starting up with basic tags like heading , paragraph, anchor, image, font & Media , other semantic and Non semantic tags.",
+                title:"Week 3 : Introduction to Tailwind CSS",
+                description:"Introduction to Tailwind CSS and its utility-first approach, Setting up and configuring Tailwind CSS in a project, Using Tailwind CSS classes for styling elements, Customizing and Tailwind CSS utility classes, Building responsive designs with Tailwind CSS",
                 id:"headingFour",
                 datatarget:"#collapseFour",
                 arialcontrols:"collapseFour"
             },
             {
-                title:"Advance HTML Tags",
-                description:"Form , Input , Textarea , Button , Legends , Fieldset , Order & Unorder List , Table , Iframe , Label , Video & Audio Tag",
+                title:"Week 4 : JavaScript Fundamentals",
+                description:"Introduction to JavaScript and its role in web development, JavaScript syntax, variables, data types, and operators, Control structures (conditional statements, loops), Functions, arrays and objects in JavaScript DOM manipulation and event handling with JavaScript",
                 id:"headingFive",
                 datatarget:"#collapseFive",
                 arialcontrols:"collapseFive"
             },
             {
-                title:"Putting It Altogether - Project 1",
-                description:"Developing our first ever website just by using html tags",
+                title:"Responsive Food Application - Project 1 with free Deployment",
+                description:"Creating an responsive food ordering application and hosting and deploying on vercel.",
                 id:"headingSix",
                 datatarget:"#collapseSix",
                 arialcontrols:"collapseSix"
             },
             {
-                title:"What is CSS and Types of CSS ",
-                description:"Explaining the need of CSS and linking it to our html page  and looking different type of CSS Selector. ",
+                title:"Week 5 : Introduction to ReactJS",
+                description:"Introduction to React.js and its component-based architecture, Setting up a React.js development environment, Creating and rendering React components, Managing state and props in React.js, Handling events and user interactions in React.js",
                 datatarget:"#collapseSeven",
                 arialcontrols:"collapseSeven"
             },
             {
-                title:"Basic CSS Property",
-                description:"Color, Background-color , font-styling , filter , Box sizing , overflow & gradient ",
+                title:"Week 6 : Advanced ReactJS Concepts",
+                description:"State management with React hooks (useState, useEffect, Handling forms and form validation in React.js, Working with React Router for client-side routing, Consuming APIs and integrating external libraries in React.js, Optimizing React.js applications for performance",
                 id:"headingEight",
                 datatarget:"#collapseEight",
                 arialcontrols:"collapseEight"
             },
             {
-                title:"Advance CSS Property",
-                description:"Box Model , Box sizing , Flex Box , Position , Media Query, Animation , Pseudo Class - Elements & AOS ",
+                title:"Week 7 : Building Dynamic Web Applications with ExpressJS and NodeJS",
+                description:"Introduction to Node.js and Express.js framework, Setting up an Express.js application, Routing and handling HTTP requests in Express.js, Working with templates and views in Express.js, Handling form submissions and data validation",
                 id:"headingNine",
                 datatarget:"#collapseNine",
                 arialcontrols:"collapseNine"
             },
             {
-                title:"Responsive Food Application - Project 2 with free Deployment",
-                description:"Creating an responsive food ordering application and hosting and deploying on vercel.",
+                title:"Week 8 : Database Integration with MongoDBt",
+                description:"Introduction to MongoDB and NoSQL databases, Setting up MongoDB and connecting it to Express.js, Performing CRUD (Create, Read, Update, Delete) operations with MongoDB, Querying and manipulating data , in MongoDB, Implementing data validation and security measures",
                 id:"headingTen",
                 datatarget:"#collapseTen",
                 arialcontrols:"collapseTen"
             },
             {
-                title:"Introduction to JS ES6 & Basic of JS",
-                description:"Requirement of JS , Linking of JS to out html page , Variable , Datatype , Type of variable , Type Casting , Controls Structure(if-else , Loops , Jump Statement)",
+                title:"Week 9 : Project Development and Deployment",
+                description:"Planning and designing a web application project, Implementing the project using the skills learned in previous weeks, Testing, debugging, and refining the web application, Deploying the application to a hosting platform, Finalizing the project and showcasing it as a portfolio piece",
                 id:"headingEleven",
                 datatarget:"#collapseEleven",
                 arialcontrols:"collapseEleven"
             },
             {
-                title:"Functions , Array , Object",
-                description:"Learning what is function and it different type, Array , Array , Array Methods , Objects , Array of Object",
+                title:"Movie Booking Application and working with API - Project 2",
+                description:"Developing a full fledge moving booking application and getting well versed with working with API ",
                 id:"headingTwelve",
                 datatarget:"#collapseTwelve",
                 arialcontrols:"collapseTwelve"
             },
             {
-                title:"Introduction to DOM and Working with Dom",
-                description:"What is Dom and different operation can be performed using DOM such as create , add & remove element ",
+                title:"News Application - Final Project",
+                description:"Developing full fledge news application including frontend, backend and database. ",
                 id:"headingTwenty",
                 datatarget:"#collapseTwenty",
                 arialcontrols:"collapseTwenty"
             },
-            {
-                title:"Full fledge Registeration System - Project 3 with Firebase",
-                description:"Making full fledge registeration page in connectivity with firebase as database. ",
-                id:"headingThirteen",
-                datatarget:"#collapseThirteen",
-                arialcontrols:"collapseThirteen"
-            },
-            {
-                title:"Looking what is Bootstrap and it Installation",
-                description:"Introduction to bootstrap and connectivity of it to our html page. ",
-                id:"headingFourteen",
-                datatarget:"#collapseFourteen",
-                arialcontrols:"collapseFourteen"
-            },
-            {
-                title:"Bootstrap Grid , Breakpoint , Container , Rows and Columns",
-                description:"Looking into structure of grid and seeing different screen breakdown , Type of Container , Rows and Columns. ",
-                id:"headingFifteen",
-                datatarget:"#collapseFifteen",
-                arialcontrols:"collapseFifteen"
-            },
-            {
-                title:"Bootstrap Tables , Form , Typography",
-                description:"Bootstrap tables and tyoe of tables , Form and Inputs , Fonts styling using Bootstrap.",
-                id:"headingSixteen",
-                datatarget:"#collapseSixteen",
-                arialcontrols:"collapseSixteen"
-            },
-            {
-                title:"Bootstrap Component & Icons",
-                description:"Different available components like Navbar , Carousel , Accordion , Modal, Cards , progess bar , spacing , colors and more.   ",
-                id:"headingSeventeen",
-                datatarget:"#collapseSeventeen",
-                arialcontrols:"collapseSeventeen"
-            },
-            {
-                title:"Cloning Netflix - Project 4",
-                description:"Using Bootstrap we will be cloning netflix and host it on vercel.",
-                id:"headingEighteen",
-                datatarget:"#collapseEighteen",
-                arialcontrols:"collapseEighteen"
-            },
-            {
-                title:"Portfolio - Project 5",
-                description:"Building Portfolio Projects using Bootstrap & hosting it on vercel.",
-                id:"headingNineteen",
-                datatarget:"#collapseNineteen",
-                arialcontrols:"collapseNineteen"
-            }
-            
+            // {
+            //     title:"Full fledge Registeration System - Project 3 with Firebase",
+            //     description:"Making full fledge registeration page in connectivity with firebase as database. ",
+            //     id:"headingThirteen",
+            //     datatarget:"#collapseThirteen",
+            //     arialcontrols:"collapseThirteen"
+            // },
+            // {
+            //     title:"Looking what is Bootstrap and it Installation",
+            //     description:"Introduction to bootstrap and connectivity of it to our html page. ",
+            //     id:"headingFourteen",
+            //     datatarget:"#collapseFourteen",
+            //     arialcontrols:"collapseFourteen"
+            // },
+            // {
+            //     title:"Bootstrap Grid , Breakpoint , Container , Rows and Columns",
+            //     description:"Looking into structure of grid and seeing different screen breakdown , Type of Container , Rows and Columns. ",
+            //     id:"headingFifteen",
+            //     datatarget:"#collapseFifteen",
+            //     arialcontrols:"collapseFifteen"
+            // },
+            // {
+            //     title:"Bootstrap Tables , Form , Typography",
+            //     description:"Bootstrap tables and tyoe of tables , Form and Inputs , Fonts styling using Bootstrap.",
+            //     id:"headingSixteen",
+            //     datatarget:"#collapseSixteen",
+            //     arialcontrols:"collapseSixteen"
+            // },
+            // {
+            //     title:"Bootstrap Component & Icons",
+            //     description:"Different available components like Navbar , Carousel , Accordion , Modal, Cards , progess bar , spacing , colors and more.   ",
+            //     id:"headingSeventeen",
+            //     datatarget:"#collapseSeventeen",
+            //     arialcontrols:"collapseSeventeen"
+            // },
+            // {
+            //     title:"Cloning Netflix - Project 4",
+            //     description:"Using Bootstrap we will be cloning netflix and host it on vercel.",
+            //     id:"headingEighteen",
+            //     datatarget:"#collapseEighteen",
+            //     arialcontrols:"collapseEighteen"
+            // },
+            // {
+            //     title:"Portfolio - Project 5",
+            //     description:"Building Portfolio Projects using Bootstrap & hosting it on vercel.",
+            //     id:"headingNineteen",
+            //     datatarget:"#collapseNineteen",
+            //     arialcontrols:"collapseNineteen"
+            // }
         ]
     },
-    {
-        img:Backend_Img,
-        title:'Backend Development Bootcamp',
-        bestseller:"",
-        price:'₹ 999 Only',
-        date:'Starts from 1st June 2023',
-        time:'8:00 PM to 9:30 PM',
-        desc:'Learn MERN backend development with 3+ live projects, learn how to create servers and intregrate with frontend technologies plus Database and Deployment!',
-        oprice:'₹ 999 Only',
-        sprice:'₹ 3999',
-        off:'75% off',
-        btn:'Buy this Course',
-        linkedinurl:'https://www.linkedin.com/in/vishal-vishwajeet',
-        requirement:"Must be familiar with HTML , CSS and Javascript advance concepts ",
-        courseDuration:"6 weeks - 8 weeks",
-        syllabus:[
-            {
-                title:"Introduction to course",
-                description:"What are Different Stacks for WebD & Whats special about MERN above them . Brief on Components of MERN Stack (ReactJS, NodeJS, ExpressJS, MongoDB). Explaining the Structure of the Course.",
-                id:"headingOne",
-                datatarget:"#collapseOne",
-                arialcontrols:"collapseOne"
-            },
-            {
-                title:"Starting with React",
-                description:"Installation of require software.Importance and detail explaination about react.Explaining advantages (SPA & its Dynamic Nature).",
-                id:"headingTwo",
-                datatarget:"#collapseTwo",
-                arialcontrols:"collapseTwo"
-            },
-            {
-                title:"React Components , Props and State.",
-                description:"What are components , how component can be created , Use of props of getting data and other use of state.",
-                id:"headingThree",
-                datatarget:"#collapseThree",
-                arialcontrols:"collapseThree"
-            },
-            {
-                title:"React Router and Hooks.",
-                description:"Making single page application using react router and seeing different hooks example such as useState , useRef , useEffect. ",
-                id:"headingFour",
-                datatarget:"#collapseFour",
-                arialcontrols:"collapseFour"
-            },
-            {
-                title:"React styling and event handler.",
-                description:"Styling page using react module css and seeing use of event handling function",
-                id:"headingFive",
-                datatarget:"#collapseFive",
-                arialcontrols:"collapseFive"
-            },
-            {
-                title:"Grocery List Application - Project 1.",
-                description:"Creating grocery list web application using reactjs.",
-                id:"headingSix",
-                datatarget:"#collapseSix",
-                arialcontrols:"collapseSix"
-            },
-            {
-                title:"Introduction to Express & Express Routing.",
-                description:"Looking what is express , it advantage and use.Setting up Server with GET, POST requests . Creating new router object for handling request from client side.",
-                id:"headingSeven",
-                datatarget:"#collapseSeven",
-                arialcontrols:"collapseSeven"
-            },
-            {
-                title:"Express Middlewares and Coding Authentication",
-                description:"Setting of functions that execute during the processing of HTTP requests received by an Express application using express Middlewares & Coding up Authentication & different ways to Authenticate users (JWT vs Traditional Cookies Method).",
-                id:"headingEight",
-                datatarget:"#collapseEight",
-                arialcontrols:"collapseEight"
-            },
-            {
-                title:"Weather Forecasting Application using API",
-                description:"Creating full-fledge weather forecasting application using the help of API.",
-                id:"headingEight2",
-                datatarget:"#collapseEight2",
-                arialcontrols:"collapseEight2"
-            },
+    // {
+    //     img:Backend_Img,
+    //     title:'Backend Development Bootcamp',
+    //     bestseller:"",
+    //     price:'₹ 999 Only',
+    //     date:'Starts from 1st June 2023',
+    //     time:'8:00 PM to 9:30 PM',
+    //     desc:'Learn MERN backend development with 3+ live projects, learn how to create servers and intregrate with frontend technologies plus Database and Deployment!',
+    //     oprice:'₹ 999 Only',
+    //     sprice:'₹ 3999',
+    //     off:'75% off',
+    //     btn:'Buy this Course',
+    //     linkedinurl:'https://www.linkedin.com/in/vishal-vishwajeet',
+    //     requirement:"Must be familiar with HTML , CSS and Javascript advance concepts ",
+    //     courseDuration:"6 weeks - 8 weeks",
+    //     syllabus:[
+    //         {
+    //             title:"Introduction to course",
+    //             description:"What are Different Stacks for WebD & Whats special about MERN above them . Brief on Components of MERN Stack (ReactJS, NodeJS, ExpressJS, MongoDB). Explaining the Structure of the Course.",
+    //             id:"headingOne",
+    //             datatarget:"#collapseOne",
+    //             arialcontrols:"collapseOne"
+    //         },
+    //         {
+    //             title:"Starting with React",
+    //             description:"Installation of require software.Importance and detail explaination about react.Explaining advantages (SPA & its Dynamic Nature).",
+    //             id:"headingTwo",
+    //             datatarget:"#collapseTwo",
+    //             arialcontrols:"collapseTwo"
+    //         },
+    //         {
+    //             title:"React Components , Props and State.",
+    //             description:"What are components , how component can be created , Use of props of getting data and other use of state.",
+    //             id:"headingThree",
+    //             datatarget:"#collapseThree",
+    //             arialcontrols:"collapseThree"
+    //         },
+    //         {
+    //             title:"React Router and Hooks.",
+    //             description:"Making single page application using react router and seeing different hooks example such as useState , useRef , useEffect. ",
+    //             id:"headingFour",
+    //             datatarget:"#collapseFour",
+    //             arialcontrols:"collapseFour"
+    //         },
+    //         {
+    //             title:"React styling and event handler.",
+    //             description:"Styling page using react module css and seeing use of event handling function",
+    //             id:"headingFive",
+    //             datatarget:"#collapseFive",
+    //             arialcontrols:"collapseFive"
+    //         },
+    //         {
+    //             title:"Grocery List Application - Project 1.",
+    //             description:"Creating grocery list web application using reactjs.",
+    //             id:"headingSix",
+    //             datatarget:"#collapseSix",
+    //             arialcontrols:"collapseSix"
+    //         },
+    //         {
+    //             title:"Introduction to Express & Express Routing.",
+    //             description:"Looking what is express , it advantage and use.Setting up Server with GET, POST requests . Creating new router object for handling request from client side.",
+    //             id:"headingSeven",
+    //             datatarget:"#collapseSeven",
+    //             arialcontrols:"collapseSeven"
+    //         },
+    //         {
+    //             title:"Express Middlewares and Coding Authentication",
+    //             description:"Setting of functions that execute during the processing of HTTP requests received by an Express application using express Middlewares & Coding up Authentication & different ways to Authenticate users (JWT vs Traditional Cookies Method).",
+    //             id:"headingEight",
+    //             datatarget:"#collapseEight",
+    //             arialcontrols:"collapseEight"
+    //         },
+    //         {
+    //             title:"Weather Forecasting Application using API",
+    //             description:"Creating full-fledge weather forecasting application using the help of API.",
+    //             id:"headingEight2",
+    //             datatarget:"#collapseEight2",
+    //             arialcontrols:"collapseEight2"
+    //         },
 
-            {
-                title:"Introduction to NodeJS and API.",
-                description:"Understanding requirement of Nodejs and understanding what is API",
-                id:"headingNine",
-                datatarget:"#collapseNine",
-                arialcontrols:"collapseNine"
-            },
-            {
-                title:"Creating Server and Understanding IP & Ports.",
-                description:"Basic NodeJS syntax for Server Creation (With Basic understanding of GET,POST, PUT, DELETE type of Requests). Understanding of IPs & Ports",
-                id:"headingTen",
-                datatarget:"#collapseTen",
-                arialcontrols:"collapseTen"
-            },
-            {
-                title:"Introduction to MongoDB and general setup.",
-                description:"What is a Database, types of DBs (MySQL, NoSQL etc.) & advantage of using MongoDB over others.",
-                id:"headingEleven",
-                datatarget:"#collapseEleven",
-                arialcontrols:"collapseEleven"
-            },
-            {
-                title:"Walking through Mongoose module & operator.",
-                description:"Different module and operation such as CRUD (create , read  , update , delete)",
-                id:"headingTwelve",
-                datatarget:"#collapseTwelve",
-                arialcontrols:"collapseTwelve"
-            },
-            {
-                title:"Connecting frontend to backend.",
-                description:"Making a request from the React Frontend to our Backend to make changes in the Mongoose Collection . A closer look on Authenticating Users.",
-                id:"headingThirteen",
-                datatarget:"#collapseThirteen",
-                arialcontrols:"collapseThirteen"
-            },
-            {
-                title:"News Application - Major Project.",
-                description:"Creating Fully Functional News Application with ReactJS Frontend, Node (ExpressJS) Backend APIs & MongoDB as our Database to store. News with an Admin Panel to upload news from with Authentication..",
-                id:"headingFourteen",
-                datatarget:"#collapseFourteen",
-                arialcontrols:"collapseFourteen"
-            },
+    //         {
+    //             title:"Introduction to NodeJS and API.",
+    //             description:"Understanding requirement of Nodejs and understanding what is API",
+    //             id:"headingNine",
+    //             datatarget:"#collapseNine",
+    //             arialcontrols:"collapseNine"
+    //         },
+    //         {
+    //             title:"Creating Server and Understanding IP & Ports.",
+    //             description:"Basic NodeJS syntax for Server Creation (With Basic understanding of GET,POST, PUT, DELETE type of Requests). Understanding of IPs & Ports",
+    //             id:"headingTen",
+    //             datatarget:"#collapseTen",
+    //             arialcontrols:"collapseTen"
+    //         },
+    //         {
+    //             title:"Introduction to MongoDB and general setup.",
+    //             description:"What is a Database, types of DBs (MySQL, NoSQL etc.) & advantage of using MongoDB over others.",
+    //             id:"headingEleven",
+    //             datatarget:"#collapseEleven",
+    //             arialcontrols:"collapseEleven"
+    //         },
+    //         {
+    //             title:"Walking through Mongoose module & operator.",
+    //             description:"Different module and operation such as CRUD (create , read  , update , delete)",
+    //             id:"headingTwelve",
+    //             datatarget:"#collapseTwelve",
+    //             arialcontrols:"collapseTwelve"
+    //         },
+    //         {
+    //             title:"Connecting frontend to backend.",
+    //             description:"Making a request from the React Frontend to our Backend to make changes in the Mongoose Collection . A closer look on Authenticating Users.",
+    //             id:"headingThirteen",
+    //             datatarget:"#collapseThirteen",
+    //             arialcontrols:"collapseThirteen"
+    //         },
+    //         {
+    //             title:"News Application - Major Project.",
+    //             description:"Creating Fully Functional News Application with ReactJS Frontend, Node (ExpressJS) Backend APIs & MongoDB as our Database to store. News with an Admin Panel to upload news from with Authentication..",
+    //             id:"headingFourteen",
+    //             datatarget:"#collapseFourteen",
+    //             arialcontrols:"collapseFourteen"
+    //         },
             
-        ]
-    },
+    //     ]
+    // },
     {
         img:ML,
         title:'Machine Learning with Python',
         bestseller:"",
-        price:'₹ 999 Only',
-        date:'Starts from 1st June 2023',
+        price:'₹ 1499 Only',
+        date:'Starts from Mid June 2023',
         time:'7:00 PM to 8:00 PM',
         desc:'Deep dive into Machine Learning with Python, by learning about libraries like Numpy, Pandas, Matplotlib and building 3+ industry-level projects!',
-        oprice:'₹ 999 Only',
-        sprice:'₹ 4999',
+        oprice:'₹ 1499 Only',
+        sprice:'₹ 6999',
         off:'80% off',
         btn:'Buy this Course',
         courseDuration:"6 weeks - 8 weeks",
@@ -439,7 +438,7 @@ let Courses_list=[
         title:'App Development with Flutter',
         bestseller:"Coming Soon",
         price:'₹ 999 Only',
-        date:'Starts from July 2023',
+        date:'Starts from August 2023',
         time:'8:00 PM to 9:30 PM',
         desc:'App development | Boost mobile app development skills with android studio using Dart and Flutter by building 3 projects',
         oprice:'₹ 1499 Only',
@@ -576,13 +575,13 @@ let Courses_list=[
         img:DSA_Java,
         title:'Data Structures and Algorithms in Java',
         bestseller:"Coming Soon",
-        price:'₹ 999 Only',
-        date:'Starts from July 2023',
+        price:'₹ 1999 Only',
+        date:'Starts from August 2023',
         time:'7:00 PM to 9:00 PM',
         desc:'Learn complete Data Structure and Algorithms with 50+ live problems solving, Included all Linear and Non Linear Data Structures!',
-        oprice:'₹ 999 Only',
+        oprice:'₹ 1999 Only',
         sprice:'₹ 4999',
-        off:'80% off',
+        off:'60% off',
         btn:'Coming Soon!',
         courseDuration:"8 weeks - 10 weeks",
         linkedinurl:'https://www.linkedin.com/in/nishan-banga-2154531b4',
@@ -712,14 +711,14 @@ let Courses_list=[
     {
         img:DSA_C,
         title:'Data Structures and Algorithms in C++',
-        price:'₹ 999 Only',
+        price:'₹ 1999 Only',
         bestseller:"Coming Soon",
-        date:'Starts from July 2023',
+        date:'Starts from August 2023',
         time:'7:00 PM to 9:00 PM',
         desc:'Learn complete Data Structure and Algorithms with 50+ live problems solving, Included all Linear and Non Linear Data Structures!',
-        oprice:'₹ 999 Only',
+        oprice:'₹ 1999 Only',
         sprice:'₹ 4999',
-        off:'80% off',
+        off:'60% off',
         btn:'Coming Soon!',
         courseDuration:"8 weeks - 10 weeks",
         linkedinurl:'https://www.linkedin.com/in/utsavbarnwal',
