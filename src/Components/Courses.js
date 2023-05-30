@@ -8,8 +8,6 @@ import App_dev from '../Images/App_dev.png'
 import ML from '../Images/machine_learning.jpg'
 
 
-
-
 // So in future if we need to add any new card we can just pass JSON Card data over here in Courses.js File
 
 let Courses_list=[

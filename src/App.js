@@ -54,7 +54,9 @@ function App() {
       {/* navbar */}
       {/* <p className={shouldAddClass ? 'd-none' : 'early-bird-text'}><i class="bi bi-gift-fill"></i> End of Season Sale - Atleast 60% off on all courses [Limited Seats Only]</p> */}
     {/* <p className='early-bird-text'><i class="bi bi-twitter"></i> Early bird offer : Guaranteed free Internship</p> */}
-      
+      <div>
+        <a href="https://wa.me/9084321252" target="_blank"><p style={{position:'fixed',right:'15px',backgroundColor:'white',bottom:'10px',color:'#25D366',fontSize:'35px',padding:'5px 13px',borderRadius:'50%',boxShadow:"0px 0px 8px #25D366",border:"1px solid #D3D3D3",margin:'5px 0px'}}><i class="bi bi-whatsapp"></i></p></a>
+      </div>
       <nav className="navbar navbar-expand-lg">
         <div className="container-fluid">
           <img src={Logo} className="logo me-2" onClick={Logohandler}/>
