@@ -168,131 +168,138 @@ let Courses_list=[
             // }
         ]
     },
-    // {
-    //     img:Backend_Img,
-    //     title:'Backend Development Bootcamp',
-    //     bestseller:"",
-    //     price:'₹ 999 Only',
-    //     date:'Starts from 1st June 2023',
-    //     time:'8:00 PM to 9:30 PM',
-    //     desc:'Learn MERN backend development with 3+ live projects, learn how to create servers and intregrate with frontend technologies plus Database and Deployment!',
-    //     oprice:'₹ 999 Only',
-    //     sprice:'₹ 3999',
-    //     off:'75% off',
-    //     btn:'Buy this Course',
-    //     linkedinurl:'https://www.linkedin.com/in/vishal-vishwajeet',
-    //     requirement:"Must be familiar with HTML , CSS and Javascript advance concepts ",
-    //     courseDuration:"6 weeks - 8 weeks",
-    //     syllabus:[
-    //         {
-    //             title:"Introduction to course",
-    //             description:"What are Different Stacks for WebD & Whats special about MERN above them . Brief on Components of MERN Stack (ReactJS, NodeJS, ExpressJS, MongoDB). Explaining the Structure of the Course.",
-    //             id:"headingOne",
-    //             datatarget:"#collapseOne",
-    //             arialcontrols:"collapseOne"
-    //         },
-    //         {
-    //             title:"Starting with React",
-    //             description:"Installation of require software.Importance and detail explaination about react.Explaining advantages (SPA & its Dynamic Nature).",
-    //             id:"headingTwo",
-    //             datatarget:"#collapseTwo",
-    //             arialcontrols:"collapseTwo"
-    //         },
-    //         {
-    //             title:"React Components , Props and State.",
-    //             description:"What are components , how component can be created , Use of props of getting data and other use of state.",
-    //             id:"headingThree",
-    //             datatarget:"#collapseThree",
-    //             arialcontrols:"collapseThree"
-    //         },
-    //         {
-    //             title:"React Router and Hooks.",
-    //             description:"Making single page application using react router and seeing different hooks example such as useState , useRef , useEffect. ",
-    //             id:"headingFour",
-    //             datatarget:"#collapseFour",
-    //             arialcontrols:"collapseFour"
-    //         },
-    //         {
-    //             title:"React styling and event handler.",
-    //             description:"Styling page using react module css and seeing use of event handling function",
-    //             id:"headingFive",
-    //             datatarget:"#collapseFive",
-    //             arialcontrols:"collapseFive"
-    //         },
-    //         {
-    //             title:"Grocery List Application - Project 1.",
-    //             description:"Creating grocery list web application using reactjs.",
-    //             id:"headingSix",
-    //             datatarget:"#collapseSix",
-    //             arialcontrols:"collapseSix"
-    //         },
-    //         {
-    //             title:"Introduction to Express & Express Routing.",
-    //             description:"Looking what is express , it advantage and use.Setting up Server with GET, POST requests . Creating new router object for handling request from client side.",
-    //             id:"headingSeven",
-    //             datatarget:"#collapseSeven",
-    //             arialcontrols:"collapseSeven"
-    //         },
-    //         {
-    //             title:"Express Middlewares and Coding Authentication",
-    //             description:"Setting of functions that execute during the processing of HTTP requests received by an Express application using express Middlewares & Coding up Authentication & different ways to Authenticate users (JWT vs Traditional Cookies Method).",
-    //             id:"headingEight",
-    //             datatarget:"#collapseEight",
-    //             arialcontrols:"collapseEight"
-    //         },
-    //         {
-    //             title:"Weather Forecasting Application using API",
-    //             description:"Creating full-fledge weather forecasting application using the help of API.",
-    //             id:"headingEight2",
-    //             datatarget:"#collapseEight2",
-    //             arialcontrols:"collapseEight2"
-    //         },
+    {
+        img:"https://tts.net.in/wp-content/uploads/2022/03/Python-01-2.png",
+        title:'Python for Everyone : Zero to Hero',
+        bestseller:"",
+        price:'₹ 999 Only',
+        date:'Starts from Mid June 2023',
+        time:'7:30 PM to 8:30 PM',
+        desc:'Learn Python like a Professional Start from the basics and go all the way to creating your own applications and games!',
+        oprice:'₹ 999 Only',
+        sprice:'₹ 3999',
+        off:'75% off',
+        btn:'Buy this Course',
+        linkedinurl:'https://www.linkedin.com/in/mohd-faizan-khawar-518135121',
+        requirement:"Must be familiar with HTML , CSS and Javascript advance concepts ",
+        courseDuration:"4 weeks - 6 weeks",
+        syllabus:[
+            {
+                title:"Class 1 : Introduction to course",
+                description:"Overview of Python and its features , Installing Python and setting up the development environment ,Writing your first Python program",
+                id:"headingOne",
+                datatarget:"#collapseOne",
+                arialcontrols:"collapseOne"
+            },
+            {
+                title:"Class 2 : Variables and Data Types",
+                description:"Understanding variables and their types ,Working with numbers, strings, and boolean values, Type conversion and operations ,String and String Manipulation",
+                id:"headingTwo",
+                datatarget:"#collapseTwo",
+                arialcontrols:"collapseTwo"
+            },
+            {
+                title:"Class 3 : Type of Operators",
+                description:"Arithmetic operators ,Assignment operators ,Comparison operators ,Logical operators ,Identity operators ,Membership operators",
+                id:"headingThree",
+                datatarget:"#collapseThree",
+                arialcontrols:"collapseThree"
+            },
+            {
+                title:"Class 4 : Control Flow Statement",
+                description:"Conditional statements (if, else, elif) and practice program",
+                id:"headingFour",
+                datatarget:"#collapseFour",
+                arialcontrols:"collapseFour"
+            },
+            {
+                title:"Class 5 : Loops",
+                description:"Using loops (for and while) for iteration , break and continue",
+                id:"headingFive",
+                datatarget:"#collapseFive",
+                arialcontrols:"collapseFive"
+            },
+            {
+                title:"Class 6 : Lists and Tuples",
+                description:"Creating and accessing lists ,Modifying and manipulating lists ,Working with tuples and their immutability",
+                id:"headingSix",
+                datatarget:"#collapseSix",
+                arialcontrols:"collapseSix"
+            },
+            {
+                title:"Class 7 : Dictionaries and Sets",
+                description:"Creating and accessing dictionaries ,Performing operations on dictionaries ,Using sets for unique elements and set operations",
+                id:"headingSeven",
+                datatarget:"#collapseSeven",
+                arialcontrols:"collapseSeven"
+            },
+            {
+                title:"Class 8 : Functions",
+                description:"Understanding functions and their purpose ,Defining and calling functions ,Function parameters and return values",
+                id:"headingEight",
+                datatarget:"#collapseEight",
+                arialcontrols:"collapseEight"
+            },
+            {
+                title:"Class 9 : File Handling",
+                description:"Reading from and writing to files ,Using file modes and file objects ,Handling exceptions in file operations",
+                id:"headingEight2",
+                datatarget:"#collapseEight2",
+                arialcontrols:"collapseEight2"
+            },
 
-    //         {
-    //             title:"Introduction to NodeJS and API.",
-    //             description:"Understanding requirement of Nodejs and understanding what is API",
-    //             id:"headingNine",
-    //             datatarget:"#collapseNine",
-    //             arialcontrols:"collapseNine"
-    //         },
-    //         {
-    //             title:"Creating Server and Understanding IP & Ports.",
-    //             description:"Basic NodeJS syntax for Server Creation (With Basic understanding of GET,POST, PUT, DELETE type of Requests). Understanding of IPs & Ports",
-    //             id:"headingTen",
-    //             datatarget:"#collapseTen",
-    //             arialcontrols:"collapseTen"
-    //         },
-    //         {
-    //             title:"Introduction to MongoDB and general setup.",
-    //             description:"What is a Database, types of DBs (MySQL, NoSQL etc.) & advantage of using MongoDB over others.",
-    //             id:"headingEleven",
-    //             datatarget:"#collapseEleven",
-    //             arialcontrols:"collapseEleven"
-    //         },
-    //         {
-    //             title:"Walking through Mongoose module & operator.",
-    //             description:"Different module and operation such as CRUD (create , read  , update , delete)",
-    //             id:"headingTwelve",
-    //             datatarget:"#collapseTwelve",
-    //             arialcontrols:"collapseTwelve"
-    //         },
-    //         {
-    //             title:"Connecting frontend to backend.",
-    //             description:"Making a request from the React Frontend to our Backend to make changes in the Mongoose Collection . A closer look on Authenticating Users.",
-    //             id:"headingThirteen",
-    //             datatarget:"#collapseThirteen",
-    //             arialcontrols:"collapseThirteen"
-    //         },
-    //         {
-    //             title:"News Application - Major Project.",
-    //             description:"Creating Fully Functional News Application with ReactJS Frontend, Node (ExpressJS) Backend APIs & MongoDB as our Database to store. News with an Admin Panel to upload news from with Authentication..",
-    //             id:"headingFourteen",
-    //             datatarget:"#collapseFourteen",
-    //             arialcontrols:"collapseFourteen"
-    //         },
+            {
+                title:"Class 10 : Modules and Packages",
+                description:"Understanding modules and their importance ,Importing and using modules in your code ,Organizing code into packages for better structure ,Exploring popular Python modules (e.g., datetime, math, random)",
+                id:"headingNine",
+                datatarget:"#collapseNine",
+                arialcontrols:"collapseNine"
+            },
+            {
+                title:"Class 11 : Object-Oriented Programming (OOP)",
+                description:"Introduction to OOP concepts (classes, objects, attributes, methods) ,Defining classes and creating objects ,Inheritance",
+                id:"headingTen",
+                datatarget:"#collapseTen",
+                arialcontrols:"collapseTen"
+            },
+            {
+                title:"Class 12 : Error Handling and Exceptions",
+                description:"Dealing with errors and exceptions ,Using try-except blocks for handling exceptions ,Working with multiple except clauses and finally block",
+                id:"headingEleven",
+                datatarget:"#collapseEleven",
+                arialcontrols:"collapseEleven"
+            },
+            {
+                title:"Class 13 : Introduction to Tkinter",
+                description:"Overview of Tkinter and its features ,Setting up a Tkinter application ,Creating and configuring basic GUI elements (labels, buttons, entry fields)",
+                id:"headingTwelve",
+                datatarget:"#collapseTwelve",
+                arialcontrols:"collapseTwelve"
+            },
+            {
+                title:"Class 14 : Layout Management with Tkinter",
+                description:"Understanding different layout managers (pack, grid, place), Organizing GUI elements using frames and containers, Creating responsive and dynamic layouts",
+                id:"headingThirteen",
+                datatarget:"#collapseThirteen",
+                arialcontrols:"collapseThirteen"
+            },
+            {
+                title:"Class 15 : Event Handling in Tkinter",
+                description:"Handling user events (button clicks, keypress, mouse events) ,Binding events to functions and methods, Responding to user actions and updating the GUI",
+                id:"headingFourteen",
+                datatarget:"#collapseFourteen",
+                arialcontrols:"collapseFourteen"
+            },
+            {
+                title:"Class 16 : Building Interactive Project",
+                description:"Creating full fledge Rock Paper Scissors Game",
+                id:"headingFifteen",
+                datatarget:"#collapseFifteen",
+                arialcontrols:"collapseFifteen"
+            },
             
-    //     ]
-    // },
+        ]
+    },
     {
         img:ML,
         title:'Machine Learning with Python',

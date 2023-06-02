@@ -14,7 +14,7 @@ function CourseDetail()
             alert("Note :\n\n1.Once your payment is successful , you will receive course confirmation mail within 24 hours. \n\n2.Also note you will be paying to Siddesh Laxmichandra Jaiswal , Founder of Codingwiz.");
             window.location.href='https://pmny.in/2I5lADweAfoz';
         }
-        else if(location.state.title=="Backend Development Bootcamp")
+        else if(location.state.title=="Python for Everyone : Zero to Hero")
         {
             // alert("Proceed for Backend payment");
             alert("Note :\n\n1.Once your payment is successful , you will receive course confirmation mail within 24 hours. \n\n2.Also note you will be paying to Siddesh Laxmichandra Jaiswal , Founder of Codingwiz.");
