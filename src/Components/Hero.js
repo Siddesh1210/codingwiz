@@ -54,8 +54,8 @@ function Hero()
 
     useEffect(() => {
         const timer = setTimeout(()=>{
-            setshowDialog(false)
-        }, 1000)
+            setshowDialog(true)
+        }, 5000)
         return ()=>clearTimeout(timer)
     }, [])
     return(
@@ -63,7 +63,7 @@ function Hero()
         <div className="row justify-content-evenly align-items-center hero-row flex-wrap-reverse">
             <div className="col-md-6 px-4 py-2">
                 <h1 className='start-text'>Start your Dream Career with <span className='codingwiztext'>CodingWiz</span></h1>
-                <p>Be job ready by learning top & trending technologies used by leading MNCs at just starting price from ₹1499!</p>
+                <p>Be job ready by learning top & trending technologies used by leading MNCs at just starting price from ₹999!</p>
                 <button className="hero-btn" onClick={CoursesHandler}>Explore Courses</button>
                 <a href="tel:9623235838" className="callTutors"><button className="hero-btn2">Call Tutors</button></a>
 
@@ -132,11 +132,11 @@ function Hero()
                 {/* <p style={{fontWeight: '500', marginBottom: 8,color:'#606060'}}>Interested Course?</p> */}
                     <select style={{border: '#a4a4a4 0.5px solid', padding: 5, paddingLeft: 12, borderRadius: 5, width: '100%', outline: 0, background: '#fff'}} id="course" className="sel">
                         <option onClick={()=>{setcourseSelectedFromDialog()}}>Select your course</option>
-                        <option onClick={()=>{setcourseSelectedFromDialog('Frontend Devlopement')}}>Frontend Development</option>
-                        <option onClick={()=>{setcourseSelectedFromDialog('MERN Backend Development')}}>MERN Backend Development</option>
-                        <option onClick={()=>{setcourseSelectedFromDialog('Android/IOS Development')}}>Android/IOS Development</option>
-                        <option onClick={()=>{setcourseSelectedFromDialog('Java DSA')}}>Java DSA</option>
-                        <option onClick={()=>{setcourseSelectedFromDialog('C++ DSA')}}>C++ DSA</option>
+                        <option onClick={()=>{setcourseSelectedFromDialog('Full Stack Devlopement')}}>Full Stack Development</option>
+                        {/* <option onClick={()=>{setcourseSelectedFromDialog('MERN Backend Development')}}>MERN Backend Development</option> */}
+                        {/* <option onClick={()=>{setcourseSelectedFromDialog('Android/IOS Development')}}>Android/IOS Development</option> */}
+                        {/* <option onClick={()=>{setcourseSelectedFromDialog('Java DSA')}}>Java DSA</option>
+                        <option onClick={()=>{setcourseSelectedFromDialog('C++ DSA')}}>C++ DSA</option> */}
                         <option onClick={()=>{setcourseSelectedFromDialog('Machine Learning')}}>Machine Learning</option>
                     </select>
                 </div>
